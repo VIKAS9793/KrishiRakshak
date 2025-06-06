@@ -19,8 +19,8 @@
     </a>
   </div>
   
-  <div style="background: white; padding: 10px; border-radius: 10px; display: inline-block; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="assets/banners/banner.png" alt="Krishi Rakshak Banner" style="max-width: 100%; border-radius: 8px; border: 1px solid #e0e0e0;">
+  <div style="background: white; padding: 6px; border-radius: 8px; display: inline-block; margin: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.08); max-width: 90%;">
+    <img src="assets/banners/banner.png" alt="Krishi Rakshak Banner" style="max-width: 100%; max-height: 200px; border-radius: 4px; border: 1px solid #e0e0e0; display: block; margin: 0 auto;">
   </div>
   
   <div style="margin: 15px 0; display: flex; justify-content: center; gap: 15px;">
