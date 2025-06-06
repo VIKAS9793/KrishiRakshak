@@ -8,9 +8,13 @@ import socket
 import base64
 from pathlib import Path
 
-# Global variables - can be set from environment or config
-BANNER_BASE64 = ""  # Set this to your banner image base64 string
-LOGO_BASE64 = ""    # Set this to your logo image base64 string
+# Global variables for logo
+import os
+from pathlib import Path
+
+# Get absolute paths to assets
+BASE_DIR = Path(__file__).parent.absolute()
+LOGO_PATH = str(BASE_DIR / "assets" / "logos" / "logo.png")  # Absolute path to logo image
 
 def predict(image, language):
     """
@@ -106,6 +110,17 @@ def create_ui():
         box-shadow: var(--shadow);
     }
     
+    .header-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .logo-image {
+        border-radius: 8px;
+    }
+    
     .header-section h1 {
         color: var(--primary-dark);
         margin: 0 0 10px 0;
@@ -196,15 +211,28 @@ def create_ui():
         css=custom_css
     ) as demo:
         
-        # Header section
+        # Header section with logo and title
         with gr.Column(elem_classes=["header-section"]):
-            if BANNER_BASE64:
-                gr.HTML(f'<img src="{BANNER_BASE64}" style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">')
+            with gr.Row(elem_classes=["header-row"]):
+                # Larger logo
+                if os.path.exists(LOGO_PATH):
+                    logo = gr.Image(
+                        value=LOGO_PATH,
+                        visible=True,
+                        show_label=False,
+                        interactive=False,
+                        height=120,  # Increased size
+                        width=120,    # Increased size
+                        container=False,
+                        elem_classes=["logo-image"]
+                    )
+                
+                # Title and subtitle
+                with gr.Column():
+                    gr.HTML("<h1 style='margin: 0; padding: 0; line-height: 1.2; font-size: 2.5em;'>🌱 Krishi Rakshak</h1>")
+                    gr.HTML("<p style='margin: 5px 0 0 0; color: var(--text-secondary); font-size: 1.1em;'>AI-Powered Plant Disease Detection System</p>")
             
-            gr.HTML("""
-                <h1>🌱 Krishi Rakshak</h1>
-                <p>AI-Powered Plant Disease Detection System</p>
-            """)
+            gr.HTML('<div style="margin-top: 20px; border-bottom: 1px solid #e0e0e0; width: 100%;"></div>')  # Separator line
         
         # Language selector
         with gr.Row(elem_classes=["language-selector"]):
