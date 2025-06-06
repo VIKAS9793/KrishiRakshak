@@ -313,7 +313,7 @@ cpu_optimization:
 Training metrics are logged to:
 - **Weights & Biases** (optional)
 - Console output
-- TensorBoard (coming soon)
+- TensorBoard logs
 
 ### Checkpoints
 
@@ -341,16 +341,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Key License Points
 - **Type**: MIT License
 - **Copyright**: © 2025 Vikas Sahani
-- **Contact**: vikassahani17@gmail.com
+- **Contact**: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
 
 For full terms and conditions, please refer to the [LICENSE](LICENSE) file.
-
-For quick reference, key points include:
-- **License Type**: MIT License
-- **Copyright Holder**: Vikas Sahani
-- **Contact**: vikassahani17@gmail.com
-
-Refer to the full [LICENSE](LICENSE) file for all terms and conditions.
 
 ### AI-Generated Content Attribution
 
@@ -371,5 +364,6 @@ Copyright © 2025 Vikas Sahani. All rights reserved.
 
 ### Contact
 For inquiries regarding licensing, usage rights, or permissions, please contact:
-Vikas Sahani  
-Email: vikassahani17@gmail.com
+
+**Vikas Sahani**  
+Email: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
