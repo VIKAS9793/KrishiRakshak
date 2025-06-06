@@ -1,7 +1,5 @@
 <div align="center" style="background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%); padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="width: 180px; height: 180px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; border: 4px solid #2e7d32; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 0 auto;">
-    <img src="assets/logos/logo.png" alt="Krishi Rakshak Logo" style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 50%;">
-  </div>
+  <img src="assets/logos/logo.png" alt="Krishi Rakshak Logo" width="120" style="border-radius: 50%; border: 3px solid #2e7d32; padding: 3px; background: white; margin: 0 auto; display: block;">
   
   <h1 style="color: #1b5e20; margin: 15px 0 5px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Krishi Rakshak</h1>
   <h3 style="color: #2e7d32; margin: 0 0 15px 0; font-weight: 500;">
@@ -21,8 +19,8 @@
     </a>
   </div>
   
-  <div style="background: white; padding: 4px; border-radius: 12px; display: inline-block; margin: 8px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); max-width: 80%;">
-    <img src="assets/banners/banner.png" alt="Krishi Rakshak Banner" style="max-width: 100%; max-height: 150px; border-radius: 8px; border: 1px solid #e0e0e0; display: block; margin: 0 auto; width: auto;">
+  <div style="background: white; padding: 3px; border-radius: 8px; display: inline-block; margin: 5px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); max-width: 90%;">
+    <img src="assets/banners/banner.png" alt="Krishi Rakshak Banner" style="max-width: 100%; max-height: 120px; border-radius: 6px; border: 1px solid #e0e0e0; display: block; margin: 0 auto;">
   </div>
   
   <div style="margin: 15px 0; display: flex; justify-content: center; gap: 15px;">
