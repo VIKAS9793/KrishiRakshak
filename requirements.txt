@@ -1,39 +1,144 @@
-# Core
-numpy>=1.19.5
-pandas>=1.3.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
+# ============================================================================
+# CPU-Optimized Requirements for Plant Disease Classification
+# Updated for modern PyTorch with CPU optimizations
+# ============================================================================
+
+# Core Scientific Computing
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scipy>=1.10.0
+
+# ============================================================================
+# Deep Learning - PyTorch CPU Optimized Stack
+# ============================================================================
+
+# PyTorch CPU-only versions (latest stable)
+torch>=2.1.0+cpu
+torchvision>=0.16.0+cpu
+torchaudio>=2.1.0+cpu
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
+# Intel CPU Optimization (Massive performance boost for Intel processors)
+intel-extension-for-pytorch>=2.1.0
+mkl>=2023.2.0
+
+# Model Utilities and Metrics
+timm>=0.9.8                    # State-of-the-art pre-trained models
+torchinfo>=1.8.0               # Better model summaries
+torchmetrics>=1.2.0            # Comprehensive metrics library
+efficientnet-pytorch>=0.7.1    # EfficientNet implementations
+
+# ============================================================================
+# Data Processing and Augmentation
+# ============================================================================
+albumentations>=1.3.1          # Advanced data augmentation
+opencv-python>=4.8.1.78        # Computer vision operations
+Pillow>=10.0.1                 # Image processing
+scikit-image>=0.21.0           # Additional image processing
+
+# ============================================================================
+# Training Utilities and Monitoring
+# ============================================================================
+tqdm>=4.66.0                   # Progress bars
+wandb>=0.16.0                  # Experiment tracking and logging
+tensorboard>=2.15.0            # Alternative experiment tracking
+python-dotenv>=1.0.0           # Environment variable management
+
+# Memory and Performance Monitoring
+psutil>=5.9.6                  # System resource monitoring
+memory-profiler>=0.61.0        # Memory usage profiling
+py-cpuinfo>=9.0.0              # CPU information detection
+gputil>=1.4.0                  # GPU monitoring (if needed later)
+
+# ============================================================================
+# Data Science and Analysis
+# ============================================================================
+scikit-learn>=1.3.0            # Machine learning utilities
+plotly>=5.17.0                 # Interactive visualizations
+ipywidgets>=8.1.0              # Jupyter notebook widgets
+
+# ============================================================================
+# Model Deployment and Serving
+# ============================================================================
+
+# Web Interfaces (choose based on preference)
+gradio>=4.7.0                  # Easy ML model interfaces
+streamlit>=1.28.0              # Alternative web interface
+fastapi>=0.104.0               # Modern API framework
+uvicorn[standard]>=0.24.0      # ASGI server for FastAPI
+flask>=3.0.0                   # Traditional web framework (if preferred)
+
+# Model Export and Optimization
+onnx>=1.15.0                   # Model interchange format
+onnxruntime>=1.16.0            # ONNX runtime for inference
+openvino>=2023.2.0             # Intel OpenVINO for optimization
+
+# ============================================================================
+# Development Environment
+# ============================================================================
+
+# Jupyter Environment
 jupyter>=1.0.0
+jupyterlab>=4.0.8
+notebook>=7.0.0
+ipykernel>=6.26.0
 
-# Deep Learning (CPU only)
-torch==1.9.0+cpu
-torchvision==0.10.0+cpu
--f https://download.pytorch.org/whl/torch_stable.html
-tensorflow==2.6.0
-tensorflow-hub>=0.12.0
-onnx>=1.9.0
-onnxruntime>=1.8.0
-tqdm>=4.62.0
+# Testing Framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.0           # Parallel test execution
 
-# Data Augmentation
-albumentations>=1.0.0
-opencv-python>=4.5.0
-Pillow>=8.3.0
+# Code Quality and Formatting
+black>=23.11.0                 # Code formatter
+isort>=5.12.0                  # Import sorter
+flake8>=6.1.0                  # Linting
+pre-commit>=3.5.0              # Git hooks for code quality
+mypy>=1.7.0                    # Type checking
 
-# Web UI
-gradio>=3.0.0
-flask>=2.0.0
+# ============================================================================
+# Utilities and Helpers
+# ============================================================================
+imutils>=0.5.4                 # Image processing utilities
+requests>=2.31.0               # HTTP requests
+pyyaml>=6.0.1                  # YAML configuration files
+click>=8.1.0                   # Command line interface creation
+rich>=13.6.0                   # Beautiful terminal output
+colorama>=0.4.6                # Cross-platform colored terminal text
 
-# Utils
-scikit-learn>=0.24.0
-imutils>=0.5.4
-python-dotenv>=0.19.0
+# File and Data Handling
+h5py>=3.10.0                   # HDF5 file format
+joblib>=1.3.0                  # Efficient serialization
+pickle5>=0.0.12                # Enhanced pickle (Python < 3.8)
 
-# Testing
-pytest>=6.2.0
-pytest-cov>=2.12.0
+# ============================================================================
+# Optional: Alternative Deep Learning Framework
+# (Uncomment only if you need TensorFlow for specific models)
+# ============================================================================
+# tensorflow-cpu>=2.15.0
+# tensorflow-hub>=0.15.0
+# keras>=2.15.0
 
-# Formatting
-black>=21.7b0
-isort>=5.9.0
-flake8>=3.9.0
+# ============================================================================
+# Installation Notes:
+# ============================================================================
+# 
+# 1. Create virtual environment first:
+#    python -m venv plant_disease_env
+#    source plant_disease_env/bin/activate  # Linux/Mac
+#    plant_disease_env\Scripts\activate     # Windows
+#
+# 2. Upgrade pip:
+#    pip install --upgrade pip
+#
+# 3. Install requirements:
+#    pip install -r requirements.txt
+#
+# 4. For Intel CPUs, verify Intel Extension installation:
+#    python -c "import intel_extension_for_pytorch as ipex; print('Intel Extension OK')"
+#
+# 5. Test PyTorch CPU installation:
+#    python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CPU threads: {torch.get_num_threads()}')"
+#
+# ============================================================================
