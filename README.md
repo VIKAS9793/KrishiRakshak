@@ -39,21 +39,19 @@ An AI-powered crop health guardian that predicts crop diseases using RGB images 
 
 ```mermaid
 graph TD
-    A[Farmer/User] -->|Captures Image| B[Mobile/Web App]
-    B -->|Sends Image| C[Krishi Rakshak API]
-    C -->|Preprocesses| D[Image Processor]
-    D -->|Feeds to| E[Deep Learning Model]
-    E -->|Returns| F[Disease Prediction]
-    F -->|Generates| G[Remedial Actions]
-    G -->|Displays| B
+    A[Farmer/User] -->|Captures Image| B[Krishi Rakshak App]
+    B -->|Processes| C[Image Processor]
+    C -->|Feeds to| D[Deep Learning Model]
+    D -->|Generates| E[Disease Prediction]
+    E -->|Suggests| F[Remedial Actions]
+    F -->|Displays| B
     
     style A fill:#4caf50,stroke:#2e7d32,color:white
     style B fill:#2196f3,stroke:#0d47a1,color:white
-    style C fill:#ff9800,stroke:#e65100,color:white
-    style D fill:#9c27b0,stroke:#4a148c,color:white
-    style E fill:#f44336,stroke:#b71c1c,color:white
-    style F fill:#009688,stroke:#004d40,color:white
-    style G fill:#795548,stroke:#3e2723,color:white
+    style C fill:#9c27b0,stroke:#4a148c,color:white
+    style D fill:#f44336,stroke:#b71c1c,color:white
+    style E fill:#009688,stroke:#004d40,color:white
+    style F fill:#795548,stroke:#3e2723,color:white
 ```
 
 ## 🔄 Workflow
@@ -61,18 +59,15 @@ graph TD
 ```mermaid
 sequenceDiagram
     participant User
-    participant App as Mobile/Web App
-    participant API as Krishi Rakshak API
+    participant App as Krishi Rakshak App
     participant Model as AI Model
     
-    User->>App: Uploads crop image
-    App->>API: Sends image for analysis
-    API->>Model: Processes & classifies image
-    Model-->>API: Returns disease prediction
-    API-->>App: Sends prediction & recommendations
+    User->>App: Loads crop image
+    App->>Model: Processes image locally
+    Model-->>App: Returns disease prediction
     App->>User: Displays results in Hindi/English
     
-    Note right of API: Real-time processing
+    Note right of App: All processing happens locally
     Note left of Model: CPU-optimized inference
 ```
 
@@ -154,21 +149,40 @@ This project is optimized for hackathon evaluation across key criteria:
 
 ```
 KrishiRakshak/
-├── data/                    # Dataset and processed data
-├── models/                  # Model files (.pt, .tflite)
-├── notebooks/               # Jupyter notebooks for exploration
-├── src/
+├── assets/                 # Static assets (images, logos, banners)
+│   ├── banners/           # Banner images
+│   └── logos/             # Logo files
+├── checkpoints/            # Saved model checkpoints
+│   └── {model_name}_{timestamp}/
+│       ├── best_model.pth
+│       ├── last_epoch.pth
+│       └── config.yaml
+├── configs/                # Configuration files
+│   └── train_config.yaml  # Training configuration
+├── data/                   # Dataset and processed data
+│   ├── raw/               # Raw dataset files
+│   └── processed/         # Processed data files
+├── models/                 # Saved model files
+├── notebooks/              # Jupyter notebooks for exploration
+├── src/                    # Source code
 │   ├── data/              # Data loading and preprocessing
 │   ├── models/            # Model architecture and training code
 │   ├── utils/             # Utility functions
-│   └── app/               # Web UI and mobile app code
+│   └── app.py            # Web application entry point
 ├── tests/                  # Unit and integration tests
-├── docs/                   # Documentation
-├── requirements.txt        # Python dependencies
-└── README.md              # Project documentation
+├── .gitignore             # Git ignore file
+├── LICENSE                # License information
+├── QUICKSTART.md          # Quick start guide
+├── README.md              # Project documentation
+├── requirements.txt       # Python dependencies
+└── train.py               # Training script
 ```
 
 ## Setup
+
+For detailed setup instructions, see [QUICKSTART.md](QUICKSTART.md).
+
+### Basic Setup
 
 1. Clone the repository:
    ```bash
@@ -248,11 +262,11 @@ data/
 
 ```bash
 # Basic training with default settings
-python train.py --config configs/train_config.yaml
+python train.py --config src/configs/train_config.yaml
 
 # Override specific parameters
-python train.py --config configs/train_config.yaml \
-    --data.data_dir data/plantvillage \
+python train.py --config src/configs/train_config.yaml \
+    --data.data_dir data/raw/plantvillage \
     --model.name efficientnet_b0 \
     --training.epochs 50 \
     --data.batch_size 8 \
@@ -271,7 +285,7 @@ The training script includes several CPU optimizations:
 
 ### Configuration
 
-Customize training via `configs/train_config.yaml`:
+Customize training via [configs/train_config.yaml](configs/train_config.yaml):
 
 ```yaml
 # Model architecture (efficientnet_b0, mobilenet_v3_small, resnet18)
@@ -317,9 +331,45 @@ checkpoints/
 Run the Gradio interface:
 
 ```bash
-python app.py
+python src/app.py
 ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete details.
+
+### Key License Points
+- **Type**: MIT License
+- **Copyright**: © 2025 Vikas Sahani
+- **Contact**: vikassahani17@gmail.com
+
+For full terms and conditions, please refer to the [LICENSE](LICENSE) file.
+
+For quick reference, key points include:
+- **License Type**: MIT License
+- **Copyright Holder**: Vikas Sahani
+- **Contact**: vikassahani17@gmail.com
+
+Refer to the full [LICENSE](LICENSE) file for all terms and conditions.
+
+### AI-Generated Content Attribution
+
+- The logo and banner images in the `assets/` directory were generated using AI (ChatGPT/DALL·E).
+- These images are provided under the same MIT License as the project.
+- The AI model used for generation is subject to OpenAI's [Content Policy](https://openai.com/policies/content-policy).
+- Users should be aware that AI-generated content may be subject to additional terms and conditions set by the AI service provider.
+
+## Copyright and Trademark
+
+### Copyright Notice
+Copyright © 2025 Vikas Sahani. All rights reserved.
+
+### Trademark Information
+- "Krishi Rakshak"™ is a registered trademark of Vikas Sahani.
+- The Krishi Rakshak logo and associated branding are protected by trademark law.
+- All other trademarks and registered trademarks are the property of their respective owners.
+
+### Contact
+For inquiries regarding licensing, usage rights, or permissions, please contact:
+Vikas Sahani  
+Email: vikassahani17@gmail.com
