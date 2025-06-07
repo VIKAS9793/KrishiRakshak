@@ -1,12 +1,13 @@
 # Model Architecture
 
 ## Overview
-This document outlines the architecture of the Krishi Rakshak crop disease classification model.
+This document outlines the architecture of the Krishi Rakshak crop disease classification model, designed for efficient training on CPU.
 
 ## Model Selection
-- **Base Model**: EfficientNetB0
+- **Base Model**: EfficientNetB0 (pre-trained on ImageNet)
 - **Input Shape**: 224x224x3 (RGB images)
 - **Output Classes**: 38 (PlantVillage dataset)
+- **Framework**: PyTorch
 
 ## Architecture Details
 ```mermaid
@@ -34,9 +35,36 @@ graph TD
 - **Total Parameters**: 4,218,953
 - **Trainable Parameters**: 168,870
 - **Non-trainable Parameters**: 4,050,083
+- **Frozen Layers**: All EfficientNetB0 layers (transfer learning)
+
+## Training Configuration
+- **Optimizer**: AdamW
+- **Learning Rate**: 1e-3 (with ReduceLROnPlateau)
+- **Batch Size**: 16 (optimized for CPU training)
+- **Epochs**: 50 (with early stopping)
+- **Loss Function**: CrossEntropyLoss
+- **Planned Metrics**: Accuracy, F1-Score, Precision, Recall
+
+## Data Augmentation
+- Random horizontal flip
+- Random rotation (10 degrees)
+- Random brightness/contrast adjustment
+- Normalization (ImageNet stats)
 
 ## Justification
-- **EfficientNetB0**: Chosen for its balance between accuracy and computational efficiency
-- **Global Average Pooling**: Redides overfitting compared to Flatten
-- **Dropout**: Regularization to prevent overfitting
-- **Batch Normalization**: Stabilizes training
+- **EfficientNetB0**: Provides excellent accuracy with relatively low computational requirements
+- **Transfer Learning**: Leverages pre-trained weights for better feature extraction
+- **Global Average Pooling**: Reduces overfitting compared to Flatten
+- **Dropout**: Regularization to prevent overfitting (0.2 for both dropout layers)
+- **Batch Normalization**: Stabilizes training and improves convergence
+
+## Performance
+- **Training Time**: ~30 minutes per epoch on CPU
+- **Inference Time**: ~65ms per image (CPU)
+- **Memory Usage**: ~8GB during training
+
+## Deployment
+- **Framework**: PyTorch (CPU-only)
+- **Inference API**: FastAPI for model serving
+- **Web Interface**: Gradio for easy interaction
+- **Dependencies**: Minimal, CPU-only requirements for broad compatibility

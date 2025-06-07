@@ -1,10 +1,10 @@
-# Krishi Rakshak - CPU-Optimized Plant Disease Classification
+# Krishi Rakshak - Plant Disease Classification
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-EE4C2C.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Krishi Rakshak** is an AI-powered crop health monitoring system that helps farmers detect plant diseases using just a smartphone camera. This version is optimized for CPU training and inference, making it accessible even on modest hardware.
+**Krishi Rakshak** is an AI-powered crop health monitoring system that helps farmers detect plant diseases using just a smartphone camera. This version is optimized for CPU training and inference, making it accessible on standard hardware.
 
 ## 🚀 Quick Start
 
@@ -52,14 +52,8 @@ pip install -r requirements.txt
 # Check PyTorch installation
 python -c "import torch; print(f'PyTorch version: {torch.__version__}')"
 
-# Check Intel Extension (if on Intel CPU)
-python -c "
-try:
-    import intel_extension_for_pytorch as ipex
-    print('✅ Intel Extension for PyTorch: Available')
-except ImportError:
-    print('ℹ️  Intel Extension for PyTorch: Not available')
-"
+# Verify CPU support
+python -c "import torch; print(f'CPU: {torch.cpu.get_device_name(0)}' if torch.cuda.is_available() else 'Using CPU')"
 ```
 
 ### 4. Prepare Your Dataset

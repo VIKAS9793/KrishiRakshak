@@ -1,234 +1,85 @@
 """
 Krishi Rakshak - Crop Disease Detection
-A clean, functional implementation with proper structure
+Minimal implementation for hackathon submission
 """
 import gradio as gr
-import os
-import socket
-import base64
-from pathlib import Path
+import torch
+import numpy as np
+from torchvision import transforms
+from PIL import Image
 
-# Global variables for logo
-import os
-from pathlib import Path
+# Constants
+CLASS_NAMES = ["Healthy", "Disease 1", "Disease 2"]  # Update with actual class names
+MODEL_PATH = "model/model.pth"  # Update with actual model path
 
-# Get absolute paths to assets
-BASE_DIR = Path(__file__).parent.absolute()
-LOGO_PATH = str(BASE_DIR / "assets" / "logos" / "logo.png")  # Absolute path to logo image
+def load_model():
+    """Load the pre-trained model"""
+    model = torch.hub.load('pytorch/vision:v0.10.0', 'efficientnet_b0', pretrained=True)
+    num_ftrs = model.classifier[1].in_features
+    model.classifier[1] = torch.nn.Linear(num_ftrs, len(CLASS_NAMES))
+    model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
+    model.eval()
+    return model
 
-def predict(image, language):
-    """
-    Placeholder prediction function
-    Replace this with your actual model prediction logic
-    """
+def preprocess_image(image):
+    """Preprocess the input image"""
+    transform = transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], 
+                          std=[0.229, 0.224, 0.225])
+    ])
+    return transform(image).unsqueeze(0)
+
+def predict(image):
+    """Make prediction on the input image"""
     if image is None:
-        return {
-            "error": "No image uploaded" if language == "English" else "कोई छवि अपलोड नहीं की गई",
-            "status": "error"
-        }
+        return "Error: No image uploaded"
     
-    # Placeholder prediction logic
-    # Replace this with your actual model inference
     try:
-        # Simulate processing time and prediction
-        import time
-        import random
-        time.sleep(1)  # Simulate processing
+        # Convert to PIL Image
+        img = Image.fromarray(image.astype('uint8'), 'RGB')
         
-        # Mock prediction results
-        diseases = ["Healthy", "Leaf Blight", "Powdery Mildew", "Rust", "Bacterial Spot"]
-        predicted_disease = random.choice(diseases)
-        confidence = random.uniform(0.7, 0.95)
+        # Preprocess
+        img_tensor = preprocess_image(img)
         
-        if language == "English":
-            result = {
-                "status": "success",
-                "prediction": predicted_disease,
-                "confidence": f"{confidence:.1%}",
-                "recommendation": "Consult with agricultural expert for proper treatment" if predicted_disease != "Healthy" else "Plant appears healthy!"
-            }
-        else:  # Hindi
-            disease_translations = {
-                "Healthy": "स्वस्थ",
-                "Leaf Blight": "पत्ती का झुलसा रोग",
-                "Powdery Mildew": "चूर्णी फफूंद",
-                "Rust": "रतुआ रोग",
-                "Bacterial Spot": "जीवाणु धब्बा"
-            }
-            result = {
-                "status": "success",
-                "prediction": disease_translations.get(predicted_disease, predicted_disease),
-                "confidence": f"{confidence:.1%}",
-                "recommendation": "उचित उपचार के लिए कृषि विशेषज्ञ से सलाह लें" if predicted_disease != "Healthy" else "पौधा स्वस्थ दिखता है!"
-            }
+        # Load model and predict
+        model = load_model()
+        with torch.no_grad():
+            outputs = model(img_tensor)
+            _, preds = torch.max(outputs, 1)
+            confidence = torch.nn.functional.softmax(outputs, dim=1)[0] * 100
         
-        return result
+        # Get results
+        predicted_class = CLASS_NAMES[preds[0]]
+        confidence = float(confidence[preds[0]])
+        
+        return f"Prediction: {predicted_class}\nConfidence: {confidence:.1f}%"
         
     except Exception as e:
-        return {
-            "error": f"Prediction failed: {str(e)}" if language == "English" else f"भविष्यवाणी असफल: {str(e)}",
-            "status": "error"
-        }
-
-def update_button_text(language):
-    """Update button text based on selected language"""
-    return gr.update(value="Analyze Image" if language == "English" else "छवि का विश्लेषण करें")
+        return f"Error: {str(e)}"
 
 def create_ui():
     """Create the main Gradio interface"""
-    
-    # Custom CSS for styling
-    custom_css = """
-    :root {
-        --primary-color: #4CAF50;
-        --primary-dark: #388E3C;
-        --primary-light: #C8E6C9;
-        --background: #f5f5f5;
-        --card-bg: #ffffff;
-        --text-primary: #212121;
-        --text-secondary: #757575;
-        --shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    body {
-        background: var(--background);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .gradio-container {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        padding: 20px !important;
-    }
-    
-    .header-section {
-        text-align: center;
-        margin-bottom: 30px;
-        padding: 20px;
-        background: var(--card-bg);
-        border-radius: 12px;
-        box-shadow: var(--shadow);
-    }
-    
-    .header-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .logo-image {
-        border-radius: 8px;
-    }
-    
-    .header-section h1 {
-        color: var(--primary-dark);
-        margin: 0 0 10px 0;
-        font-size: 2.5em;
-        font-weight: 700;
-    }
-    
-    .header-section p {
-        color: var(--text-secondary);
-        margin: 0;
-        font-size: 1.1em;
-    }
-    
+    css = """
     .main-content {
-        display: flex;
-        gap: 20px;
-        margin-top: 20px;
-    }
-    
-    .upload-section, .results-section {
-        flex: 1;
-        background: var(--card-bg);
-        border-radius: 12px;
-        padding: 25px;
-        box-shadow: var(--shadow);
-    }
-    
-    .analyze-btn {
-        width: 100% !important;
-        padding: 12px 20px !important;
-        font-size: 1.1em !important;
-        font-weight: 600 !important;
-        background: var(--primary-color) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 8px !important;
-        margin-top: 15px !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    .analyze-btn:hover {
-        background: var(--primary-dark) !important;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-    }
-    
-    .language-selector {
-        margin-bottom: 20px;
-        background: var(--card-bg);
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: var(--shadow);
-    }
-    
-    .results-title {
-        color: var(--primary-dark);
-        font-size: 1.3em;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-    
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .main-content {
-            flex-direction: column;
-        }
-        
-        .gradio-container {
-            padding: 15px !important;
-        }
-        
-        .header-section h1 {
-            font-size: 2em;
-        }
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
     }
     """
     
-    # Create the Gradio interface
-    with gr.Blocks(
-        title="Krishi Rakshak - Plant Disease Detection",
-        theme=gr.themes.Default(
-            primary_hue="green",
-            secondary_hue="lime",
-            neutral_hue="stone",
-            spacing_size="sm",
-            radius_size="md"
-        ),
-        css=custom_css
-    ) as demo:
-        
-        # Header section with logo and title
-        with gr.Column(elem_classes=["header-section"]):
-            with gr.Row(elem_classes=["header-row"]):
-                # Larger logo
-                if os.path.exists(LOGO_PATH):
-                    logo = gr.Image(
-                        value=LOGO_PATH,
-                        visible=True,
-                        show_label=False,
-                        interactive=False,
-                        height=120,  # Increased size
-                        width=120,    # Increased size
-                        container=False,
-                        elem_classes=["logo-image"]
-                    )
+    with gr.Blocks(css=css) as demo:
+        with gr.Column(elem_classes=["main-content"]):
+            gr.Markdown("# 🌱 Crop Disease Detection")
+            
+            with gr.Row():
+                image_input = gr.Image(label="Upload Crop Image", type="numpy")
                 
-                # Title and subtitle
                 with gr.Column():
+                    predict_btn = gr.Button("Analyze")
+                    output = gr.Textbox(label="Result")
                     gr.HTML("<h1 style='margin: 0; padding: 0; line-height: 1.2; font-size: 2.5em;'>🌱 Krishi Rakshak</h1>")
                     gr.HTML("<p style='margin: 5px 0 0 0; color: var(--text-secondary); font-size: 1.1em;'>AI-Powered Plant Disease Detection System</p>")
             

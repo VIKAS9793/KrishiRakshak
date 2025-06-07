@@ -1,5 +1,5 @@
-<div align="center" style="background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%); padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <img src="assets/logos/logo.png" alt="Krishi Rakshak Logo" width="120" style="border-radius: 50%; border: 3px solid #2e7d32; padding: 3px; background: white; margin: 0 auto; display: block;">
+<div align="center">
+  <img src="assets/optimized/logo.jpg" alt="Krishi Rakshak Logo" width="120" style="border-radius: 50%; border: 3px solid #2e7d32; padding: 3px; background: white; margin: 0 auto; display: block;">
   
   <h1 style="color: #1b5e20; margin: 15px 0 5px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Krishi Rakshak</h1>
   <h3 style="color: #2e7d32; margin: 0 0 15px 0; font-weight: 500;">
@@ -19,21 +19,123 @@
     </a>
   </div>
   
-  <div style="background: white; padding: 3px; border-radius: 8px; display: inline-block; margin: 5px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); max-width: 90%;">
-    <img src="assets/banners/banner.png" alt="Krishi Rakshak Banner" style="max-width: 100%; max-height: 120px; border-radius: 6px; border: 1px solid #e0e0e0; display: block; margin: 0 auto;">
-  </div>
-  
-  <div style="margin: 15px 0; display: flex; justify-content: center; gap: 15px;">
-    <a href="#quick-start" style="background: #2e7d32; color: white; padding: 8px 20px; border-radius: 25px; text-decoration: none; font-weight: 500; transition: all 0.3s;">
-      🚀 Quick Start
-    </a>
-    <a href="#-features" style="background: white; color: #2e7d32; border: 2px solid #2e7d32; padding: 8px 20px; border-radius: 25px; text-decoration: none; font-weight: 500; transition: all 0.3s;">
-      ✨ Features
-    </a>
+  <div style="background: white; padding: 3px; border-radius: 8px; display: inline-block; margin: 5px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); max-width: 100%;">
+    <img src="assets/optimized/banner.jpg" alt="Krishi Rakshak Banner" style="max-width: 100%; max-height: 200px; border-radius: 6px; border: 1px solid #e0e0e0; display: block; margin: 0 auto;">
   </div>
 </div>
 
-An AI-powered crop health guardian that predicts crop diseases using RGB images and deep learning. Designed for early detection and advisory support to farmers in both English and Hindi.
+# 🌱 Krishi Rakshak: Crop Disease Classification
+
+## 📑 Table of Contents
+- [Project Overview](#-project-overview)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Quick Start](#-quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Training](#training)
+  - [Prediction](#prediction)
+- [Model Evaluation](#-model-evaluation)
+- [Model Architecture](#-model-architecture)
+- [License](#-license)
+- [References](#-references)
+
+## 📝 Project Overview
+Krishi Rakshak is a deep learning-based solution for crop disease classification using RGB images. It helps in early detection of plant diseases, enabling timely intervention and better crop management.
+
+## 🎯 Features
+- **Multiple Model Architectures**: Supports EfficientNet, ResNet, and MobileNet
+- **Comprehensive Evaluation**: Implements accuracy, precision, recall, F1-score, and more
+- **Data Augmentation**: Built-in image transformations for robust training
+- **CPU/GPU Support**: Optimized for both training and inference
+- **Model Interpretability**: Includes Grad-CAM visualization for predictions
+
+## 🏗️ Project Structure
+```
+KrishiRakshak/
+├── data/                    # Dataset directory
+│   └── plantvillage/       # Raw dataset
+├── src/
+│   ├── data/              # Data loading and preprocessing
+│   │   └── dataset.py
+│   └── models/             # Model architectures
+│       ├── __init__.py
+│       └── model.py
+├── docs/                   # Documentation
+│   ├── ARCHITECTURE.md
+│   ├── EVALUATION_REPORT.md
+│   ├── OPTIMIZATION_REPORT.md
+│   └── VISUALIZATIONS.md
+├── outputs/                # Training outputs and model checkpoints
+├── train.py                # Training script
+├── predict.py              # Prediction script
+└── requirements.txt        # Dependencies
+```
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.8+
+- PyTorch 2.0+
+- CUDA (optional, for GPU acceleration)
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/VIKAS9793/KrishiRakshak.git
+cd KrishiRakshak
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Training
+```bash
+python train.py \
+    --data-dir data/plantvillage/raw \
+    --model-name efficientnet_b0 \
+    --batch-size 32 \
+    --epochs 50 \
+    --img-size 224 \
+    --output-dir outputs/experiment
+```
+
+### Prediction
+```bash
+python predict.py path/to/image.jpg --model-dir outputs/experiment
+```
+
+## 📊 Model Evaluation
+Detailed evaluation metrics and visualizations will be available in the [EVALUATION_REPORT.md](docs/EVALUATION_REPORT.md) after training.
+
+### Planned Evaluation Metrics
+- **Classification Metrics**:
+  - Accuracy
+  - Precision (Weighted)
+  - Recall (Weighted)
+  - F1-Score
+  - Confusion Matrix
+
+### Expected Performance
+- **Training**: CPU/GPU optimized
+- **Inference**: Real-time prediction support
+- **Memory**: Efficient resource utilization
+
+### Dataset Split
+- **Training**: 70%
+- **Validation**: 15%
+- **Test**: 15%
+
+## 🤖 Model Architecture
+For detailed architecture information, refer to [ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📚 References
+- [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
+- [PlantVillage Dataset](https://plantvillage.psu.edu/)
+- [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 
 ## 🏗️ System Architecture
 

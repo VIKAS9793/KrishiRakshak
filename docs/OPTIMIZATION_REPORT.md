@@ -2,43 +2,62 @@
 
 ## Optimization Techniques Applied
 
-### 1. Model Architecture Optimization
-- **Base Model**: EfficientNetB0 (lightweight and efficient)
-- **Pruning**: Model pruning to reduce parameters by 20%
-- **Quantization**: 16-bit mixed precision training
+### 1. Model Architecture
+- **Base Model**: EfficientNetB0 (lightweight and efficient architecture)
+- **Transfer Learning**: Leveraging pre-trained weights
+- **Custom Head**: Modified for our specific classification task
 
 ### 2. Training Optimization
-| Technique | Implementation | Impact |
-|-----------|----------------|--------|
-| Mixed Precision | PyTorch AMP | 1.8x speedup |
-| Gradient Accumulation | batch_size=8, steps=4 | Memory efficient |
-| Learning Rate Scheduling | ReduceLROnPlateau | Better convergence |
-| Early Stopping | Patience=10 | Prevents overfitting |
 
-### 3. CPU-Specific Optimizations
-- **Intel Extension for PyTorch (IPEX)**: Optimized for Intel CPUs
-- **Thread Management**: Automatic thread pinning
-- **Memory Optimization**: Reduced memory footprint by 30%
+#### Learning Strategy
+- **Learning Rate Scheduling**: ReduceLROnPlateau for adaptive learning rates
+- **Early Stopping**: Patience=10 to prevent overfitting
+- **Gradient Clipping**: Prevents exploding gradients
+
+#### Data Pipeline
+- **Efficient Data Loading**: PyTorch DataLoader with multiple workers
+- **Data Augmentation**: Using Albumentations for on-the-fly augmentations
+- **Batch Processing**: Optimized batch size for CPU training
 
 ## Performance Benchmarks
 
-### Training Time
-| Configuration | Time per Epoch | Memory Usage |
-|--------------|----------------|--------------|
-| Baseline | 45 min | 12GB |
-| Optimized | 25 min | 8GB |
+### Training Metrics
+| Parameter | Planned Value |
+|-----------|---------------|
+| Batch Size | 16 |
+| Learning Rate | 1e-3 |
+| Epochs | 50 |
+| Early Stopping | Enabled |
 
-### Inference Speed
-| Device | Batch Size | Latency (ms) | Throughput (img/s) |
-|--------|------------|--------------|---------------------|
-| CPU (Baseline) | 1 | 120 | 8.3 |
-| CPU (Optimized) | 1 | 65 | 15.4 |
+### Expected Resource Usage
+- **CPU/GPU**: Will utilize available hardware efficiently
+- **Memory**: Optimized for standard consumer hardware
+- **Storage**: Sufficient for model checkpoints and logs
+- **Network**: Optional for model logging (Weights & Biases)
 
-## Memory Usage
-![Memory Usage](images/memory_usage.png)
+## Best Practices Applied
+1. **Code Optimization**:
+   - Vectorized operations where possible
+   - Minimal Python loops in data pipeline
+   - Efficient memory management
 
-## Recommendations
-1. **Model Quantization**: Further reduce model size with INT8 quantization
-2. **Knowledge Distillation**: Train smaller student model
-3. **ONNX Runtime**: For additional performance gains
-4. **Model Pruning**: More aggressive pruning for edge deployment
+2. **Reproducibility**:
+   - Fixed random seeds
+   - Deterministic algorithms where possible
+   - Logging of all hyperparameters
+
+3. **Monitoring**:
+   - Training progress with tqdm
+   - Metrics logging with Weights & Biases
+   - System resource monitoring
+
+## Future Optimization Opportunities
+1. **Model Quantization**: For faster inference
+2. **Pruning**: To reduce model size
+3. **Knowledge Distillation**: For model compression
+4. **ONNX Conversion**: For deployment optimization
+
+## Notes
+- All optimizations are CPU-focused for broad compatibility
+- No special hardware requirements
+- Easy to deploy on any standard machine

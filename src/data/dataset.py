@@ -85,7 +85,7 @@ def get_transforms(img_size: int = 224, is_train: bool = True) -> A.Compose:
     """
     if is_train:
         return A.Compose([
-            A.RandomResizedCrop(img_size, img_size, scale=(0.7, 1.0)),
+            A.RandomResizedCrop(size=(img_size, img_size), scale=(0.7, 1.0)),
             A.HorizontalFlip(p=0.5),
             A.VerticalFlip(p=0.5),
             A.Rotate(limit=45, p=0.5),
@@ -98,8 +98,7 @@ def get_transforms(img_size: int = 224, is_train: bool = True) -> A.Compose:
         ])
     else:
         return A.Compose([
-            A.Resize(img_size + 32, img_size + 32),
-            A.CenterCrop(img_size, img_size),
+            A.Resize(height=img_size, width=img_size),
             A.Normalize(
                 mean=[0.485, 0.456, 0.406], 
                 std=[0.229, 0.224, 0.225]
