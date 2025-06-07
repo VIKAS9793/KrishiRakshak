@@ -12,12 +12,10 @@
 #### Learning Strategy
 - **Learning Rate Scheduling**: ReduceLROnPlateau for adaptive learning rates
 - **Early Stopping**: Patience=10 to prevent overfitting
-- **Gradient Clipping**: Prevents exploding gradients
 
 #### Data Pipeline
 - **Efficient Data Loading**: PyTorch DataLoader with multiple workers
 - **Data Augmentation**: Using Albumentations for on-the-fly augmentations
-- **Batch Processing**: Optimized batch size for CPU training
 
 ## Performance Benchmarks
 
@@ -29,17 +27,15 @@
 | Epochs | 50 |
 | Early Stopping | Enabled |
 
-### Expected Resource Usage
-- **CPU/GPU**: Will utilize available hardware efficiently
-- **Memory**: Optimized for standard consumer hardware
-- **Storage**: Sufficient for model checkpoints and logs
+### Resource Requirements
+- **Hardware**: Compatible with standard consumer hardware
+- **Storage**: Sufficient space required for model checkpoints and logs
 - **Network**: Optional for model logging (Weights & Biases)
 
 ## Best Practices Applied
 1. **Code Optimization**:
    - Vectorized operations where possible
    - Minimal Python loops in data pipeline
-   - Efficient memory management
 
 2. **Reproducibility**:
    - Fixed random seeds
@@ -52,12 +48,18 @@
    - System resource monitoring
 
 ## Future Optimization Opportunities
-1. **Model Quantization**: For faster inference
-2. **Pruning**: To reduce model size
-3. **Knowledge Distillation**: For model compression
-4. **ONNX Conversion**: For deployment optimization
+1. **CPU Optimization**:
+   - Intel Extension for PyTorch
+   - Mixed Precision Training
+   - Gradient Accumulation
+   - Thread Management
+   - Memory Profiling
+2. **Model Optimization**:
+   - Model Quantization
+   - Pruning
+   - Knowledge Distillation
+   - ONNX Conversion
 
 ## Notes
-- All optimizations are CPU-focused for broad compatibility
 - No special hardware requirements
 - Easy to deploy on any standard machine

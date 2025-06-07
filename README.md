@@ -53,23 +53,46 @@ Krishi Rakshak is a deep learning-based solution for crop disease classification
 ## 🏗️ Project Structure
 ```
 KrishiRakshak/
-├── data/                    # Dataset directory
-│   └── plantvillage/       # Raw dataset
-├── src/
-│   ├── data/              # Data loading and preprocessing
-│   │   └── dataset.py
-│   └── models/             # Model architectures
-│       ├── __init__.py
-│       └── model.py
+├── assets/                 # Static assets (images, logos)
+│   ├── banners/           # Banner images
+│   ├── logos/             # Logo files
+│   └── optimized/         # Optimized images
+├── configs/                # Configuration files
+│   └── train_config.yaml
+├── data/                   # Dataset directory
+│   ├── raw/               # Raw dataset
+│   │   └── plantvillage/
+│   └── processed/         # Processed data
 ├── docs/                   # Documentation
 │   ├── ARCHITECTURE.md
 │   ├── EVALUATION_REPORT.md
 │   ├── OPTIMIZATION_REPORT.md
-│   └── VISUALIZATIONS.md
+│   ├── VISUALIZATIONS.md
+│   └── images/            # Generated visualizations
+├── notebooks/              # Jupyter notebooks
 ├── outputs/                # Training outputs and model checkpoints
-├── train.py                # Training script
-├── predict.py              # Prediction script
-└── requirements.txt        # Dependencies
+├── scripts/                # Utility scripts
+│   ├── download_dataset.py
+│   ├── optimize_images.py
+│   ├── requirements-train.txt
+│   └── train_model.py
+├── src/                    # Source code
+│   ├── app/               # Web application
+│   ├── data/              # Data loading and preprocessing
+│   │   └── dataset.py
+│   ├── models/            # Model architectures
+│   │   ├── __init__.py
+│   │   └── model.py
+│   └── utils/             # Utility functions
+│       └── config.py
+├── .gitignore
+├── app.py                 # Main application entry point
+├── LICENSE
+├── predict.py             # Prediction script
+├── QUICKSTART.md
+├── README.md
+├── requirements.txt
+└── train.py              # Training script
 ```
 
 ## 🚀 Quick Start
@@ -92,7 +115,7 @@ pip install -r requirements.txt
 ### Training
 ```bash
 python train.py \
-    --data-dir data/plantvillage/raw \
+    --data-dir data/raw/plantvillage \
     --model-name efficientnet_b0 \
     --batch-size 32 \
     --epochs 50 \
@@ -375,16 +398,6 @@ python train.py --config src/configs/train_config.yaml \
     --training.learning_rate 0.001
 ```
 
-### CPU Optimization Features
-
-The training script includes several CPU optimizations:
-
-- **Intel Extension for PyTorch**: Automatic acceleration for Intel CPUs
-- **Mixed Precision Training**: Faster training with FP16 (PyTorch 2.0+)
-- **Gradient Accumulation**: Simulate larger batch sizes with less memory
-- **Thread Management**: Optimized CPU thread usage
-- **Memory Profiling**: Monitor and optimize memory usage
-
 ### Configuration
 
 Customize training via [configs/train_config.yaml](configs/train_config.yaml):
@@ -403,11 +416,11 @@ training:
   weight_decay: 1e-4
   early_stopping_patience: 5
 
-# CPU optimizations
-cpu_optimization:
-  gradient_accumulation_steps: 4
-  use_mixed_precision: true
-  memory_efficient: true
+# CPU optimizations (future work)
+# cpu_optimization:
+#   gradient_accumulation_steps: 4
+#   use_mixed_precision: true
+#   memory_efficient: true
 ```
 
 ### Monitoring
