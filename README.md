@@ -92,37 +92,7 @@ KrishiRakshak/
 ```
 
 ## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.8+
-- PyTorch 2.0+
-- CUDA (optional, for GPU acceleration)
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/VIKAS9793/KrishiRakshak.git
-cd KrishiRakshak
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Training
-```bash
-python train.py \
-    --data-dir data/raw/plantvillage \
-    --model-name efficientnet_b0 \
-    --batch-size 16 \
-    --epochs 5 \
-    --img-size 128 \
-    --output-dir outputs/experiment
-```
-
-### Prediction
-```bash
-python predict.py path/to/image.jpg --model-dir outputs/experiment
-```
+For detailed setup, installation, training, and prediction instructions, please refer to the [QUICKSTART.md](QUICKSTART.md) guide.
 
 ## 📊 Model Evaluation
 Detailed evaluation metrics and visualizations will be available in the [EVALUATION_REPORT.md](docs/EVALUATION_REPORT.md) after training.
@@ -155,39 +125,6 @@ For detailed architecture information, refer to [ARCHITECTURE.md](docs/ARCHITECT
 
 ## ⚙️ Optimization Techniques
 For details on optimization techniques used to improve performance, refer to [OPTIMIZATION_REPORT.md](docs/OPTIMIZATION_REPORT.md).
-
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-### Key License Points
-- **Type**: MIT License
-- **Copyright**: © 2025 Vikas Sahani
-- **Contact**: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
-
-For full terms and conditions, please refer to the [LICENSE](LICENSE) file.
-
-### AI-Generated Content Attribution
-
-- The logo and banner images in the `assets/` directory were generated using AI (ChatGPT/DALL·E).
-- These images are provided under the same MIT License as the project.
-- The AI model used for generation is subject to OpenAI's [Content Policy](https://openai.com/policies/content-policy).
-- Users should be aware that AI-generated content may be subject to additional terms and conditions set by the AI service provider.
-
-## Copyright and Trademark
-
-### Copyright Notice
-Copyright © 2025 Vikas Sahani. All rights reserved.
-
-### Trademark Information
-- "Krishi Rakshak"™ is a registered trademark of Vikas Sahani.
-- The Krishi Rakshak logo and associated branding are protected by trademark law.
-- All other trademarks and registered trademarks are the property of their respective owners.
-
-### Contact
-For inquiries regarding licensing, usage rights, or permissions, please contact:
-
-**Vikas Sahani**  
-Email: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
 
 ## 📚 References
 - [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
