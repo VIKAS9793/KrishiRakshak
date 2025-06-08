@@ -1,3 +1,11 @@
+# KrishiRakshak – AI-Powered Crop Health Guardian
+
+## Project Demo
+
+A public demo of the KrishiRakshak system is available at the following link:
+
+[Project Demo Video (Google Drive)](https://drive.google.com/file/d/1PDxYq5rOuCXZAldZlSd6Q3M5WIGXEtbJ/view?usp=drive_link)
+
 <div align="center">
   <img src="assets/optimized/logo.jpg" alt="Krishi Rakshak Logo" width="120" style="border-radius: 50%; border: 3px solid #2e7d32; padding: 3px; background: white; margin: 0 auto; display: block;">
   
