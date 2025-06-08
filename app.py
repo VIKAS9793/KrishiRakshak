@@ -47,7 +47,10 @@ with open(CLASS_TO_IDX_PATH, 'r', encoding='utf-8') as f:
 CLASS_NAMES = list(CLASS_TO_IDX.keys())
 NUM_CLASSES = len(CLASS_NAMES)
 
-# Hindi translations for class names (EXAMPLE - EXPAND AS NEEDED)
+# Print class names for debugging
+print("Available class names:", CLASS_NAMES)
+
+# Hindi translations for class names
 HINDI_TRANSLATIONS = {
     "Apple___Apple_scab": "सेब - सेब स्कैब",
     "Apple___Black_rot": "सेब - काला सड़न",
@@ -56,8 +59,8 @@ HINDI_TRANSLATIONS = {
     "Blueberry___healthy": "ब्लूबेरी - स्वस्थ",
     "Cherry_(including_sour)___Powdery_mildew": "चेरी - ख़स्ता फफूंदी",
     "Cherry_(including_sour)___healthy": "चेरी - स्वस्थ",
-    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "मक्का - सर्कोस्पोरा पत्ती धब्बा ग्रे पत्ती धब्बा",
-    "Corn_(maize)___Common_rust_": "मक्का - सामान्य रस्ट",
+    "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot": "मक्का - सर्कोस्पोरा पत्ती धब्बा ग्रे पत्ती धब्बा",
+    "Corn_(maize)___Common_rust": "मक्का - सामान्य रस्ट",
     "Corn_(maize)___Northern_Leaf_Blight": "मक्का - उत्तरी पत्ती झुलसा",
     "Corn_(maize)___healthy": "मक्का - स्वस्थ",
     "Grape___Black_rot": "अंगूर - काला सड़न",
@@ -82,167 +85,245 @@ HINDI_TRANSLATIONS = {
     "Tomato___Late_blight": "टमाटर - पछेती झुलसा",
     "Tomato___Leaf_Mold": "टमाटर - पत्ती मोल्ड",
     "Tomato___Septoria_leaf_spot": "टमाटर - सेप्टोरिया पत्ती धब्बा",
-    "Tomato___Spider_mites Two-spotted_spider_mite": "टमाटर - स्पाइडर माइट्स दो-धब्बेदार स्पाइडर माइट",
+    "Tomato___Spider_mites_Two-spotted_spider_mite": "टमाटर - स्पाइडर माइट्स दो-धब्बेदार स्पाइडर माइट",
     "Tomato___Target_Spot": "टमाटर - टारगेट स्पॉट",
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "टमाटर - टमाटर पीला पत्ती कर्ल वायरस",
     "Tomato___Tomato_mosaic_virus": "टमाटर - टमाटर मोज़ेक वायरस",
     "Tomato___healthy": "टमाटर - स्वस्थ"
 }
 
+# Marathi translations for class names
+MARATHI_TRANSLATIONS = {
+    "Apple___Apple_scab": "सफरचंद - सफरचंद स्कॅब",
+    "Apple___Black_rot": "सफरचंद - काळी कुज",
+    "Apple___Cedar_apple_rust": "सफरचंद - सिडर सफरचंद गंज",
+    "Apple___healthy": "सफरचंद - निरोगी",
+    "Blueberry___healthy": "ब्लूबेरी - निरोगी",
+    "Cherry_(including_sour)___Powdery_mildew": "चेरी - पावडरी मिल्ड्यू",
+    "Cherry_(including_sour)___healthy": "चेरी - निरोगी",
+    "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot": "मका - सर्कोस्पोरा पान स्पॉट ग्रे पान स्पॉट",
+    "Corn_(maize)___Common_rust": "मका - सामान्य गंज",
+    "Corn_(maize)___Northern_Leaf_Blight": "मका - उत्तर पान ब्लाइट",
+    "Corn_(maize)___healthy": "मका - निरोगी",
+    "Grape___Black_rot": "द्राक्ष - काळी कुज",
+    "Grape___Esca_(Black_Measles)": "द्राक्ष - एस्का (काळे मिसळ्स)",
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "द्राक्ष - पान ब्लाइट",
+    "Grape___healthy": "द्राक्ष - निरोगी",
+    "Orange___Haunglongbing_(Citrus_greening)": "संत्रा - हुआंगलोंगबिंग (लिंबू हिरवेपणा)",
+    "Peach___Bacterial_spot": "पीच - जीवाणू स्पॉट",
+    "Peach___healthy": "पीच - निरोगी",
+    "Pepper,_bell___Bacterial_spot": "भोपळी मिरची - जीवाणू स्पॉट",
+    "Pepper,_bell___healthy": "भोपळी मिरची - निरोगी",
+    "Potato___Early_blight": "बटाटा - लवकर ब्लाइट",
+    "Potato___Late_blight": "बटाटा - उशीरा ब्लाइट",
+    "Potato___healthy": "बटाटा - निरोगी",
+    "Raspberry___healthy": "रास्पबेरी - निरोगी",
+    "Soybean___healthy": "सोयाबीन - निरोगी",
+    "Squash___Powdery_mildew": "कोहळा - पावडरी मिल्ड्यू",
+    "Strawberry___Leaf_scorch": "स्ट्रॉबेरी - पान स्कॉर्च",
+    "Strawberry___healthy": "स्ट्रॉबेरी - निरोगी",
+    "Tomato___Bacterial_spot": "टोमॅटो - जीवाणू स्पॉट",
+    "Tomato___Early_blight": "टोमॅटो - लवकर ब्लाइट",
+    "Tomato___Late_blight": "टोमॅटो - उशीरा ब्लाइट",
+    "Tomato___Leaf_Mold": "टोमॅटो - पान मोल्ड",
+    "Tomato___Septoria_leaf_spot": "टोमॅटो - सेप्टोरिया पान स्पॉट",
+    "Tomato___Spider_mites_Two-spotted_spider_mite": "टोमॅटो - स्पायडर माइट्स दोन-ठिपके स्पायडर माइट",
+    "Tomato___Target_Spot": "टोमॅटो - टारगेट स्पॉट",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "टोमॅटो - टोमॅटो पिवळा पान कर्ल व्हायरस",
+    "Tomato___Tomato_mosaic_virus": "टोमॅटो - टोमॅटो मोझेक व्हायरस",
+    "Tomato___healthy": "टोमॅटो - निरोगी"
+}
+
 # Advisory information for each disease
 ADVISORY_INFO = {
     "Apple___Apple_scab": {
         "en": "Advisory: Practice good sanitation by removing fallen leaves. Prune trees for better air circulation. Consider resistant varieties and apply fungicides preventatively if needed. More info: https://extension.umn.edu/plant-diseases/apple-scab",
-        "hi": "सलाह: गिरी हुई पत्तियों को हटाकर अच्छी स्वच्छता बनाए रखें। बेहतर वायु संचार के लिए पेड़ों की छंटाई करें। प्रतिरोधी किस्मों पर विचार करें और आवश्यकता पड़ने पर निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: गिरी हुई पत्तियों को हटाकर अच्छी स्वच्छता बनाए रखें। बेहतर वायु संचार के लिए पेड़ों की छंटाई करें। प्रतिरोधी किस्मों पर विचार करें और आवश्यकता पड़ने पर निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: पडलेली पाने काढून चांगली स्वच्छता राखा. चांगल्या हवेच्या वहनासाठी झाडांची छाटणी करा. प्रतिरोधक जातींचा विचार करा आणि गरज पडल्यास निवारक फंगिसायड्स वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Apple___Black_rot": {
         "en": "Advisory: Practice rigorous orchard sanitation by removing mummified fruits and pruning out dead or diseased branches/cankers. Maintain tree health to reduce stress, as weakened trees are more susceptible. Fungicides can be used preventatively as part of a comprehensive spray program. More info: https://extension.umn.edu/plant-diseases/black-rot-apple",
-        "hi": "सलाह: सड़े हुए फलों को हटाकर और मृत या रोगग्रस्त शाखाओं/कैंकरों की छंटाई करके सख्त बाग स्वच्छता का अभ्यास करें। तनाव कम करने के लिए पेड़ के स्वास्थ्य को बनाए रखें, क्योंकि कमजोर पेड़ अधिक संवेदनशील होते हैं। व्यापक स्प्रे कार्यक्रम के हिस्से के रूप में निवारक रूप से फफूंदनाशकों का उपयोग किया जा सकता है। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: सड़े हुए फलों को हटाकर और मृत या रोगग्रस्त शाखाओं/कैंकरों की छंटाई करके सख्त बाग स्वच्छता का अभ्यास करें। तनाव कम करने के लिए पेड़ के स्वास्थ्य को बनाए रखें, क्योंकि कमजोर पेड़ अधिक संवेदनशील होते हैं। व्यापक स्प्रे कार्यक्रम के हिस्से के रूप में निवारक रूप से फफूंदनाशकों का उपयोग किया जा सकता है। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: सडलेल्या फळांना काढून आणि मृत किंवा रोगग्रस्त फांद्या/कँकरची छाटणी करून बागेची स्वच्छता काटेकोरपणे राखा. झाडांवरील ताण कमी करण्यासाठी त्यांचे आरोग्य चांगले ठेवा, कारण कमकुवत झाडे अधिक संवेदनशील असतात. व्यापक फवारणी कार्यक्रमाचा भाग म्हणून प्रतिबंधात्मक फंगिसायड्स वापरता येतात. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Apple___Cedar_apple_rust": {
         "en": "Advisory: Manage this disease by removing nearby cedar trees (the alternate host) within a few miles if possible. Plant resistant apple varieties. Apply fungicides effective against rust diseases from pink bud stage through third cover. More info: https://apples.extension.org/cedar-apple-rust/",
-        "hi": "सलाह: यदि संभव हो तो कुछ मील के भीतर पास के देवदार के पेड़ों (वैकल्पिक मेजबान) को हटाकर इस बीमारी का प्रबंधन करें। प्रतिरोधी सेब की किस्में लगाएं। गुलाबी कली अवस्था से तीसरी कवर तक रस्ट रोगों के खिलाफ प्रभावी फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: यदि संभव हो तो कुछ मील के भीतर पास के देवदार के पेड़ों (वैकल्पिक मेजबान) को हटाकर इस बीमारी का प्रबंधन करें। प्रतिरोधी सेब की किस्में लगाएं। गुलाबी कली अवस्था से तीसरी कवर तक रस्ट रोगों के खिलाफ प्रभावी फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: शक्य असल्यास काही मैलांच्या आत जवळच्या देवदार वृक्षांना (पर्यायी होस्ट) काढून टाकून या रोगाचे व्यवस्थापन करा. प्रतिरोधक सफरचंदाच्या जाती लावा. गुलाबी कळी अवस्थेपासून तिसऱ्या कव्हरपर्यंत रस्ट रोगांवर प्रभावी फंगिसायड्स वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Apple___healthy": {
         "en": "Advisory: Your apple tree is healthy! Ensure at least 8 hours of direct sun daily. Plant a different apple variety or crabapple nearby for pollination. Maintain well-drained soil (pH 6-7). Prune annually in late winter for shape and air circulation. Provide 1 inch of water weekly during dry spells. Fertilize based on soil tests. Keep the base clear of weeds. More info: https://extension.umn.edu/fruit/growing-apples",
-        "hi": "सलाह: आपका सेब का पेड़ स्वस्थ है! प्रतिदिन कम से कम 8 घंटे सीधी धूप सुनिश्चित करें। परागण के लिए पास में एक अलग सेब की किस्म या जंगली सेब लगाएं। अच्छी जल निकासी वाली मिट्टी (पीएच 6-7) बनाए रखें। आकार और वायु संचार के लिए देर सर्दियों में सालाना छंटाई करें। सूखे मंत्रों के दौरान प्रति सप्ताह 1 इंच पानी प्रदान करें। मिट्टी परीक्षण के आधार पर खाद डालें। आधार को खरपतवारों से साफ रखें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: आपका सेब का पेड़ स्वस्थ है! प्रतिदिन कम से कम 8 घंटे सीधी धूप सुनिश्चित करें। परागण के लिए पास में एक अलग सेब की किस्म या जंगली सेब लगाएं। अच्छी जल निकासी वाली मिट्टी (पीएच 6-7) बनाए रखें। आकार और वायु संचार के लिए देर सर्दियों में सालाना छंटाई करें। सूखे मंत्रों के दौरान प्रति सप्ताह 1 इंच पानी प्रदान करें। मिट्टी परीक्षण के आधार पर खाद डालें। आधार को खरपतवारों से साफ रखें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचे सफरचंदाचे झाड निरोगी आहे! दररोज कमीत कमी 8 तास थेट सूर्यप्रकाश असल्याची खात्री करा. परागकणासाठी जवळच वेगळी सफरचंद जात किंवा जंगली सफरचंद लावा. चांगल्या निचऱ्याची माती (pH 6-7) राखा. आकार आणि हवेच्या वहनासाठी दरवर्षी हिवाळ्यात छाटणी करा. कोरड्या काळात दर आठवड्याला 1 इंच पाणी द्या. माती परीक्षणानुसार खत द्या. तळाशी तणमुक्त ठेवा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
-    # Add more advisory info for other diseases here
     "Blueberry___healthy": {
         "en": "Advisory: Your blueberry plant is healthy! Ensure acidic soil (pH 4.0-5.5), full sun, consistent moisture (1-2 inches/week), and annually prune out old, weak, or dead wood for best production. More info: https://extension.umn.edu/fruit/growing-blueberries-home-garden",
-        "hi": "सलाह: आपका ब्लूबेरी का पौधा स्वस्थ है! अम्लीय मिट्टी (पीएच 4.0-5.5), पूर्ण सूर्य, लगातार नमी (1-2 इंच/सप्ताह) सुनिश्चित करें, और सर्वोत्तम उत्पादन के लिए सालाना पुरानी, कमजोर या सूखी लकड़ी की छंटाई करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: आपका ब्लूबेरी का पौधा स्वस्थ है! अम्लीय मिट्टी (पीएच 4.0-5.5), पूर्ण सूर्य, लगातार नमी (1-2 इंच/सप्ताह) सुनिश्चित करें, और सर्वोत्तम उत्पादन के लिए सालाना पुरानी, कमजोर या सूखी लकड़ी की छंटाई करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचा ब्लूबेरीचा रोपा निरोगी आहे! आम्ल माती (pH 4.0-5.5), पूर्ण सूर्यप्रकाश, सातत्यपूर्ण आर्द्रता (1-2 इंच/आठवडा) याची खात्री करा आणि उत्तम उत्पादनासाठी दरवर्षी जुनी, कमकुवत किंवा मृत लाकूड छाटणी करा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Cherry_(including_sour)___Powdery_mildew": {
-        "en": "Advisory: Improve air circulation through proper pruning. Manage irrigation to avoid excessive humidity. Remove root suckers. Apply preventative fungicides from shuck fall through harvest, rotating modes of action for resistance management. More info: https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/",
-        "hi": "सलाह: उचित छंटाई से वायु संचार सुधारें। अत्यधिक नमी से बचने के लिए सिंचाई का प्रबंधन करें। जड़ से निकलने वाली शाखाओं को हटा दें। रोग प्रतिरोधक क्षमता के लिए फफूंदनाशक का उपयोग शुक फॉल से कटाई तक करें और उनकी कार्यप्रणाली बदलते रहें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Improve air circulation through pruning. Apply fungicides when symptoms first appear. Consider resistant varieties. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/powdery-mildew-trees-and-shrubs",
+        "hi": "सलाह: छंटाई के माध्यम से वायु संचार में सुधार करें। लक्षण पहली बार दिखाई देने पर फफूंदनाशक लगाएं। प्रतिरोधी किस्मों पर विचार करें। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: छाटणीद्वारे हवेच्या वहनात सुधारणा करा. लक्षणे प्रथम दिसल्यावर फंगिसायड्स वापरा. प्रतिरोधक जातींचा विचार करा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Cherry_(including_sour)___healthy": {
         "en": "Advisory: Your cherry tree is healthy! Ensure full sun, good drainage, and protection from strong winds. Implement proper pruning for structure and light penetration, provide adequate watering, and fertilize annually based on soil tests. More info: https://extension.psu.edu/cherries-in-the-garden-and-the-kitchen",
-        "hi": "सलाह: आपका चेरी का पेड़ स्वस्थ है! पूर्ण सूर्य, अच्छी जल निकासी, और तेज हवाओं से सुरक्षा सुनिश्चित करें। संरचना और प्रकाश के प्रवेश के लिए उचित छंटाई करें, पर्याप्त पानी दें, और मिट्टी परीक्षण के आधार पर सालाना खाद डालें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: आपका चेरी का पेड़ स्वस्थ है! पूर्ण सूर्य, अच्छी जल निकासी, और तेज हवाओं से सुरक्षा सुनिश्चित करें। संरचना और प्रकाश के प्रवेश के लिए उचित छंटाई करें, पर्याप्त पानी दें, और मिट्टी परीक्षण के आधार पर सालाना खाद डालें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचे चेरीचे झाड निरोगी आहे! पूर्ण सूर्यप्रकाश, चांगला निचरा आणि जोरदार वाऱ्यापासून संरक्षण सुनिश्चित करा. संरचना आणि प्रकाश भेदनासाठी योग्य छाटणी करा, पुरेसे पाणी द्या आणि माती परीक्षणानुसार दरवर्षी खत द्या. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot": {
         "en": "Advisory: Plant resistant hybrids. Practice crop rotation with non-hosts and manage corn residue (e.g., tillage) to reduce fungal inoculum. Apply fungicides preventatively if disease risk is high (susceptible hybrid, high humidity, early disease activity). More info: https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/gray-leaf-spot-on-corn/",
-        "hi": "सलाह: प्रतिरोधी संकर लगाएं। फफूंद के संक्रमण को कम करने के लिए गैर-मेजबानों के साथ फसल चक्र अपनाएं और मकई के अवशेषों का प्रबंधन करें (उदाहरण के लिए, जुताई)। यदि रोग का जोखिम अधिक हो (संवेदनशील संकर, उच्च आर्द्रता, प्रारंभिक रोग गतिविधि) तो निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: प्रतिरोधी संकर लगाएं। फफूंद के संक्रमण को कम करने के लिए गैर-मेजबानों के साथ फसल चक्र अपनाएं और मकई के अवशेषों का प्रबंधन करें (उदाहरण के लिए, जुताई)। यदि रोग का जोखिम अधिक हो (संवेदनशील संकर, उच्च आर्द्रता, प्रारंभिक रोग गतिविधि) तो निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: प्रतिरोधक संकरित वाण लावा. बुरशीजन्य संसर्ग कमी करण्यासाठी गैर-होस्ट पिकांसोबत पीक फेरपालट करा आणि मक्याच्या अवशेषांचे व्यवस्थापन करा (उदा. नांगरणी). जर रोगाचा धोका जास्त असेल (संवेदनशील संकरित, उच्च आर्द्रता, प्रारंभिक रोग क्रियाकलाप) तर प्रतिबंधात्मक फंगिसायड्स वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Corn_(maize)___Common_rust": {
         "en": "Advisory: The best management practice is to use resistant corn hybrids. Fungicides can be beneficial, especially if applied early when few pustules have appeared. The disease favors cool, wet conditions. More info: https://extension.umn.edu/corn-pest-management/common-rust-corn",
-        "hi": "सलाह: सबसे अच्छा प्रबंधन अभ्यास प्रतिरोधी मकई संकर का उपयोग करना है। फफूंदनाशक फायदेमंद हो सकते हैं, खासकर यदि कुछ फुंसी दिखाई देने पर जल्दी लगाए जाएं। यह रोग ठंडी, गीली परिस्थितियों को पसंद करता है। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: सबसे अच्छा प्रबंधन अभ्यास प्रतिरोधी मकई संकर का उपयोग करना है। फफूंदनाशक फायदेमंद हो सकते हैं, खासकर यदि कुछ फुंसी दिखाई देने पर जल्दी लगाए जाएं। यह रोग ठंडी, गीली परिस्थितियों को पसंद करता है। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: उत्तम व्यवस्थापन पद्धत म्हणजे प्रतिरोधक मक्याचे संकरित वाण वापरणे. फंगिसायड्स फायदेशीर ठरू शकतात, विशेषतः जेव्हा काही पुटिका दिसू लागताच लवकर वापरले जातात. हा रोग थंड, ओल्या परिस्थितीला अनुकूल असतो. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Corn_(maize)___Northern_Leaf_Blight": {
         "en": "Advisory: Plant resistant hybrids (Ht genes or polygenic resistance). Practice crop rotation with non-hosts and manage corn residue through tillage to reduce inoculum. Consider fungicide applications on susceptible hybrids, especially if infection occurs before or at tasseling under favorable conditions. More info: https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
-        "hi": "सलाह: प्रतिरोधी संकर लगाएं (Ht जीन या बहुजीनिक प्रतिरोध)। गैर-मेजबानों के साथ फसल चक्र अपनाएं और जुताई के माध्यम से मकई के अवशेषों का प्रबंधन करें ताकि संक्रमण कम हो सके। यदि अनुकूल परिस्थितियों में टेसलिंग से पहले या उसके दौरान संक्रमण होता है, तो संवेदनशील संकरों पर फफूंदनाशक अनुप्रयोगों पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "hi": "सलाह: प्रतिरोधी संकर लगाएं (Ht जीन या बहुजीनिक प्रतिरोध)। गैर-मेजबानों के साथ फसल चक्र अपनाएं और जुताई के माध्यम से मकई के अवशेषों का प्रबंधन करें ताकि संक्रमण कम हो सके। यदि अनुकूल परिस्थितियों में टेसलिंग से पहले या उसके दौरान संक्रमण होता है, तो संवेदनशील संकरों पर फफूंदनाशक अनुप्रयोगों पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: प्रतिरोधक संकरित वाण लावा (Ht जीन्स किंवा पॉलीजेनिक प्रतिरोध). संसर्ग कमी करण्यासाठी गैर-होस्ट पिकांसोबत पीक फेरपालट करा आणि नांगरणीद्वारे मक्याच्या अवशेषांचे व्यवस्थापन करा. संवेदनशील संकरित वाणांवर फंगिसायडचा वापर विचारात घ्या, विशेषतः जर अनुकूल परिस्थितीत टॅसलिंगपूर्वी किंवा त्यावेळी संसर्ग झाला असेल. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Corn_(maize)___healthy": {
-        "en": "Advisory: Your corn plant is healthy! Ensure full sun, deep, well-drained, fertile soil (pH 6.0-6.8), and consistent moisture (1 inch/week, especially before silking). Fertilize based on soil tests, and practice good pest management. More info: https://extension.unh.edu/resource/growing-sweet-corn-fact-sheet",
-        "hi": "सलाह: आपका मकई का पौधा स्वस्थ है! पूर्ण सूर्य, गहरी, अच्छी जल निकासी वाली, उपजाऊ मिट्टी (पीएच 6.0-6.8) और लगातार नमी (1 इंच/सप्ताह, विशेष रूप से सिल्क आने से पहले) सुनिश्चित करें। मिट्टी परीक्षण के आधार पर खाद डालें, और अच्छी कीट प्रबंधन प्रथाओं का पालन करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your corn plant is healthy! Plant in well-drained soil with full sun. Maintain proper spacing (30-36 inches between rows). Water regularly, especially during tasseling and silking. Apply balanced fertilizer based on soil tests. More info: https://extension.umn.edu/corn/growing-sweet-corn-home-garden",
+        "hi": "सलाह: आपका मक्का का पौधा स्वस्थ है! अच्छी जल निकासी वाली मिट्टी में पूर्ण सूर्य के साथ लगाएं। उचित दूरी बनाए रखें (पंक्तियों के बीच 30-36 इंच)। नियमित रूप से पानी दें, विशेष रूप से टसलिंग और सिल्किंग के दौरान। मिट्टी परीक्षण के आधार पर संतुलित उर्वरक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचा मक्याचा रोपा निरोगी आहे! चांगल्या निचऱ्याच्या मातीत पूर्ण सूर्यप्रकाशासह लावा. योग्य अंतर राखा (ओळींमध्ये 30-36 इंच). नियमित पाणी द्या, विशेषतः टॅसलिंग आणि सिल्किंग दरम्यान. माती परीक्षणानुसार संतुलित खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Grape___Black_rot": {
-        "en": "Advisory: Crucially, remove and destroy mummified berries and diseased canes from the vineyard. Ensure good air circulation through proper pruning and trellising. Apply fungicides preventatively from bud break through four to six weeks after bloom, rotating modes of action to prevent resistance. More info: https://extension.psu.edu/black-rot-on-grapes-in-home-gardens",
-        "hi": "सलाह: महत्वपूर्ण रूप से, दाख की बारी से ममीकृत जामुन और रोगग्रस्त छड़ियों को हटा दें और नष्ट कर दें। उचित छंटाई और प्रशिक्षण के माध्यम से अच्छा वायु संचार सुनिश्चित करें। प्रतिरोध को रोकने के लिए, कली फूटने से लेकर फूल आने के चार से छह सप्ताह बाद तक निवारक रूप से फफूंदनाशक लगाएं, कार्रवाई के तरीकों को बदलते रहें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Practice good canopy management for air circulation. Apply fungicides preventatively from bud break through fruit set. Remove and destroy infected plant parts. Consider resistant varieties. More info: https://extension.umn.edu/plant-diseases/black-rot-grapes",
+        "hi": "सलाह: वायु संचार के लिए अच्छी छतरी प्रबंधन का अभ्यास करें। कली टूटने से फल सेट होने तक निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। प्रतिरोधी किस्मों पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: हवेच्या वहनासाठी चांगले छतरी व्यवस्थापन करा. कळी फुटल्यापासून फळ बांधल्यापर्यंत प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. प्रतिरोधक जातींचा विचार करा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Grape___Esca_(Black_Measles)": {
-        "en": "Advisory: Currently, there are no fully effective chemical treatments for Esca. Focus on cultural controls: avoid large pruning cuts, prune during dry weather, and consider wound protectants. Delay fruiting in young vines, and ensure proper planting and irrigation to reduce vine stress. More info: https://pnwhandbooks.org/plantdisease/host-disease/grape-vitis-spp-esca-young-esca-petri-disease",
-        "hi": "सलाह: वर्तमान में, एस्का के लिए कोई पूरी तरह से प्रभावी रासायनिक उपचार नहीं हैं। सांस्कृतिक नियंत्रणों पर ध्यान दें: बड़े प्रूनिंग कट से बचें, शुष्क मौसम के दौरान प्रूनिंग करें, और घाव रक्षक पर विचार करें। युवा लताओं में फल लगने में देरी करें, और बेल के तनाव को कम करने के लिए उचित रोपण और सिंचाई सुनिश्चित करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Prune during dry weather to prevent infection. Apply fungicides to pruning wounds. Remove and destroy infected vines. Consider trunk renewal. More info: https://extension.umn.edu/plant-diseases/esca-grapes",
+        "hi": "सलाह: संक्रमण को रोकने के लिए सूखे मौसम में छंटाई करें। छंटाई के घावों पर फफूंदनाशक लगाएं। संक्रमित बेलों को हटा दें और नष्ट कर दें। तने की नवीनीकरण पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: संसर्ग टाळण्यासाठी कोरड्या हवामानात छाटणी करा. छाटणीच्या जखमांवर फंगिसायड्स वापरा. संसर्गित द्राक्षे काढून टाका. खोड नूतनीकरणाचा विचार करा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
-        "en": "Advisory: This disease is common in tropical and subtropical grapes and appears late in the season. Improve air circulation through proper pruning and trellising. Remove infected leaves and plant debris. Fungicides sprayed for other diseases during the season may help to reduce this disease. More info: https://plantvillage.psu.edu/topics/grape/infos",
-        "hi": "सलाह: यह रोग उष्णकटिबंधीय और उपोष्णकटिबंधीय अंगूरों में आम है और देर से मौसम में दिखाई देता है। उचित छंटाई और प्रशिक्षण के माध्यम से हवा का संचार सुधारें। संक्रमित पत्तियों और पौधों के मलबे को हटा दें। मौसम के दौरान अन्य बीमारियों के लिए छिड़के गए फफूंदनाशक इस रोग को कम करने में मदद कर सकते हैं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Improve air circulation through canopy management. Apply fungicides when conditions favor disease development. Remove and destroy infected leaves. Consider resistant varieties. More info: https://extension.umn.edu/plant-diseases/leaf-blight-grapes",
+        "hi": "सलाह: छतरी प्रबंधन के माध्यम से वायु संचार में सुधार करें। जब स्थितियां रोग विकास का पक्ष लेती हैं तो फफूंदनाशक लगाएं। संक्रमित पत्तियों को हटा दें और नष्ट कर दें। प्रतिरोधी किस्मों पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: छतरी व्यवस्थापनाद्वारे हवेच्या वहनात सुधारणा करा. रोग विकासास अनुकूल परिस्थिती असल्यावर फंगिसायड्स वापरा. संसर्गित पाने काढून टाका. प्रतिरोधक जातींचा विचार करा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Grape___healthy": {
-        "en": "Advisory: Your grape plant is healthy! Ensure full sun (at least 6-8 hours direct sunlight), well-drained soil (pH 6.0-7.0 is ideal), and a sturdy trellis system for support. Prune annually in late winter or early spring while dormant, removing 80-90% of the previous year's growth to encourage new, fruitful shoots and good air circulation to prevent diseases. More info: https://extension.usu.edu/yardandgarden/research/grape-trellising-training-basics",
-        "hi": "सलाह: आपका अंगूर का पौधा स्वस्थ है! पूर्ण सूर्य (कम से कम 6-8 घंटे सीधी धूप), अच्छी जल निकासी वाली मिट्टी (पीएच 6.0-7.0 आदर्श है), और समर्थन के लिए एक मजबूत ट्रेलिस प्रणाली सुनिश्चित करें। सुप्त अवस्था में देर सर्दियों या शुरुआती वसंत में सालाना छंटाई करें, पिछली फसल की 80-90% वृद्धि को हटा दें ताकि नई, फलदार टहनियों को बढ़ावा मिले और बीमारियों को रोकने के लिए अच्छा वायु संचार हो। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your grape vine is healthy! Plant in well-drained soil with full sun. Train vines on a trellis system. Prune annually in late winter. Water deeply but infrequently. Apply balanced fertilizer in early spring. More info: https://extension.umn.edu/fruit/growing-grapes-home-garden",
+        "hi": "सलाह: आपकी अंगूर की बेल स्वस्थ है! अच्छी जल निकासी वाली मिट्टी में पूर्ण सूर्य के साथ लगाएं। बेलों को ट्रेलिस सिस्टम पर प्रशिक्षित करें। देर सर्दियों में सालाना छंटाई करें। गहराई से लेकिन कम बार पानी दें। शुरुआती वसंत में संतुलित उर्वरक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमची द्राक्षाची वेल निरोगी आहे! चांगल्या निचऱ्याच्या मातीत पूर्ण सूर्यप्रकाशासह लावा. वेलींना ट्रेलिस सिस्टमवर प्रशिक्षित करा. हिवाळ्यात दरवर्षी छाटणी करा. खोलवर पण कमी वेळा पाणी द्या. वसंत ऋतूच्या सुरुवातीला संतुलित खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Orange___Haunglongbing_(Citrus_greening)": {
-        "en": "Advisory: Huanglongbing (HLB), or citrus greening, is a devastating bacterial disease with no known cure. Management focuses on preventing the spread of the Asian citrus psyllid (the vector), using certified disease-free nursery trees, and maintaining tree health with optimal nutrition and irrigation. Infected trees are typically removed to minimize further spread. More info: https://www.nifa.usda.gov/grants/programs/emergency-citrus-disease-research-extension-program/citrus-greening-huanglongbing-hlb",
-        "hi": "सलाह: हुआंगलोंगबिंग (HLB), या खट्टे फलों का हरा होना, एक विनाशकारी जीवाणु रोग है जिसका कोई ज्ञात इलाज नहीं है। प्रबंधन एशियाई खट्टे सिल्लड (वाहक) के प्रसार को रोकने, प्रमाणित रोग-मुक्त नर्सरी पेड़ों का उपयोग करने, और इष्टतम पोषण और सिंचाई के साथ पेड़ के स्वास्थ्य को बनाए रखने पर केंद्रित है। आगे प्रसार को कम करने के लिए संक्रमित पेड़ों को आमतौर पर हटा दिया जाता है। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Control Asian citrus psyllid vectors. Remove infected trees. Use disease-free nursery stock. Apply systemic insecticides. More info: https://extension.umn.edu/plant-diseases/citrus-greening-huanglongbing",
+        "hi": "सलाह: एशियाई साइट्रस साइलिड वैक्टर को नियंत्रित करें। संक्रमित पेड़ों को हटा दें। रोग मुक्त नर्सरी स्टॉक का उपयोग करें। प्रणालीगत कीटनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: आशियाई लिंबू सायलिड वेक्टर नियंत्रित करा. संसर्गित झाडे काढून टाका. रोगमुक्त नर्सरी स्टॉक वापरा. सिस्टेमिक कीडनाशके वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Peach___Bacterial_spot": {
-        "en": "Advisory: Plant bacterial spot-resistant peach varieties where possible. Maintain tree vigor through proper fertilization and care. Practice timely pruning to improve air circulation and sunlight penetration. Minimize wind-blown sand, which can create wounds. Chemical sprays (e.g., copper or oxytetracycline) can be used preventatively; consult local extension for timing and products. More info: https://www.aces.edu/blog/topics/crop-production/bacterial-spot-treatment-in-peaches/",
-        "hi": "सलाह: जहाँ संभव हो, बैक्टीरियल स्पॉट प्रतिरोधी आड़ू की किस्में लगाएं। उचित उर्वरक और देखभाल के माध्यम से पेड़ की शक्ति बनाए रखें। वायु संचार और सूर्य के प्रकाश के प्रवेश में सुधार के लिए समय पर छंटाई का अभ्यास करें। हवा से उड़ने वाली रेत को कम करें, जिससे घाव हो सकते हैं। रासायनिक स्प्रे (जैसे, तांबा या ऑक्सीटेट्रासाइक्लिन) का उपयोग निवारक रूप से किया जा सकता है; समय और उत्पादों के लिए स्थानीय कृषि विभाग से सलाह लें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use resistant varieties. Apply copper-based bactericides during dormancy. Practice good sanitation. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/bacterial-spot-peach",
+        "hi": "सलाह: प्रतिरोधी किस्मों का उपयोग करें। निष्क्रियता के दौरान तांबे-आधारित जीवाणुनाशक लगाएं। अच्छी स्वच्छता का अभ्यास करें। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: प्रतिरोधक जाती वापरा. निष्क्रिय काळात तांबे-आधारित जीवाणुनाशके वापरा. चांगली स्वच्छता राखा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Peach___healthy": {
-        "en": "Advisory: Your peach tree is healthy! Ensure full sun (at least 8 hours/day), well-drained soil (pH 6-6.5), and good air drainage. Prune annually in late winter/early spring to maintain an open vase shape for light and air circulation. Provide consistent moisture, especially during fruit development, and fertilize based on soil tests. Thin fruit 3-4 weeks after bloom to 8-10 inches apart for optimal size. More info: https://ohioline.osu.edu/factsheet/hyg-1406",
-        "hi": "सलाह: आपका आड़ू का पेड़ स्वस्थ है! पूर्ण सूर्य (कम से कम 8 घंटे/दिन), अच्छी जल निकासी वाली मिट्टी (पीएच 6-6.5), और अच्छे वायु संचार वाली जगह सुनिश्चित करें। प्रकाश और वायु संचार के लिए खुली फूलदान जैसी आकृति बनाए रखने के लिए देर सर्दियों/शुरुआती वसंत में सालाना छंटाई करें। फल विकास के दौरान लगातार नमी प्रदान करें, और मिट्टी परीक्षण के आधार पर खाद डालें। इष्टतम आकार के लिए फूल आने के 3-4 सप्ताह बाद फलों को 8-10 इंच की दूरी पर पतला करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your peach tree is healthy! Plant in well-drained soil with full sun. Prune annually in late winter. Water deeply during dry periods. Apply balanced fertilizer in early spring. More info: https://extension.umn.edu/fruit/growing-stone-fruits-home-garden",
+        "hi": "सलाह: आपका आड़ू का पेड़ स्वस्थ है! अच्छी जल निकासी वाली मिट्टी में पूर्ण सूर्य के साथ लगाएं। देर सर्दियों में सालाना छंटाई करें। सूखे मंत्रों के दौरान गहराई से पानी दें। शुरुआती वसंत में संतुलित उर्वरक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचे पीचचे झाड निरोगी आहे! चांगल्या निचऱ्याच्या मातीत पूर्ण सूर्यप्रकाशासह लावा. हिवाळ्यात दरवर्षी छाटणी करा. कोरड्या काळात खोलवर पाणी द्या. वसंत ऋतूच्या सुरुवातीला संतुलित खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Pepper,_bell___Bacterial_spot": {
-        "en": "Advisory: Plant resistant bell pepper varieties. Use certified disease-free seeds or treat seeds with hot water. Practice a 3-year crop rotation with non-host plants and manage crop debris. Avoid overhead irrigation and working with wet plants. Apply copper-based bactericides preventatively, often combined with mancozeb. More info: https://extension.wvu.edu/lawn-gardening-pests/plant-disease/fruit-vegetable-diseases/bacterial-leaf-spot-of-pepper",
-        "hi": "सलाह: प्रतिरोधी शिमला मिर्च की किस्में लगाएं। प्रमाणित रोग-मुक्त बीजों का उपयोग करें या बीजों को गर्म पानी से उपचारित करें। गैर-मेजबान पौधों के साथ 3 साल का फसल चक्र अपनाएं और फसल के मलबे का प्रबंधन करें। ओवरहेड सिंचाई और गीले पौधों के साथ काम करने से बचें। निवारक रूप से तांबा-आधारित जीवाणुनाशकों का प्रयोग करें, अक्सर मैनकोज़ेब के साथ मिलाकर। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free seed and transplants. Practice crop rotation. Apply copper-based bactericides preventatively. Remove and destroy infected plants. More info: https://extension.umn.edu/plant-diseases/bacterial-spot-pepper",
+        "hi": "सलाह: रोग मुक्त बीज और पौधों का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से तांबे-आधारित जीवाणुनाशक लगाएं। संक्रमित पौधों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त बियाणे आणि रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक तांबे-आधारित जीवाणुनाशके वापरा. संसर्गित रोपे काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Pepper,_bell___healthy": {
-        "en": "Advisory: Your bell pepper plant is healthy! Ensure full sun (at least 6-8 hours/day) and well-drained soil with a pH of 5.8-6.6. Transplant after soil temperatures reach 60°F. Provide consistent moisture (1 inch/week) to prevent blossom end rot, especially during fruit development. Fertilize based on soil tests, and consider black plastic mulch for warmth and weed control. More info: https://extension.umn.edu/vegetables/growing-peppers",
-        "hi": "सलाह: आपका शिमला मिर्च का पौधा स्वस्थ है! पूर्ण सूर्य (कम से कम 6-8 घंटे/दिन) और 5.8-6.6 पीएच वाली अच्छी जल निकासी वाली मिट्टी सुनिश्चित करें। मिट्टी का तापमान 60°F तक पहुंचने के बाद रोपण करें। विशेष रूप से फल विकास के दौरान, ब्लोसम एंड रॉट (Blossom end rot) को रोकने के लिए लगातार नमी (1 इंच/सप्ताह) प्रदान करें। मिट्टी परीक्षण के आधार पर खाद डालें, और गर्मी और खरपतवार नियंत्रण के लिए काली प्लास्टिक मल्च पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your bell pepper plant is healthy! Plant in well-drained soil with full sun. Maintain consistent moisture. Apply balanced fertilizer. Stake plants for support. More info: https://extension.umn.edu/vegetables/growing-peppers",
+        "hi": "सलाह: आपका शिमला मिर्च का पौधा स्वस्थ है! अच्छी जल निकासी वाली मिट्टी में पूर्ण सूर्य के साथ लगाएं। लगातार नमी बनाए रखें। संतुलित उर्वरक लगाएं। समर्थन के लिए पौधों को खूंटे से बांधें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचा भोपळी मिरचीचा रोपा निरोगी आहे! चांगल्या निचऱ्याच्या मातीत पूर्ण सूर्यप्रकाशासह लावा. सातत्यपूर्ण आर्द्रता राखा. संतुलित खते वापरा. समर्थनासाठी रोपांना खुंटी लावा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Potato___Early_blight": {
-        "en": "Advisory: Plant resistant potato varieties. Practice 2-3 year crop rotation with non-host crops. Remove and destroy infected plant debris and control volunteer potato plants and susceptible weeds. Avoid overhead irrigation, or water early in the day to allow foliage to dry. Apply fungicides preventatively starting at first sign of disease or after bloom, rotating active ingredients to prevent resistance. More info: https://extension.umn.edu/disease-management/early-blight-tomato-and-potato",
-        "hi": "सलाह: प्रतिरोधी आलू की किस्में लगाएं। गैर-मेजबान फसलों के साथ 2-3 साल का फसल चक्र अपनाएं। संक्रमित पौधों के मलबे को हटा दें और नष्ट कर दें, और स्वयंसेवक आलू के पौधों और संवेदनशील खरपतवारों को नियंत्रित करें। ओवरहेड सिंचाई से बचें, या पत्तियों को सूखने देने के लिए दिन की शुरुआत में पानी दें। रोग के पहले लक्षण या फूल आने के बाद से ही निवारक रूप से फफूंदनाशक लगाएं, प्रतिरोध को रोकने के लिए सक्रिय सामग्री को बदलते रहें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Practice crop rotation. Use certified disease-free seed potatoes. Apply fungicides preventatively. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/early-blight-potato",
+        "hi": "सलाह: फसल चक्रण का अभ्यास करें। प्रमाणित रोग मुक्त बीज आलू का उपयोग करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: पीक फेरफार करा. प्रमाणित रोगमुक्त बटाटा बियाणे वापरा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Potato___Late_blight": {
-        "en": "Advisory: Destroy all cull and volunteer potato plants. Plant certified late blight-free seed tubers. Avoid excessive and/or nighttime irrigation. Eliminate weed hosts like hairy nightshade. Scout fields regularly, especially in wet areas. Apply foliar fungicides preventatively on a regular schedule, adjusting based on disease forecasts. Quickly destroy any disease hotspots. Kill vines completely 2-3 weeks before harvest. More info: https://www.ndsu.edu/agriculture/extension/publications/late-blight-potato",
-        "hi": "सलाह: सभी कटी हुई और स्वयंसेवक आलू के पौधों को नष्ट कर दें। प्रमाणित लेट ब्लाइट-मुक्त बीज कंद लगाएं। अत्यधिक और/या रात में सिंचाई से बचें। कांटेदार धतूरा जैसे खरपतवार मेजबानों को खत्म करें। विशेष रूप से गीले क्षेत्रों में, खेतों की नियमित रूप से निगरानी करें। रोग के पूर्वानुमान के आधार पर, नियमित रूप से फोलियर फफूंदनाशक लगाएं। किसी भी रोग के हॉटस्पॉट को तुरंत नष्ट करें। कटाई से 2-3 सप्ताह पहले बेलों को पूरी तरह से नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use certified disease-free seed potatoes. Practice crop rotation. Apply fungicides preventatively. Remove and destroy infected plants. More info: https://extension.umn.edu/plant-diseases/late-blight-potato",
+        "hi": "सलाह: प्रमाणित रोग मुक्त बीज आलू का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: प्रमाणित रोगमुक्त बटाटा बियाणे वापरा. पीक फेरफार करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित रोपे काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Potato___healthy": {
-        "en": "Advisory: Your potato plant is healthy! Use certified disease-free seed tubers. Plant in well-drained, sandy, slightly acidic soil (pH 6-6.5). Hill soil around plants as they grow to protect tubers from greening. Provide consistent moisture (1 inch/week) especially during tuber enlargement. Fertilize based on soil tests, and practice crop rotation, avoiding planting in the same spot for 3-4 years. More info: https://extension.umn.edu/vegetables/growing-potatoes",
-        "hi": "सलाह: आपका आलू का पौधा स्वस्थ है! प्रमाणित रोग-मुक्त बीज कंदों का उपयोग करें। अच्छी जल निकासी वाली, रेतीली, थोड़ी अम्लीय मिट्टी (पीएच 6-6.5) में लगाएं। कंदों को हरा होने से बचाने के लिए पौधों के बढ़ने पर उनके चारों ओर मिट्टी चढ़ाएं। विशेष रूप से कंद के बढ़ने के दौरान लगातार नमी (1 इंच/सप्ताह) प्रदान करें। मिट्टी परीक्षण के आधार पर खाद डालें, और फसल चक्र का अभ्यास करें, 3-4 साल तक एक ही जगह पर रोपण से बचें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your potato plant is healthy! Plant certified seed potatoes in well-drained soil. Hill soil around plants as they grow. Water consistently. Apply balanced fertilizer. More info: https://extension.umn.edu/vegetables/growing-potatoes",
+        "hi": "सलाह: आपका आलू का पौधा स्वस्थ है! प्रमाणित बीज आलू को अच्छी जल निकासी वाली मिट्टी में लगाएं। पौधों के बढ़ने के साथ उनके चारों ओर मिट्टी लगाएं। लगातार पानी दें। संतुलित उर्वरक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचा बटाट्याचा रोपा निरोगी आहे! प्रमाणित बटाटा बियाणे चांगल्या निचऱ्याच्या मातीत लावा. रोपे वाढत असताना त्यांच्या भोवती माती लावा. सातत्यपूर्ण पाणी द्या. संतुलित खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Raspberry___healthy": {
-        "en": "Advisory: Your raspberry plant is healthy! Ensure full sun (at least 6-8 hours/day) and well-drained soil rich in organic matter (pH 5.5-7.0). Provide 1-1.5 inches of water per week, especially from flowering until harvest. Prune annually to remove old fruited canes and thin new ones for good air circulation. Consider trellising for support to prevent canes from sprawling. Use certified disease-free plants. More info: https://extension.umn.edu/fruit/growing-raspberries-home-garden",
-        "hi": "सलाह: आपका रास्पबेरी का पौधा स्वस्थ है! पूर्ण सूर्य (कम से कम 6-8 घंटे/दिन) और जैविक पदार्थ से भरपूर अच्छी जल निकासी वाली मिट्टी (पीएच 5.5-7.0) सुनिश्चित करें। विशेष रूप से फूल आने से लेकर कटाई तक प्रति सप्ताह 1-1.5 इंच पानी दें। अच्छी वायु संचार के लिए सालाना पुरानी फल देने वाली छड़ियों को हटा दें और नई छड़ियों को पतला करें। छड़ियों को फैलने से रोकने के लिए सहारा देने के लिए ट्रेलिसिंग पर विचार करें। प्रमाणित रोग-मुक्त पौधों का उपयोग करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your raspberry plant is healthy! Plant in well-drained soil with full sun. Prune annually to remove old canes. Maintain consistent moisture. Apply balanced fertilizer in early spring. More info: https://extension.umn.edu/fruit/growing-raspberries-home-garden",
+        "hi": "सलाह: आपका रास्पबेरी का पौधा स्वस्थ है! अच्छी जल निकासी वाली मिट्टी में पूर्ण सूर्य के साथ लगाएं। पुरानी छड़ियों को हटाने के लिए सालाना छंटाई करें। लगातार नमी बनाए रखें। शुरुआती वसंत में संतुलित उर्वरक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचा रास्पबेरीचा रोपा निरोगी आहे! चांगल्या निचऱ्याच्या मातीत पूर्ण सूर्यप्रकाशासह लावा. जुन्या वेली काढण्यासाठी दरवर्षी छाटणी करा. सातत्यपूर्ण आर्द्रता राखा. वसंत ऋतूच्या सुरुवातीला संतुलित खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Soybean___healthy": {
         "en": "Advisory: Your soybean plant is healthy! Plant into warm (above 50°F) and well-drained soil. Ensure proper inoculation with Bradyrhizobium japonicum, as supplemental nitrogen is generally not needed. Provide consistent moisture, especially during pod development. Control weeds early to prevent yield loss. More info: https://extension.umn.edu/soybean/soybean-planting",
         "hi": "सलाह: आपका सोयाबीन का पौधा स्वस्थ है! गर्म (50°F से ऊपर) और अच्छी जल निकासी वाली मिट्टी में लगाएं। ब्रैडीराइजोबियम जैपोनिकम के साथ उचित टीकाकरण सुनिश्चित करें, क्योंकि पूरक नाइट्रोजन की आम तौर पर आवश्यकता नहीं होती है। विशेष रूप से फली के विकास के दौरान लगातार नमी प्रदान करें। उपज हानि को रोकने के लिए खरपतवारों को जल्दी नियंत्रित करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
     },
     "Squash___Powdery_mildew": {
-        "en": "Advisory: Improve air circulation through proper spacing and pruning. Plant resistant varieties. Apply fungicides preventatively if needed. More info: example.com/squash_mildew_en",
-        "hi": "सलाह: उचित दूरी और छंटाई के माध्यम से हवा का संचार सुधारें। प्रतिरोधी किस्में लगाएं। आवश्यकता पड़ने पर निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Improve air circulation through proper spacing. Apply fungicides when symptoms first appear. Consider resistant varieties. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/powdery-mildew-vegetables",
+        "hi": "सलाह: उचित दूरी के माध्यम से वायु संचार में सुधार करें। लक्षण पहली बार दिखाई देने पर फफूंदनाशक लगाएं। प्रतिरोधी किस्मों पर विचार करें। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: योग्य अंतराद्वारे हवेच्या वहनात सुधारणा करा. प्रतिरोधक जाती लावा. गरज पडल्यास निवारक फंगिसायड्स वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Strawberry___Leaf_scorch": {
-        "en": "Advisory: Remove infected leaves. Ensure good air circulation. Apply fungicides if necessary. More info: example.com/strawberry_scorch_en",
-        "hi": "सलाह: संक्रमित पत्तियों को हटा दें। अच्छी हवा का संचार सुनिश्चित करें। आवश्यकता पड़ने पर फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free plants. Practice crop rotation. Apply fungicides preventatively. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/leaf-scorch-strawberry",
+        "hi": "सलाह: रोग मुक्त पौधों का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Strawberry___healthy": {
-        "en": "Advisory: Ensure full sun and well-drained, slightly acidic soil (pH 5.5-6.5). Provide consistent moisture. Fertilize based on soil tests. More info: example.com/strawberry_healthy_en",
-        "hi": "सलाह: पूर्ण सूर्य और अच्छी जल निकासी वाली, थोड़ी अम्लीय मिट्टी (पीएच 5.5-6.5) सुनिश्चित करें। लगातार नमी प्रदान करें। मिट्टी परीक्षण के आधार पर खाद डालें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Ensure full sun and well-drained, slightly acidic soil (pH 5.5-6.5). Provide consistent moisture. Fertilize based on soil tests. More info: https://extension.umn.edu/fruit/growing-strawberries-home-garden",
+        "hi": "सलाह: पूर्ण सूर्य और अच्छी जल निकासी वाली, थोड़ी अम्लीय मिट्टी (पीएच 5.5-6.5) सुनिश्चित करें। लगातार नमी प्रदान करें। मिट्टी परीक्षण के आधार पर खाद डालें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: पूर्ण सूर्यप्रकाश आणि चांगल्या निचऱ्याची, थोडी आम्ल माती (pH 5.5-6.5) सुनिश्चित करा. सातत्याने पाणी द्या. मातीच्या चाचणीनुसार खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Bacterial_spot": {
-        "en": "Advisory: Use certified disease-free seeds/transplants. Practice crop rotation. Avoid overhead irrigation. Apply copper-based bactericides preventatively. More info: example.com/tomato_bacterial_en",
-        "hi": "सलाह: प्रमाणित रोग-मुक्त बीजों/पौधों का उपयोग करें। फसल चक्र का अभ्यास करें। ओवरहेड सिंचाई से बचें। निवारक रूप से तांबा-आधारित जीवाणुनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free seed and transplants. Practice crop rotation. Apply copper-based bactericides preventatively. Remove and destroy infected plants. More info: https://extension.umn.edu/plant-diseases/bacterial-spot-tomato",
+        "hi": "सलाह: रोग-मुक्त बीज और पौधे का उपयोग करें। फसल चक्रण का अभ्यास करें। ओवरहेड सिंचाई से बचें। निवारक रूप से तांबा-आधारित जीवाणुनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषी विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त बियाणे आणि रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक तांबे-आधारित जीवाणुनाशके वापरा. संसर्गित रोपे काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Early_blight": {
-        "en": "Advisory: Plant resistant varieties. Practice crop rotation and remove plant debris. Apply fungicides preventatively. More info: example.com/tomato_early_en",
-        "hi": "सलाह: प्रतिरोधी किस्में लगाएं। फसल चक्र का अभ्यास करें और पौधों के मलबे को हटा दें। निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free seed and transplants. Practice crop rotation. Apply fungicides preventatively. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/early-blight-tomato",
+        "hi": "सलाह: रोग मुक्त बीज और पौधों का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त बियाणे आणि रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Late_blight": {
-        "en": "Advisory: Eliminate inoculum sources. Plant resistant varieties if available. Manage irrigation to reduce foliage wetness. Apply fungicides preventatively. More info: example.com/tomato_late_en",
-        "hi": "सलाह: संक्रमण के स्रोतों को खत्म करें। यदि उपलब्ध हो तो प्रतिरोधी किस्में लगाएं। पत्तियों की नमी को कम करने के लिए सिंचाई का प्रबंधन करें। निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free seed and transplants. Practice crop rotation. Apply fungicides preventatively. Remove and destroy infected plants. More info: https://extension.umn.edu/plant-diseases/late-blight-tomato",
+        "hi": "सलाह: रोग मुक्त बीज और पौधों का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त बियाणे आणि रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित रोपे काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Leaf_Mold": {
-        "en": "Advisory: Improve air circulation by proper spacing and pruning. Manage greenhouse humidity. Plant resistant varieties. More info: example.com/tomato_leaf_mold_en",
-        "hi": "सलाह: उचित दूरी और छंटाई से हवा का संचार सुधारें। ग्रीनहाउस की नमी का प्रबंधन करें। प्रतिरोधी किस्में लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Improve air circulation through proper spacing. Apply fungicides preventatively. Remove and destroy infected plant parts. Consider resistant varieties. More info: https://extension.umn.edu/plant-diseases/leaf-mold-tomato",
+        "hi": "सलाह: उचित दूरी के माध्यम से वायु संचार में सुधार करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। प्रतिरोधी किस्मों पर विचार करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: योग्य अंतराद्वारे हवेच्या वहनात सुधारणा करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. प्रतिरोधक जातींचा विचार करा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Septoria_leaf_spot": {
-        "en": "Advisory: Practice crop rotation and remove plant debris. Avoid overhead irrigation. Apply fungicides preventatively. More info: example.com/tomato_septoria_en",
-        "hi": "सलाह: फसल चक्र का अभ्यास करें और पौधों के मलबे को हटा दें। ओवरहेड सिंचाई से बचें। निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free seed and transplants. Practice crop rotation. Apply fungicides preventatively. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/septoria-leaf-spot-tomato",
+        "hi": "सलाह: रोग मुक्त बीज और पौधों का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त बियाणे आणि रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Spider_mites_Two-spotted_spider_mite": {
-        "en": "Advisory: Monitor plants regularly for mites. Use strong streams of water to dislodge mites. Consider insecticidal soaps or horticultural oils for control. Introduce natural predators if feasible. More info: example.com/tomato_spider_mites_en",
-        "hi": "सलाह: पौधों पर नियमित रूप से मकड़ियों की निगरानी करें। मकड़ियों को हटाने के लिए पानी की तेज धाराओं का उपयोग करें। नियंत्रण के लिए कीटनाशक साबुन या बागवानी तेलों पर विचार करें। यदि संभव हो तो प्राकृतिक शिकारियों को पेश करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Monitor plants regularly for early detection. Use insecticidal soaps or oils. Apply miticides when needed. Remove and destroy heavily infested plants. More info: https://extension.umn.edu/yard-and-garden-insects/spider-mites",
+        "hi": "सलाह: शुरुआती पहचान के लिए पौधों की नियमित निगरानी करें। कीटनाशक साबुन या तेल का उपयोग करें। आवश्यकता पड़ने पर माइटिसाइड लगाएं। अत्यधिक संक्रमित पौधों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: लवकर शोधण्यासाठी रोपांची नियमित निरीक्षणे करा. कीडनाशक साबण किंवा तेले वापरा. गरज पडल्यास माइटिसायड्स वापरा. जास्त संसर्गित रोपे काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Target_Spot": {
-        "en": "Advisory: Use resistant varieties if available. Practice crop rotation and remove plant debris. Avoid overhead irrigation. Apply fungicides preventatively. More info: example.com/tomato_target_en",
-        "hi": "सलाह: यदि उपलब्ध हो तो प्रतिरोधी किस्मों का उपयोग करें। फसल चक्र का अभ्यास करें और पौधों के मलबे को हटा दें। ओवरहेड सिंचाई से बचें। निवारक रूप से फफूंदनाशक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
-    },
-    "Tomato___Tomato_mosaic_virus": {
-        "en": "Advisory: There is no cure for viral diseases. Remove and destroy infected plants immediately. Disinfect tools. Manage insect vectors. Use resistant varieties. More info: example.com/tomato_mosaic_en",
-        "hi": "सलाह: वायरल रोगों का कोई इलाज नहीं है। संक्रमित पौधों को तुरंत हटा दें और नष्ट कर दें। औजारों को कीटाणुरहित करें। कीट वाहकों का प्रबंधन करें। प्रतिरोधी किस्मों का उपयोग करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Use disease-free seed and transplants. Practice crop rotation. Apply fungicides preventatively. Remove and destroy infected plant parts. More info: https://extension.umn.edu/plant-diseases/target-spot-tomato",
+        "hi": "सलाह: रोग मुक्त बीज और पौधों का उपयोग करें। फसल चक्रण का अभ्यास करें। निवारक रूप से फफूंदनाशक लगाएं। संक्रमित पौधे के हिस्सों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: रोगमुक्त बियाणे आणि रोपे वापरा. पीक फेरफार करा. प्रतिबंधात्मक फंगिसायड्स वापरा. संसर्गित वनस्पती भाग काढून टाका. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
-        "en": "Advisory: This virus is transmitted by whiteflies. Control whitefly populations using insecticidal soaps, neem oil, or appropriate insecticides. Use resistant varieties or reflective mulches. Remove and destroy infected plants. More info: example.com/tomato_yellow_curl_en",
-        "hi": "सलाह: यह वायरस सफेद मक्खियों द्वारा फैलता है। कीटनाशक साबुन, नीम के तेल, या उपयुक्त कीटनाशकों का उपयोग करके सफेद मक्खी आबादी को नियंत्रित करें। प्रतिरोधी किस्मों या परावर्तक मल्च का उपयोग करें। संक्रमित पौधों को हटा दें और नष्ट कर दें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Control whitefly vectors. Use virus-resistant varieties. Remove and destroy infected plants. Practice good weed management. More info: https://extension.umn.edu/plant-diseases/tomato-yellow-leaf-curl-virus",
+        "hi": "सलाह: व्हाइटफ्लाई वैक्टर को नियंत्रित करें। वायरस प्रतिरोधी किस्मों का उपयोग करें। संक्रमित पौधों को हटा दें और नष्ट कर दें। अच्छी खरपतवार प्रबंधन का अभ्यास करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: व्हाइटफ्लाय वेक्टर नियंत्रित करा. व्हायरस-प्रतिरोधक जाती वापरा. संसर्गित रोपे काढून टाका. चांगले तण व्यवस्थापन करा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "en": "Advisory: Use virus-free seed and transplants. Control aphid vectors. Remove and destroy infected plants. Practice good sanitation. More info: https://extension.umn.edu/plant-diseases/tomato-mosaic-virus",
+        "hi": "सलाह: वायरस मुक्त बीज और पौधों का उपयोग करें। एफिड वैक्टर को नियंत्रित करें। संक्रमित पौधों को हटा दें और नष्ट कर दें। अच्छी स्वच्छता का अभ्यास करें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: व्हायरस-मुक्त बियाणे आणि रोपे वापरा. एफिड वेक्टर नियंत्रित करा. संसर्गित रोपे काढून टाका. चांगली स्वच्छता राखा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     },
     "Tomato___healthy": {
-        "en": "Advisory: Your tomato plant is healthy! Ensure full sun (6-8 hours/day) and well-drained, fertile soil (pH 6.0-6.8). Water consistently at the base of the plant to avoid foliage wetness. Support plants with stakes or cages. Fertilize based on soil tests. More info: example.com/tomato_healthy_en",
-        "hi": "सलाह: आपका टमाटर का पौधा स्वस्थ है! पूर्ण सूर्य (6-8 घंटे/दिन) और अच्छी जल निकासी वाली, उपजाऊ मिट्टी (पीएच 6.0-6.8) सुनिश्चित करें। पत्तियों की नमी से बचने के लिए पौधे के आधार पर लगातार पानी दें। डंडों या पिंजरों से पौधों को सहारा दें। मिट्टी परीक्षण के आधार पर खाद डालें। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।"
+        "en": "Advisory: Your tomato plant is healthy! Plant in well-drained soil with full sun. Stake or cage plants for support. Water consistently at the base. Apply balanced fertilizer. More info: https://extension.umn.edu/vegetables/growing-tomatoes",
+        "hi": "सलाह: आपका टमाटर का पौधा स्वस्थ है! अच्छी जल निकासी वाली मिट्टी में पूर्ण सूर्य के साथ लगाएं। समर्थन के लिए पौधों को खूंटे या पिंजरे से बांधें। आधार पर लगातार पानी दें। संतुलित उर्वरक लगाएं। अधिक जानकारी के लिए, अपने स्थानीय कृषि विभाग से संपर्क करें।",
+        "mr": "सल्ला: तुमचा टोमॅटोचा रोपा निरोगी आहे! चांगल्या निचऱ्याच्या मातीत पूर्ण सूर्यप्रकाशासह लावा. समर्थनासाठी रोपांना खुंटी किंवा पिंजरा लावा. तळाशी सातत्यपूर्ण पाणी द्या. संतुलित खते वापरा. अधिक माहितीसाठी, तुमच्या स्थानिक कृषी विभागाशी संपर्क साधा."
     }
 }
 
@@ -251,20 +332,21 @@ ADVISORY_INFO = {
 MODEL = None
 
 def load_model():
-    """Load the pre-trained model based on your training configuration."""
-    global MODEL
-    if MODEL is None:
-        print(f"Loading model from: {MODEL_PATH}")
-        # Initialize the model with the correct architecture and number of classes
-        # Use pretrained=False because we are loading specific weights
-        MODEL = get_model(model_name="efficientnet_b0", num_classes=NUM_CLASSES, pretrained=False)
-        
-        # Load the trained state_dict
-        # map_location='cpu' ensures it loads correctly even if trained on GPU
-        MODEL.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu'))['model_state_dict'])
-        MODEL.eval() # Set model to evaluation mode
-        print("Model loaded successfully!")
-    return MODEL
+    print("[DEBUG] Loading model...")
+    try:
+        model = get_model(num_classes=NUM_CLASSES)
+        checkpoint = torch.load(MODEL_PATH, map_location=torch.device('cpu'))
+        # If checkpoint is a dict with 'model_state_dict', use that
+        if isinstance(checkpoint, dict) and 'model_state_dict' in checkpoint:
+            model.load_state_dict(checkpoint['model_state_dict'])
+        else:
+            model.load_state_dict(checkpoint)
+        model.eval()
+        print("[DEBUG] Model loaded successfully.")
+        return model
+    except Exception as e:
+        print(f"[ERROR] Model loading failed: {e}")
+        raise
 
 def preprocess_image(image):
     """Preprocess the input image"""
@@ -278,184 +360,239 @@ def preprocess_image(image):
     return transform(image).unsqueeze(0)
 
 def predict(image, language):
-    """Make prediction on the input image"""
-    if image is None:
-        return "Error: No image uploaded"
-    
+    print("[DEBUG] predict() called")
     try:
-        # Convert to PIL Image
-        img = Image.fromarray(image.astype('uint8'), 'RGB')
-        
-        # Preprocess
-        img_tensor = preprocess_image(img)
-        
-        # Load model and predict
-        model = load_model()
+        if image is None:
+            print("[DEBUG] No image provided.")
+            return None, None, None, None
+        global model
+        if 'model' not in globals():
+            print("[DEBUG] Model not loaded yet, loading now...")
+            model = load_model()
+        print("[DEBUG] Preprocessing image...")
+        input_tensor = preprocess_image(image)
+        print("[DEBUG] Running model inference...")
         with torch.no_grad():
-            outputs = model(img_tensor)
-            _, preds = torch.max(outputs, 1)
-            confidence = torch.nn.functional.softmax(outputs, dim=1)[0] * 100
-        
-        # Get results
-        predicted_class = CLASS_NAMES[preds[0]]
-        confidence_score = float(confidence[preds[0]])
-        
-        # Return only the single most confident prediction
-        if language == "हिंदी (Hindi)":
-            translated_class_name = HINDI_TRANSLATIONS.get(predicted_class, predicted_class)
-            advisory = ADVISORY_INFO.get(predicted_class, {"en": "No specific advisory available.", "hi": "कोई विशेष सलाह उपलब्ध नहीं है।"})
-            return {
-                "अनुमानित_रोग": translated_class_name,
-                "आत्मविश्वास_स्कोर": f"{confidence_score:.1f}%",
-                "सलाह": advisory["hi"]
-            }
+            output = model(input_tensor)
+            probabilities = torch.nn.functional.softmax(output[0], dim=0)
+            predicted_class_idx = torch.argmax(probabilities).item()
+        predicted_class = CLASS_NAMES[predicted_class_idx]
+        confidence = probabilities[predicted_class_idx].item()
+        print(f"[DEBUG] Prediction: {predicted_class}, Confidence: {confidence}")
+        if language == "English":
+            translated_class = predicted_class
+            advisory_key = "en"
+        elif language == "हिंदी (Hindi)":
+            translated_class = HINDI_TRANSLATIONS.get(predicted_class, predicted_class)
+            advisory_key = "hi"
+        elif language == "मराठी (Marathi)":
+            translated_class = MARATHI_TRANSLATIONS.get(predicted_class, predicted_class)
+            advisory_key = "mr"
         else:
-            advisory = ADVISORY_INFO.get(predicted_class, {"en": "No specific advisory available.", "hi": "कोई विशेष सलाह उपलब्ध नहीं है।"})
-            return {
-                "predicted_disease": predicted_class,
-                "confidence_score": f"{confidence_score:.1f}%",
-                "advisory": advisory["en"]
-            }
-        
+            translated_class = predicted_class
+            advisory_key = "en"
+        advisory = ADVISORY_INFO.get(predicted_class, {}).get(advisory_key, "No advisory information available.")
+        print("[DEBUG] predict() completed successfully.")
+        return translated_class, confidence, advisory, predicted_class
     except Exception as e:
-        return {"error": str(e)}
+        print(f"[ERROR] Exception in predict(): {e}")
+        import traceback
+        traceback.print_exc()
+        return "Error during prediction. Check logs.", None, None, None
 
 def create_ui():
-    """Create the main Gradio interface"""
-    css = """
-    body {
-        font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        color: #212529; /* Darker default text color */
-    }
-    .main-content {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 15px; /* Reduced padding */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border-radius: 10px;
-        background-color: #ffffff;
-    }
-    .gradio-container { background-color: #f0f2f5; } /* Light grey background for the whole page */
-    .logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px; /* Adjust as needed */
-        margin-bottom: 15px; /* Reduced margin */
-    }
-    .banner {
-        width: 100%;
-        max-height: 200px; /* Set a max-height for the banner */
-        object-fit: cover; /* Ensure the image covers the area without distortion */
-        border-radius: 10px;
-        margin-bottom: 15px; /* Reduced margin */
-    }
-    h1 { color: #1e7e34; text-align: center; font-size: 2.8em; margin-bottom: 8px; } /* Reduced margin */
-    h3 { color: #004085; font-size: 1.8em; margin-top: 15px; } /* Reduced margin */
-    p { color: #333333; font-size: 1.0em; }
-    .analyze-btn {
-        background-color: #28a745 !important;
-        color: white !important;
-        border-color: #28a745 !important;
-    }
-    .analyze-btn:hover { background-color: #218838 !important; }
-    .language-selector label { font-weight: bold; }
-    .upload-section, .results-section {
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 10px; /* Reduced padding */
-        background-color: #fefefe;
-    }
-    .results-title { color: #004085; text-align: center; margin-bottom: 10px; } /* Reduced margin */
-    .gr-json-display {
-        background-color: #f8f9fa;
-        border-radius: 5px;
-        padding: 10px; /* Reduced padding */
-        font-family: 'Arial', sans-serif; /* Changed font to a more readable sans-serif */
-        font-size: 1.0em; /* Slightly larger font size */
-        line-height: 1.4; /* Reduced line height for tighter spacing */
-        font-weight: normal; /* Ensure normal weight for readability, can be changed to bold if needed */
-        color: #000000; /* Black color for analysis output */
-        height: auto !important; /* Allow height to expand */
-        overflow: visible !important; /* Prevent internal scrolling */
-    }
-    """
-    
-    with gr.Blocks(css=css) as demo:
-        with gr.Column(elem_classes=["main-content"]):
-            # Optional Banner Image (if you have one)
-            gr.Image("assets/banners/banner.png", label="", show_label=False, container=False, elem_classes=["banner"])
+    with gr.Blocks(title="Krishi Rakshak - Crop Disease Detection", theme=gr.themes.Soft()) as demo:
+        # Add custom CSS for better styling and theme
+        
+        
+        gr.Markdown("""
+        <style>
+        html, body, .gradio-container, .gr-block, .gr-root, .gradio-app, .main, .footer-section {
+            background: #f4f7f2 !important;
+            color: #357a38 !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+        .gradio-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 !important;
+            background-color: #fffefb !important;
+            box-shadow: 0 4px 16px rgba(60, 80, 40, 0.08) !important;
+            border-radius: 12px !important;
+            overflow: hidden !important;
+        }
+        #header_section {
+            background: linear-gradient(90deg, #e8f5e9 0%, #f4f7f2 100%) !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            border-radius: 12px 12px 0 0 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            width: 100% !important;
+        }
+        #krishi_rakshak_logo img {
+            display: block !important;
+            margin: 0 auto 0.2rem auto !important;
+            object-fit: contain !important;
+            width: 110px !important;
+            height: 110px !important;
+            padding: 0 !important;
+        }
+        h1, h3, h4, h5, h6, label, .gradio-label, .gradio-title, .gradio-description {
+            color: #357a38 !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+        h1 { margin-bottom: 4px !important; font-weight: 700 !important; letter-spacing: 1px !important; }
+        h3 { margin-bottom: 10px !important; font-weight: 500 !important; color: #5d7c4a !important; }
+        #krishi_rakshak_banner {
+            width: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        #krishi_rakshak_banner img {
+            display: block !important;
+            margin: 0 auto !important;
+            max-width: 800px !important;
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 8px !important;
+            box-shadow: 0 2px 8px rgba(60, 80, 40, 0.07) !important;
+        }
+        .gr-row, .gradio-row, .gradio-block {
+            margin-bottom: 5px !important;
+            padding: 0 !important;
+        }
+        .gr-column, .gradio-column {
+            padding: 5px !important;
+            margin: 0 !important;
+        }
+        /* Upload/Preview fix */
+        .custom-image-input .drop_zone {
+            min-height: 200px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            position: relative !important;
+            overflow: hidden !important;
+            background: #f0f7ec !important;
+            border: 2px dashed #b5c99a !important;
+            border-radius: 8px !important;
+        }
+        .custom-image-input .image-preview {
+            position: static !important;
+            width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+            margin-top: 10px !important;
+            border-radius: 6px !important;
+            box-shadow: 0 1px 4px rgba(60, 80, 40, 0.05) !important;
+        }
+        .custom-image-input .clear_btn {
+            margin-top: 5px !important;
+        }
+        /* Agrotech button theme */
+        .gradio-button, button, .gr-button, .gradio-btn, .gr-button-primary {
+            background: linear-gradient(90deg, #7cb342 0%, #388e3c 100%) !important;
+            color: #fff !important;
+            border: none !important;
+            padding: 12px 25px !important;
+            border-radius: 6px !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            transition: background 0.3s !important;
+            box-shadow: 0 2px 8px rgba(60, 80, 40, 0.07) !important;
+        }
+        .gradio-button:hover, button:hover, .gr-button:hover, .gradio-btn:hover, .gr-button-primary:hover {
+            background: linear-gradient(90deg, #558b2f 0%, #2e7d32 100%) !important;
+        }
+        /* Radio/inputs */
+        .gr-text-input, .gr-radio-group, input[type="text"], input[type="radio"] {
+            border: 1.5px solid #b5c99a !important;
+            border-radius: 6px !important;
+            padding: 10px !important;
+            background: #f8fbe9 !important;
+            color: #357a38 !important;
+        }
+        .gr-text-input:focus, .gr-radio-group:focus-within, input[type="text"]:focus {
+            border-color: #7cb342 !important;
+            box-shadow: 0 0 5px rgba(124, 179, 66, 0.3) !important;
+            outline: none !important;
+        }
+        /* Footer */
+        .footer-section {
+            background: #e8f5e9 !important;
+            padding: 10px !important;
+            border-radius: 0 0 12px 12px !important;
+            margin-top: 10px !important;
+            color: #357a38 !important;
+        }
+        /* Accent lines and borders */
+        hr, .gradio-separator, .gr-separator {
+            border: 0;
+            border-top: 2px solid #b5c99a !important;
+            margin: 10px 0 !important;
+        }
+        </style>
+        """)
+        
+        # Add logo and banner using gr.Image for proper display and sizing
+        with gr.Column(elem_id="header_section", scale=1):
+            gr.Image(value="assets/logos/logo.png", label=None, show_label=False, interactive=False, width=110, height=110, elem_id="krishi_rakshak_logo", container=False)
+            gr.Markdown("<h1 style=\"color: #357a38; text-align: center; margin: 0 !important; padding: 0 !important; font-weight: 700; letter-spacing: 1px;\">🌱 Krishi Rakshak</h1>")
+            gr.Markdown("<h3 style=\"color: #5d7c4a; text-align: center; margin: 0 !important; padding: 0 !important; font-weight: 500;\">स्वस्थ फसल, समृद्ध किसान | Healthy Crops, Prosperous Farmers | निरोगी पीक, समृद्ध शेतकरी</h3>")
+            with gr.Row():
+                gr.Image(value="assets/banners/banner.png", label=None, show_label=False, interactive=False, width=800, height=300, elem_id="krishi_rakshak_banner", container=False)
+        
+        # Add footer with instructions, moved higher for better visibility
+        gr.Markdown("""
+        <div class="footer-section" style="text-align: center;">
+            <h4 style="color: #2E7D32;">How to Use / उपयोग कैसे करें / वापर कसा करावा</h4>
+            <p>1. Upload a clear image of a crop leaf / फसल की पत्ती की स्पष्ट छवि अपलोड करें / पीक पानाची स्पष्ट प्रतिमा अपलोड करा</p>
+            <p>2. Select your preferred language / अपनी पसंदीदा भाषा चुनें / तुमची पसंतीची भाषा निवडा</p>
+            <p>3. Click 'Analyze Image' to get results / परिणाम प्राप्त करने के लिए 'छवि का विश्लेषण करें' पर क्लिक करें / परिणाम मिळविण्यासाठी 'प्रतिमेचे विश्लेषण करा' वर क्लिक करें</p>
+        </div>
+        """)
 
-            # Logo and Title
-            gr.Image("assets/logos/logo.png", label="", show_label=False, container=False, elem_classes=["logo"])
-            gr.Markdown("# 🌱 Krishi Rakshak: AI-Powered Crop Disease Detection")
-            gr.Markdown("**Upload an image of a plant leaf to get instant disease diagnosis and recommendations.**")
+        with gr.Row():
+            with gr.Column(scale=1):
+                image_input = gr.Image(type="pil", label="Upload Crop Image / फसल छवि अपलोड करें / पीक प्रतिमा अपलोड करा", elem_classes="custom-image-input")
+                language = gr.Radio(
+                    choices=["English", "हिंदी (Hindi)", "मराठी (Marathi)"],
+                    value="English",
+                    label="Select Language / भाषा चुनें / भाषा निवडा"
+                )
+                predict_btn = gr.Button("Analyze Image", variant="primary")
             
-            gr.HTML('<div style="margin-top: 20px; border-bottom: 1px solid #e0e0e0; width: 100%;"></div>')  # Separator line
+            with gr.Column(scale=1):
+                result = gr.Textbox(label="Prediction / अनुमान / अंदाज", interactive=False, elem_classes="gr-text-input")
+                confidence = gr.Textbox(label="Confidence / आत्मविश्वास / आत्मविश्वास", interactive=False, elem_classes="gr-text-input")
+                advisory = gr.Textbox(label="Advisory / सलाह / सल्ला", lines=5, interactive=False, elem_classes="gr-text-input")
+                original_class = gr.Textbox(label="Original Class Name", visible=False)
         
-        # Language selector
-        with gr.Row(elem_classes=["language-selector"]):
-            language = gr.Radio(
-                choices=["English", "हिंदी (Hindi)"],
-                label="Select Language / भाषा चुनें",
-                value="English",
-                interactive=True
-            )
-        
-        # Main content area
-        with gr.Row(elem_classes=["main-content"]):
-            # Left column - Image upload
-            with gr.Column(scale=1, elem_classes=["upload-section"]):
-                gr.Markdown("### Upload Plant Image")
-                
-                image_input = gr.Image(
-                    type="numpy",
-                    label="Choose an image of a plant leaf",
-                    height=300,
-                    elem_id="image-upload"
-                )
-                
-                submit_btn = gr.Button(
-                    "Analyze Image",
-                    variant="primary",
-                    elem_classes=["analyze-btn"]
-                )
-                
-                gr.Markdown("*Upload a clear image of a plant leaf for disease detection*")
-            
-            # Right column - Results
-            with gr.Column(scale=1, elem_classes=["results-section"]):
-                gr.HTML('<h3 class="results-title">Analysis Results</h3>')
-                
-                output = gr.JSON(
-                    label="",
-                    show_label=False,
-                    container=True
-                )
-                
-                gr.Markdown("*Results will appear here after analysis*")
-        
-        # Event handlers
-        language.change(
-            fn=update_button_text,
-            inputs=language,
-            outputs=submit_btn
-        )
-        
-        submit_btn.click(
+        predict_btn.click(
             fn=predict,
             inputs=[image_input, language],
-            outputs=output
-        )
-        
-        # Auto-analyze on image upload (optional)
-        image_input.change(
-            fn=lambda img, lang: predict(img, lang) if img is not None else None,
-            inputs=[image_input, language],
-            outputs=output
+            outputs=[result, confidence, advisory, original_class]
         )
     
     return demo
+
+def update_button_text(language):
+    if language == "English":
+        return gr.Button(value="Analyze Image")
+    elif language == "हिंदी (Hindi)":
+        return gr.Button(value="छवि का विश्लेषण करें")
+    elif language == "मराठी (Marathi)":
+        return gr.Button(value="प्रतिमेचे विश्लेषण करा")
+    return gr.Button(value="Analyze Image")
 
 def main():
     """Main function to run the application"""
@@ -477,6 +614,7 @@ def main():
             print(f"{'='*60}\n")
 
             # Launch the application
+            demo.queue() # Enable queuing for the Blocks app
             demo.launch(
                 server_name="0.0.0.0",
                 server_port=port, 
@@ -502,14 +640,6 @@ def main():
         print("💡 Please ensure no other applications are using these ports or restart your system.")
         exit(1)
 
-# Helper function to update button text based on language selection
-def update_button_text(language):
-    if language == "English":
-        return gr.Button(value="Analyze Image")
-    elif language == "हिंदी (Hindi)":
-        return gr.Button(value="छवि का विश्लेषण करें")
-    return gr.Button(value="Analyze Image")
-
 def is_port_available(port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         return s.connect_ex(('localhost', port)) != 0
@@ -521,7 +651,7 @@ def find_available_port(start_port=7860, max_port=7870):
     return None
 
 # Define the Gradio interface
-app = gr.Interface(fn=predict, inputs=[gr.Image(), gr.Radio(['English', 'Hindi'])], outputs=gr.Label())
+app = gr.Interface(fn=predict, inputs=[gr.Image(), gr.Radio(['English', 'Hindi', 'Marathi'])], outputs=gr.Label())
 
 if __name__ == "__main__":
     main()
