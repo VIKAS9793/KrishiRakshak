@@ -60,17 +60,12 @@ KrishiRakshak/
 │   └── optimized/         # Optimized images
 ├── configs/                # Configuration files
 │   └── train_config.yaml
-├── data/                   # Dataset directory
-│   ├── raw/               # Raw dataset
-│   │   └── plantvillage/
-│   └── processed/         # Processed data
 ├── docs/                   # Documentation
 │   ├── ARCHITECTURE.md
 │   ├── EVALUATION_REPORT.md
 │   ├── OPTIMIZATION_REPORT.md
 │   ├── VISUALIZATIONS.md
 │   └── images/            # Generated visualizations
-├── notebooks/              # Jupyter notebooks
 ├── outputs/                # Training outputs and model checkpoints
 ├── scripts/                # Utility scripts
 │   ├── download_dataset.py
@@ -132,7 +127,7 @@ python predict.py path/to/image.jpg --model-dir outputs/experiment
 ## 📊 Model Evaluation
 Detailed evaluation metrics and visualizations will be available in the [EVALUATION_REPORT.md](docs/EVALUATION_REPORT.md) after training.
 
-### Planned Evaluation Metrics
+### Evaluation Metrics
 - **Classification Metrics**:
   - Accuracy
   - Precision (Weighted)
@@ -163,6 +158,36 @@ For details on optimization techniques used to improve performance, refer to [OP
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Key License Points
+- **Type**: MIT License
+- **Copyright**: © 2025 Vikas Sahani
+- **Contact**: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
+
+For full terms and conditions, please refer to the [LICENSE](LICENSE) file.
+
+### AI-Generated Content Attribution
+
+- The logo and banner images in the `assets/` directory were generated using AI (ChatGPT/DALL·E).
+- These images are provided under the same MIT License as the project.
+- The AI model used for generation is subject to OpenAI's [Content Policy](https://openai.com/policies/content-policy).
+- Users should be aware that AI-generated content may be subject to additional terms and conditions set by the AI service provider.
+
+## Copyright and Trademark
+
+### Copyright Notice
+Copyright © 2025 Vikas Sahani. All rights reserved.
+
+### Trademark Information
+- "Krishi Rakshak"™ is a registered trademark of Vikas Sahani.
+- The Krishi Rakshak logo and associated branding are protected by trademark law.
+- All other trademarks and registered trademarks are the property of their respective owners.
+
+### Contact
+For inquiries regarding licensing, usage rights, or permissions, please contact:
+
+**Vikas Sahani**  
+Email: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
 
 ## 📚 References
 - [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
@@ -278,39 +303,6 @@ This project is optimized for hackathon evaluation across key criteria:
 - **Clean Code**: Well-commented, PEP-8 compliant Python
 - **Reproducible**: Exact environment specification
 - **Demo-Ready**: Simple web interface for immediate testing
-
-## Project Structure
-
-```
-KrishiRakshak/
-├── assets/                 # Static assets (images, logos, banners)
-│   ├── banners/           # Banner images
-│   └── logos/             # Logo files
-├── checkpoints/            # Saved model checkpoints
-│   └── {model_name}_{timestamp}/
-│       ├── best_model.pth
-│       ├── last_epoch.pth
-│       └── config.yaml
-├── configs/                # Configuration files
-│   └── train_config.yaml  # Training configuration
-├── data/                   # Dataset and processed data
-│   ├── raw/               # Raw dataset files
-│   └── processed/         # Processed data files
-├── models/                 # Saved model files
-├── notebooks/              # Jupyter notebooks for exploration
-├── src/                    # Source code
-│   ├── data/              # Data loading and preprocessing
-│   ├── models/            # Model architecture and training code
-│   ├── utils/             # Utility functions
-│   └── app.py            # Web application entry point
-├── tests/                  # Unit and integration tests
-├── .gitignore             # Git ignore file
-├── LICENSE                # License information
-├── QUICKSTART.md          # Quick start guide
-├── README.md              # Project documentation
-├── requirements.txt       # Python dependencies
-└── train.py               # Training script
-```
 
 ## Setup
 
@@ -443,11 +435,14 @@ Training metrics are logged to:
 
 Model checkpoints are saved to:
 ```
-checkpoints/
-  └── {model_name}_{timestamp}/
+outputs/
+  └── hackathon_demo/experiment/{timestamp}/
       ├── best_model.pth
-      ├── last_epoch.pth
-      └── config.yaml
+      ├── final_model.pth
+      ├── config.json
+      ├── history.json
+      ├── metrics.json
+      └── class_to_idx_reencoded.json
 ```
 
 ## Web UI
@@ -455,75 +450,5 @@ checkpoints/
 Run the Gradio interface:
 
 ```bash
-python src/app.py
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete details.
-
-### Key License Points
-- **Type**: MIT License
-- **Copyright**: © 2025 Vikas Sahani
-- **Contact**: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
-
-For full terms and conditions, please refer to the [LICENSE](LICENSE) file.
-
-### AI-Generated Content Attribution
-
-- The logo and banner images in the `assets/` directory were generated using AI (ChatGPT/DALL·E).
-- These images are provided under the same MIT License as the project.
-- The AI model used for generation is subject to OpenAI's [Content Policy](https://openai.com/policies/content-policy).
-- Users should be aware that AI-generated content may be subject to additional terms and conditions set by the AI service provider.
-
-## Copyright and Trademark
-
-### Copyright Notice
-Copyright © 2025 Vikas Sahani. All rights reserved.
-
-### Trademark Information
-- "Krishi Rakshak"™ is a registered trademark of Vikas Sahani.
-- The Krishi Rakshak logo and associated branding are protected by trademark law.
-- All other trademarks and registered trademarks are the property of their respective owners.
-
-### Contact
-For inquiries regarding licensing, usage rights, or permissions, please contact:
-
-**Vikas Sahani**  
-Email: [vikassahani17@gmail.com](mailto:vikassahani17@gmail.com)
-
-# Krishi Rakshak
-
-## Overview
-Krishi Rakshak is a project focused on crop disease classification using a deep learning model.
-
-## Setup Instructions
-1. **Clone the Repository**: 
-   ```bash
-   git clone <repository-url>
-   cd KrishiRakshak
-   ```
-
-2. **Create a Virtual Environment**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Running the Application
-To run the application, use the following command:
-```bash
 python app.py
 ```
-
-## Common Issues and Solutions
-- **Port Already in Use**: If the application fails to start due to a port conflict, ensure no other application is using the specified port. You can change the port in the `app.py` file.
-- **Model Not Found**: Ensure the model file is present in the specified path. Check the `MODEL_PATH` variable in `app.py`.
-- **Dependencies Missing**: If you encounter missing module errors, ensure all dependencies are installed using `pip install -r requirements.txt`.
-
-For more details, refer to the `ARCHITECTURE.md` document.
