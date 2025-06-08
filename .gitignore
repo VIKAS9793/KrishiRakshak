@@ -1,0 +1,47 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Data directories
+data/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Local configuration
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Note: outputs/ directory is now tracked for hackathon submission
+# It contains:
+# - Trained models (.pth and .onnx)
+# - Model configurations
+# - Evaluation metrics
+# - Class mappings
+# - Training history
+# - Confusion matrices
+# - Test metrics
+# - Reencoded class mappings 

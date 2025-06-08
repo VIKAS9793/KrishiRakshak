@@ -1,0 +1,61 @@
+{
+  "project_name": "Krishi Rakshak",
+  "tagline": "स्वस्थ फसल, समृद्ध किसान",
+  "description": "An AI-powered crop health guardian that predicts crop diseases using RGB images and deep learning. Designed for early detection and advisory support to farmers in Hindi and English.",
+  "deadline": "2025-06-09",
+  "components": [
+    {
+      "name": "Model Training",
+      "description": "Train a crop disease classification model using RGB images from public datasets.",
+      "tech_stack": ["PyTorch", "EfficientNetB0", "Albumentations"],
+      "tasks": [
+        "Download and preprocess PlantVillage dataset",
+        "Apply image augmentations (flip, rotate, crop, color jitter)",
+        "Fine-tune EfficientNetB0 using transfer learning",
+        "Evaluate model with accuracy, F1, confusion matrix",
+        "Export model to .pt and .tflite"
+      ],
+      "output": "efficientnetb0_model.pt, efficientnetb0_model.tflite"
+    },
+    {
+      "name": "Web UI",
+      "description": "Gradio interface to upload images, predict disease, and display advisory in Hindi and English.",
+      "tech_stack": ["Gradio", "Python", "Hugging Face Spaces"],
+      "tasks": [
+        "Design input component (image upload or camera)",
+        "Integrate EfficientNetB0 PyTorch model",
+        "Display predicted disease class with confidence score",
+        "Map class to disease description and farmer advisory",
+        "Deploy on Hugging Face Spaces"
+      ],
+      "output": "https://huggingface.co/spaces/krishi-rakshak/demo"
+    },
+    {
+      "name": "Mobile App (APK)",
+      "description": "Flutter app to capture crop images, run disease detection offline using TFLite model, and show localized advisory.",
+      "tech_stack": ["Flutter", "TensorFlow Lite", "Android SDK"],
+      "tasks": [
+        "Setup Flutter UI with camera/image picker",
+        "Integrate tflite_flutter plugin and EfficientNetB0.tflite",
+        "Run local inference on device",
+        "Display prediction and localized advisory",
+        "Export and sign APK for distribution"
+      ],
+      "output": "krishi_rakshak.apk"
+    }
+  ],
+  "dataset": {
+    "name": "PlantVillage",
+    "source": "https://www.kaggle.com/datasets/emmarex/plantdisease",
+    "type": "RGB images",
+    "classes": "Multiple crop diseases + healthy class"
+  },
+  "language_support": ["English", "Hindi"],
+  "delivery_targets": [
+    "Gradio-based Web UI on Hugging Face",
+    "Flutter-based Android APK"
+  ],
+  "collaboration_mode": "Solo builder with online tools",
+  "focus_areas": ["Early Detection", "Farmer Advisory", "Accessibility", "Bilingual Support"],
+  "license": "MIT"
+}

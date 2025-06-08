@@ -1,0 +1,22 @@
+{
+  "data_dir": "data/raw/plantvillage",
+  "batch_size": 16,
+  "img_size": 128,
+  "val_split": 0.15,
+  "test_split": 0.15,
+  "model_name": "efficientnet_b0",
+  "pretrained": true,
+  "freeze_base": false,
+  "epochs": 5,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "early_stopping_patience": 10,
+  "lr_patience": 5,
+  "lr_factor": 0.1,
+  "output_dir": "outputs/hackathon_demo\\experiment_20250607_224551",
+  "experiment_name": "experiment",
+  "use_wandb": false,
+  "seed": 42,
+  "num_workers": 4,
+  "cpu": false
+}

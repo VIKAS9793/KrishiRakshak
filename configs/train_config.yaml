@@ -1,0 +1,198 @@
+# ============================================================================
+# Krishi Rakshak - CPU-Optimized Training Configuration
+# ============================================================================
+# This is a template configuration file for CPU-optimized plant disease classification.
+# Copy and modify this file for different training scenarios.
+
+# =========================== Data Configuration =============================
+data:
+  # Path to the dataset directory (should contain train/val/test subdirectories)
+  data_dir: "data/plantvillage"
+  
+  # Batch size and image settings
+  batch_size: 8                     # Reduced for CPU memory constraints
+  img_size: 224                     # Standard size for most models (try 160 or 192 for faster training)
+  
+  # Data split ratios (should sum to < 1.0)
+  val_split: 0.15                  # Fraction for validation set
+  test_split: 0.15                 # Fraction for test set
+  
+  # Data loading settings
+  num_workers: 0                    # 0 or 1 recommended for CPU training
+  pin_memory: false                # Set to false for CPU training
+  persistent_workers: false        # Set to false for CPU training
+
+# ========================== Model Configuration ============================
+model:
+  # Model architecture (efficientnet_b0, mobilenet_v3_small, resnet18)
+  name: "efficientnet_b0"
+  
+  # Transfer learning settings
+  pretrained: true                 # Use ImageNet pretrained weights
+  freeze_backbone: false           # Freeze feature extractor layers
+  
+  # Custom model parameters
+  num_classes: 38                  # Number of plant disease classes (38 for PlantVillage)
+  dropout: 0.2                    # Dropout rate for regularization
+  
+  # Model saving options
+  save_format: "pth"               # Options: pth, onnx, both
+  export_onnx: true               # Export to ONNX format
+
+# ====================== CPU Optimization Settings ==========================
+cpu_optimization:
+  # Thread management
+  threads: null                    # null = auto-detect optimal threads
+  
+  # Memory optimization
+  gradient_accumulation_steps: 4   # Simulate larger batch size
+  use_mixed_precision: true        # Enable if PyTorch 2.0+ (FP16 training)
+  memory_efficient: true          # Enable memory optimizations
+  
+  # Hardware acceleration
+  intel_extension: true            # Use Intel Extension if available
+  mkl_enabled: true               # Enable MKL optimizations
+  
+  # Performance tuning
+  jit_compile: false              # Enable TorchScript JIT compilation
+  channels_last: false            # Use channels-last memory format
+
+# ========================= Training Configuration ==========================
+training:
+  # Basic training parameters
+  epochs: 50
+  learning_rate: 0.01              # Higher learning rate for smaller batches
+  weight_decay: 0.0001
+  
+  # Early stopping
+  early_stopping: true
+  early_stopping_patience: 15      # Higher patience for CPU training
+  early_stopping_delta: 0.001
+  
+  # Class balancing
+  use_class_weights: true         # Enable for imbalanced datasets
+  class_weights_method: "balanced" # Options: balanced, inverse, sqrt_inverse
+  
+  # Checkpointing
+  save_checkpoints: true
+  checkpoint_interval: 1           # Save checkpoint every N epochs
+  max_checkpoints: 5               # Maximum number of checkpoints to keep
+
+# ===================== Learning Rate Scheduler =============================
+scheduler:
+  type: "ReduceLROnPlateau"        # Options: ReduceLROnPlateau, StepLR, CosineAnnealingLR
+  
+  # Common parameters
+  mode: "max"                      # Track validation accuracy
+  factor: 0.1
+  patience: 5
+  min_lr: 1e-6
+  
+  # StepLR specific
+  step_size: 10
+  gamma: 0.1
+  
+  # CosineAnnealingLR specific
+  t_max: 10
+  eta_min: 1e-6
+
+# ======================= Monitoring and Logging ============================
+monitoring:
+  # Weights & Biases integration
+  use_wandb: true
+  project_name: "krishi-rakshak"
+  experiment_name: null           # null = auto-generate with timestamp
+  
+  # Local logging
+  log_dir: "logs"
+  log_interval: 10                # Log every N batches
+  
+  # Metrics to track
+  metrics:
+    - "accuracy"
+    - "precision_weighted"
+    - "recall_weighted"
+    - "f1_weighted"
+    - "confusion_matrix"
+  
+  # Visualization
+  plot_confusion_matrix: true
+  plot_training_curves: true
+  save_plots: true
+
+# ========================== Output Configuration ==========================
+output:
+  base_dir: "experiments"
+  experiment_name: null           # null = auto-generate with timestamp
+  
+  # What to save
+  save_model: true
+  save_optimizer: false
+  save_latest: true               # Always save the latest model
+  save_best: true                 # Save the best model based on validation
+  
+  # Additional outputs
+  save_predictions: true
+  save_classification_report: true
+  save_training_metrics: true
+
+# ======================= Data Augmentation ================================
+augmentation:
+  # Basic augmentations
+  horizontal_flip: 0.5
+  vertical_flip: 0.2
+  rotation: 15                    # degrees
+  
+  # Color jitter
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.2
+  hue: 0.1
+  
+  # Advanced augmentations (enable as needed)
+  random_erasing: false
+  random_erasing_p: 0.1
+  cutmix: false
+  cutmix_alpha: 1.0
+  mixup: false
+  mixup_alpha: 0.2
+
+# ====================== Reproducibility ===================================
+reproducibility:
+  seed: 42
+  deterministic: true
+  benchmark: false                # Set to false for reproducibility
+  cudnn_deterministic: false      # Only applicable for CUDA
+  cudnn_benchmark: false          # Only applicable for CUDA
+
+# ===================== Performance Profiling ==============================
+profiling:
+  enabled: false
+  memory_profiling: false
+  cpu_profiling: false
+  profile_interval: 10            # Profile every N batches
+  
+  # Memory profiling options
+  track_tensors: false
+  detect_leaks: false
+
+# ========================== Example Commands ==============================
+# 
+# Basic training with this config:
+#   python train.py --config configs/train_config.yaml
+#
+# Quick test run (2 epochs):
+#   python train.py --config configs/train_config.yaml --epochs 2 --experiment_name test_run
+#
+# Memory-efficient training:
+#   python train.py --batch_size 4 --gradient_accumulation_steps 8
+#
+# Mixed precision training (PyTorch 2.0+):
+#   python train.py --use_mixed_precision
+#
+# To override specific parameters:
+#   python train.py --config configs/train_config.yaml --batch_size 16 --learning_rate 0.001
+#
+# For help:
+#   python train.py --help
+# ==========================================================================

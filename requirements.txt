@@ -1,0 +1,78 @@
+# ============================================================================
+# Requirements for Plant Disease Classification
+# ============================================================================
+
+# Core Dependencies
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Image Processing
+opencv-python>=4.5.0
+Pillow>=10.0.1
+albumentations>=1.3.1
+scikit-image>=0.21.0
+
+# Model and Training
+timm>=0.9.8
+torchinfo>=1.8.0
+torchmetrics>=1.2.0
+efficientnet-pytorch>=0.7.1
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Web Interface
+gradio>=4.7.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+streamlit>=1.28.0
+
+# Development Tools
+jupyter>=1.0.0
+jupyterlab>=4.0.8
+notebook>=7.0.0
+ipykernel>=6.26.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.0
+
+# Code Quality
+black>=23.11.0
+isort>=5.12.0
+flake8>=6.1.0
+pre-commit>=3.5.0
+mypy>=1.7.0
+
+# Utilities
+requests>=2.31.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+wandb>=0.16.0
+python-dotenv>=1.0.0
+psutil>=5.9.6
+py-cpuinfo>=9.0.0
+
+# ============================================================================
+# Installation:
+# ============================================================================
+# 1. Create and activate a virtual environment:
+#    python -m venv venv
+#    .\venv\Scripts\activate  # Windows
+#    source venv/bin/activate  # Linux/Mac
+#
+# 2. Install requirements:
+#    pip install -r requirements.txt
+#
+# 3. Verify installation:
+#    python -c "import torch; print(f'PyTorch version: {torch.__version__}')"
+#
+# 4. Run the application:
+#    python app.py  # or streamlit run app.py if using Streamlit
+#
+# ============================================================================
