@@ -1,0 +1,2760 @@
+{
+  "Apple___Apple_scab": {
+    "en": {
+      "chemical_control": [
+        "Apply myclobutanil or fenarimol-based fungicides",
+        "Start treatments at bud break and continue every 7-10 days in wet weather"
+      ],
+      "description": "Fungal disease causing dark, scabby lesions on leaves and fruit, common in humid conditions.",
+      "name": "Apple Scab",
+      "organic_control": [
+        "Prune trees to improve air circulation",
+        "Apply sulfur or copper-based fungicides during wet periods",
+        "Remove and destroy fallen leaves in autumn"
+      ],
+      "prevention": [
+        "Plant resistant varieties like 'Liberty' or 'Freedom'",
+        "Ensure good air circulation through proper spacing",
+        "Water at the base to keep foliage dry"
+      ],
+      "symptoms": [
+        "Olive-green to black spots on leaves",
+        "Velvety lesions on leaf undersides",
+        "Cracked, deformed fruit"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "माइक्लोब्यूटानिल या फेनरिमोल युक्त कवकनाशी लगाएं",
+        "कली फूटने के समय से उपचार शुरू करें और गीले मौसम में हर 7-10 दिन में दोहराएं"
+      ],
+      "description": "कवक जनित रोग जो नमी वाले क्षेत्रों में आम है, पत्तियों और फलों पर काले, खुरदरे धब्बे बनाता है।",
+      "name": "सेब का खर्रा रोग",
+      "organic_control": [
+        "हवा के संचार को बेहतर बनाने के लिए पेड़ों की छंटाई करें",
+        "गीले मौसम के दौरान सल्फर या कॉपर आधारित कवकनाशी लगाएं",
+        "पतझड़ में गिरी हुई पत्तियों को हटाकर नष्ट करें"
+      ],
+      "prevention": [
+        "'लिबर्टी' या 'फ्रीडम' जैसी प्रतिरोधी किस्में लगाएं",
+        "उचित दूरी बनाकर अच्छा वायु संचार सुनिश्चित करें",
+        "पत्तियों को सूखा रखने के लिए जड़ों में पानी दें"
+      ],
+      "symptoms": [
+        "पत्तियों पर जैतून-हरे से काले धब्बे",
+        "पत्तियों के नीचे मखमली घाव",
+        "फटे हुए, विकृत फल"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "मायक्लोब्युटानिल किंवा फेनरिमोल असलेले फंगिसायड वापरा",
+        "कळी फुटल्यावर उपचार सुरू करा आणि ओल्या हवामानात दर 7-10 दिवसांनी पुन्हा करा"
+      ],
+      "description": "बुरशीजन्य रोग जो ओल्या भागात सामान्य आहे, पाने आणि फळांवर काळे, खरबुजेसारखे डाग तयार करतो.",
+      "name": "सफरचंदाचा खर्रा रोग",
+      "organic_control": [
+        "वायुसंचार सुधारण्यासाठी झाडांची छाटणी करा",
+        "ओल्या हवामानात सल्फर किंवा तांबे आधारित फंगिसायड वापरा",
+        "शरद ऋतूत पडलेली पाने काढून टाका आणि नष्ट करा"
+      ],
+      "prevention": [
+        "'लिबर्टी' किंवा 'फ्रीडम' सारख्या प्रतिरोधक जाती लावा",
+        "योग्य अंतर ठेवून चांगला वायुसंचार सुनिश्चित करा",
+        "पाने कोरडी ठेवण्यासाठी झाडाच्या मुळाशी पाणी घाला"
+      ],
+      "symptoms": [
+        "पानांवर ऑलिव्ह-हिरवे ते काळे डाग",
+        "पानांच्या खालच्या बाजूस मखमली व्रण",
+        "फुटलेली, विकृत फळे"
+      ]
+    }
+  },
+  "Apple___Black_rot": {
+    "en": {
+      "chemical_control": [
+        "Apply captan or thiophanate-methyl at petal fall",
+        "Continue applications at 10-14 day intervals during wet weather"
+      ],
+      "description": "Fungal disease causing fruit rot and cankers, particularly severe in warm, humid weather.",
+      "name": "Black Rot of Apple",
+      "organic_control": [
+        "Prune out and destroy infected branches",
+        "Remove and destroy mummified fruit",
+        "Apply copper-based fungicides during wet periods"
+      ],
+      "prevention": [
+        "Plant in well-drained sites with good air movement",
+        "Avoid overhead irrigation",
+        "Prune trees annually to improve air circulation"
+      ],
+      "symptoms": [
+        "Brown lesions on leaves with concentric rings",
+        "Rotted, mummified fruit with black pycnidia",
+        "Reddish-brown cankers on branches"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "पंखुड़ी गिरने के समय कैप्टान या थायोफेनेट-मिथाइल लगाएं",
+        "गीले मौसम में 10-14 दिन के अंतराल पर उपचार दोहराएं"
+      ],
+      "description": "कवक जनित रोग जो गर्म, नम मौसम में फलों को सड़ाता है और तनों पर घाव बनाता है।",
+      "name": "सेब का काला सड़न रोग",
+      "organic_control": [
+        "संक्रमित शाखाओं को काटकर नष्ट करें",
+        "ममीकृत फलों को हटाकर नष्ट करें",
+        "गीले मौसम के दौरान तांबे आधारित कवकनाशी लगाएं"
+      ],
+      "prevention": [
+        "अच्छे जल निकास वाली जगह पर पौधे लगाएं",
+        "ऊपर से सिंचाई से बचें",
+        "वायु संचार के लिए सालाना छंटाई करें"
+      ],
+      "symptoms": [
+        "संकेंद्रित वलयों के साथ पत्तियों पर भूरे रंग के घाव",
+        "काले पाइकनिडिया के साथ सड़े हुए, ममीकृत फल",
+        "शाखाओं पर लाल-भूरे रंग के घाव"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "फुलाची पाकळी पडताना कॅप्टान किंवा थायोफेनेट-मिथाइल लावा",
+        "ओल्या हवामानात 10-14 दिवसांच्या अंतराने उपचार पुन्हा करा"
+      ],
+      "description": "बुरशीजन्य रोग जे उबदार, दमट हवामानात फळे कुजवते आणि खोडावर जखमा तयार करते.",
+      "name": "सफरचंदाचा काळा कुजवा",
+      "organic_control": [
+        "संसर्गलेल्या फांद्या कापून टाका आणि नष्ट करा",
+        "ममीफाइड फळे काढून टाका आणि नष्ट करा",
+        "ओल्या हवामानात तांबे आधारित फंगिसायड्सचा वापर करा"
+      ],
+      "prevention": [
+        "चांगल्या जलनिकाशी असलेल्या भागात लागवड करा",
+        "वरून पाणी देणे टाळा",
+        "वायुसंचार सुधारण्यासाठी दरवर्षी छाटणी करा"
+      ],
+      "symptoms": [
+        "एककेंद्री वर्तुळांसह पानांवर तपकिरी जखमा",
+        "काळ्या पायक्निडियासह कुजलेली, ममीफाइड फळे",
+        "फांद्यांवर तपकिरी-लाल रंगाचे जखमे"
+      ]
+    }
+  },
+  "Apple___Cedar_apple_rust": {
+    "en": {
+      "chemical_control": [
+        "Apply myclobutanil or propiconazole at pink bud stage",
+        "Repeat application at 7-10 day intervals during wet weather"
+      ],
+      "description": "Fungal disease that requires both apple and cedar trees to complete its life cycle, causing yellow-orange spots on leaves.",
+      "name": "Cedar Apple Rust",
+      "organic_control": [
+        "Remove nearby juniper/cedar trees if possible",
+        "Plant resistant apple varieties",
+        "Apply sulfur or copper-based fungicides"
+      ],
+      "prevention": [
+        "Maintain good air circulation",
+        "Remove galls from nearby cedar trees in winter",
+        "Plant resistant varieties like 'Redfree' or 'Liberty'"
+      ],
+      "symptoms": [
+        "Yellow-orange spots on upper leaf surfaces",
+        "Horn-like projections on leaf undersides",
+        "Premature leaf drop"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "गुलाबी कली अवस्था में माइक्लोब्यूटानिल या प्रोपिकोनाज़ोल लगाएं",
+        "गीले मौसम में 7-10 दिन के अंतराल पर उपचार दोहराएं"
+      ],
+      "description": "कवक जनित रोग जिसे अपना जीवन चक्र पूरा करने के लिए सेब और देवदार दोनों पेड़ों की आवश्यकता होती है, पत्तियों पर पीले-नारंगी धब्बे बनाता है।",
+      "name": "देवदार-सेब की जंग",
+      "organic_control": [
+        "यदि संभव हो तो पास के जुनिपर/देवदार के पेड़ों को हटा दें",
+        "प्रतिरोधी किस्मों के सेब के पेड़ लगाएं",
+        "सल्फर या तांबे आधारित कवकनाशी लगाएं"
+      ],
+      "prevention": [
+        "अच्छा वायु संचार बनाए रखें",
+        "सर्दियों में पास के देवदार के पेड़ों से गांठों को हटा दें",
+        "'रेडफ्री' या 'लिबर्टी' जैसी प्रतिरोधी किस्में लगाएं"
+      ],
+      "symptoms": [
+        "पत्तियों की ऊपरी सतह पर पीले-नारंगी धब्बे",
+        "पत्तियों के नीचे सींग जैसे उभार",
+        "समय से पहले पत्तियों का गिरना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "गुलाबी कळीच्या टप्प्यात मायक्लोब्युटानिल किंवा प्रोपिकोनाझोल लावा",
+        "ओल्या हवामानात दर 7-10 दिवसांनी उपचार पुन्हा करा"
+      ],
+      "description": "बुरशीजन्य रोग ज्याला जीवनचक्र पूर्ण करण्यासाठी सफरचंद आणि सिडर (देवदार) अशा दोन्ही झाडांची गरज असते, पानांवर पिवळसर-नारिंगी डाग तयार करते.",
+      "name": "सिडर सफरचंद गंज",
+      "organic_control": [
+        "शक्य असल्यास जवळची जुनिपर/देवदाराची झाडे काढून टाका",
+        "प्रतिरोधक जातींची सफरचंदे लावा",
+        "सल्फर किंवा तांबे आधारित फंगिसायड वापरा"
+      ],
+      "prevention": [
+        "चांगला वायुसंचार राखा",
+        "हिवाळ्यात जवळच्या देवदाराच्या झाडांवरील गाठी काढून टाका",
+        "'रेडफ्री' किंवा 'लिबर्टी' सारख्या प्रतिरोधक जाती लावा"
+      ],
+      "symptoms": [
+        "पानांच्या वरच्या पृष्ठभागावर पिवळसर-नारिंगी डाग",
+        "पानांच्या खालील बाजूस शिंगासारखे उंचवटे",
+        "अकाली पानगळ"
+      ]
+    }
+  },
+  "Apple___healthy": {
+    "en": {
+      "care_tips": [
+        "Prune annually during dormancy",
+        "Mulch around base to retain moisture",
+        "Monitor for early signs of pests or disease"
+      ],
+      "description": "Healthy apple tree with no visible signs of disease or stress.",
+      "maintenance": [
+        "Continue regular monitoring for pests and diseases",
+        "Maintain proper watering schedule",
+        "Apply balanced fertilizer as needed"
+      ],
+      "name": "Healthy Apple",
+      "symptoms": [
+        "Vibrant green leaves",
+        "Firm, well-formed fruits",
+        "Strong, flexible branches"
+      ],
+      "organic_control": [
+        "No organic control needed for healthy plants"
+      ],
+      "chemical_control": [
+        "No chemical control needed for healthy plants"
+      ],
+      "prevention": [
+        "Maintain good growing conditions",
+        "Practice crop rotation",
+        "Use disease-free seeds and plants",
+        "Monitor plants regularly for early signs of disease"
+      ]
+    },
+    "hi": {
+      "care_tips": [
+        "निष्क्रिय अवस्था के दौरान सालाना छंटाई करें",
+        "नमी बनाए रखने के लिए पेड़ के आसपास गीली घास बिछाएं",
+        "कीटों या बीमारियों के शुरुआती लक्षणों पर नजर रखें"
+      ],
+      "description": "स्वस्थ सेब का पेड़ जिसमें किसी प्रकार के रोग या तनाव के लक्षण दिखाई नहीं दे रहे हैं।",
+      "maintenance": [
+        "कीटों और रोगों की नियमित निगरानी जारी रखें",
+        "उचित सिंचाई कार्यक्रम बनाए रखें",
+        "आवश्यकतानुसार संतुलित उर्वरक डालें"
+      ],
+      "name": "स्वस्थ सेब का पेड़",
+      "symptoms": [
+        "हरी-भरी पत्तियाँ",
+        "मजबूत, सुडौल फल",
+        "मजबूत, लचीली शाखाएँ"
+      ],
+      "organic_control": [
+        "स्वस्थ पौधों के लिए किसी कार्बनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "prevention": [
+        "अच्छी उगाने की स्थिति बनाए रखें",
+        "फसल चक्रण का अभ्यास करें",
+        "रोगमुक्त बीज और पौधों का उपयोग करें",
+        "रोग के शुरुआती लक्षणों के लिए नियमित रूप से पौधों की निगरानी करें"
+      ]
+    },
+    "mr": {
+      "care_tips": [
+        "निष्क्रिय काळात दरवर्षी छाटणी करा",
+        "ओला राहण्यासाठी झाडाच्या मुळाशी मल्चिंग करा",
+        "कीटक किंवा रोगांची सुरुवातीची लक्षणे पाहण्यासाठी निरीक्षण करत रहा"
+      ],
+      "description": "निरोगी सफरचंदाचे झाड ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "maintenance": [
+        "कीटक आणि रोगांसाठी नियमित निरीक्षण सुरू ठेवा",
+        "योग्य पाणीपुरवठा कार्यक्रम राखा",
+        "गरजेनुसार संतुलित खत वापरा"
+      ],
+      "name": "निरोगी सफरचंद",
+      "symptoms": [
+        "तेजस्वी हिरवी पाने",
+        "घट्ट, सुडौल फळे",
+        "मजबूत, लवचिक फांद्या"
+      ],
+      "organic_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही जैविक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "prevention": [
+        "चांगल्या वाढीच्या परिस्थिती राखा",
+        "पिकांची फेरपालट करा",
+        "रोगमुक्त बिया आणि रोपे वापरा",
+        "रोगाची लक्षणे लवकर ओळखण्यासाठी नियमितपणे वनस्पतींचे निरीक्षण करा"
+      ]
+    }
+  },
+  "Blueberry___healthy": {
+    "en": {
+      "care_tips": [
+        "Water consistently, especially during fruit development",
+        "Protect ripening fruit from birds",
+        "Fertilize in early spring with ammonium sulfate"
+      ],
+      "description": "Healthy blueberry plant with no visible signs of disease or stress.",
+      "maintenance": [
+        "Maintain acidic soil pH (4.5-5.5)",
+        "Apply mulch to conserve moisture",
+        "Prune annually to remove old canes"
+      ],
+      "name": "Healthy Blueberry",
+      "symptoms": [
+        "Dark green, waxy leaves",
+        "Plump, firm berries with silvery bloom",
+        "Strong, upright canes"
+      ],
+      "organic_control": [
+        "No organic control needed for healthy plants"
+      ],
+      "chemical_control": [
+        "No chemical control needed for healthy plants"
+      ],
+      "prevention": [
+        "Maintain good growing conditions",
+        "Practice crop rotation",
+        "Use disease-free seeds and plants",
+        "Monitor plants regularly for early signs of disease"
+      ]
+    },
+    "hi": {
+      "care_tips": [
+        "विशेष रूप से फल विकास के दौरान नियमित रूप से पानी दें",
+        "पकते फलों को पक्षियों से बचाएं",
+        "वसंत ऋतु की शुरुआत में अमोनियम सल्फेट से खाद दें"
+      ],
+      "description": "स्वस्थ ब्लूबेरी का पौधा जिसमें किसी प्रकार के रोग या तनाव के लक्षण दिखाई नहीं दे रहे हैं।",
+      "maintenance": [
+        "अम्लीय मिट्टी का पीएच (4.5-5.5) बनाए रखें",
+        "नमी बनाए रखने के लिए गीली घास बिछाएं",
+        "पुराने तनों को हटाने के लिए सालाना छंटाई करें"
+      ],
+      "name": "स्वस्थ ब्लूबेरी",
+      "symptoms": [
+        "गहरे हरे, मोमी पत्ते",
+        "चांदी जैसी परत के साथ मोटे, मजबूत जामुन",
+        "मजबूत, सीधे तने"
+      ],
+      "organic_control": [
+        "स्वस्थ पौधों के लिए किसी कार्बनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "prevention": [
+        "अच्छी उगाने की स्थिति बनाए रखें",
+        "फसल चक्रण का अभ्यास करें",
+        "रोगमुक्त बीज और पौधों का उपयोग करें",
+        "रोग के शुरुआती लक्षणों के लिए नियमित रूप से पौधों की निगरानी करें"
+      ]
+    },
+    "mr": {
+      "care_tips": [
+        "विशेषतः फळे वाढत असताना सातत्याने पाणी द्या",
+        "पिकत असलेल्या फळांना पक्ष्यांपासून वाचवा",
+        "वसंत ऋतूच्या सुरुवातीला अमोनियम सल्फेटने खत घाला"
+      ],
+      "description": "निरोगी ब्ल्यूबेरीचे रोपटे ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "maintenance": [
+        "आम्लयुक्त मातीचे पीएच (4.5-5.5) राखा",
+        "ओलावा टिकवून ठेवण्यासाठी मल्चिंग करा",
+        "जुन्या काड्या काढून टाकण्यासाठी दरवर्षी छाटणी करा"
+      ],
+      "name": "निरोगी ब्ल्यूबेरी",
+      "symptoms": [
+        "गडद हिरवी, मेणासारखी पाने",
+        "चांदीसारखा उठाव असलेली गोलगोल, घट्ट बेरी",
+        "मजबूत, सरळ वाढलेली काडी"
+      ],
+      "organic_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही जैविक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "prevention": [
+        "चांगल्या वाढीच्या परिस्थिती राखा",
+        "पिकांची फेरपालट करा",
+        "रोगमुक्त बिया आणि रोपे वापरा",
+        "रोगाची लक्षणे लवकर ओळखण्यासाठी नियमितपणे वनस्पतींचे निरीक्षण करा"
+      ]
+    }
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "en": {
+      "chemical_control": [
+        "Apply sulfur or myclobutanil at first sign of disease",
+        "Repeat applications every 7-14 days as needed"
+      ],
+      "description": "Fungal disease causing white powdery growth on leaves and shoots, common in warm, dry conditions.",
+      "name": "Powdery Mildew of Cherry",
+      "organic_control": [
+        "Apply potassium bicarbonate or neem oil sprays",
+        "Prune to improve air circulation",
+        "Remove and destroy infected plant parts"
+      ],
+      "prevention": [
+        "Plant resistant varieties when available",
+        "Avoid overhead watering",
+        "Ensure proper spacing between plants"
+      ],
+      "symptoms": [
+        "White powdery spots on leaves and shoots",
+        "Distorted or stunted new growth",
+        "Premature leaf drop in severe cases"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "रोग के पहले लक्षण दिखते ही सल्फर या माइक्लोब्यूटानिल का छिड़काव करें",
+        "आवश्यकतानुसार हर 7-14 दिन में दोहराएं"
+      ],
+      "description": "कवक जनित रोग जो पत्तियों और नई शाखाओं पर सफेद पाउडर जैसी परत बनाता है, गर्म और शुष्क मौसम में आम।",
+      "name": "चेरी का पाउडरी मिल्ड्यू",
+      "organic_control": [
+        "पोटेशियम बाइकार्बोनेट या नीम तेल का छिड़काव करें",
+        "हवा के प्रवाह के लिए छंटाई करें",
+        "संक्रमित भागों को काटकर नष्ट कर दें"
+      ],
+      "prevention": [
+        "प्रतिरोधी किस्में लगाएं",
+        "ऊपर से पानी देने से बचें",
+        "पौधों के बीच उचित दूरी रखें"
+      ],
+      "symptoms": [
+        "पत्तियों और शाखाओं पर सफेद पाउडर जैसे धब्बे",
+        "विकृत या अविकसित नई वृद्धि",
+        "गंभीर मामलों में समय से पहले पत्तियों का गिरना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "रोगाची पहिली लक्षणे दिसताच सल्फर किंवा मायक्लोब्युटानिलचा वापर करा",
+        "गरजेनुसार दर 7-14 दिवसांनी पुन्हा करा"
+      ],
+      "description": "बुरशीजन्य रोग जो पाने आणि नवीन फुटांवर पांढरा पावडरसारखा थर तयार करतो, उबदार आणि कोरड्या हवामानात सामान्य.",
+      "name": "चेरीचा पावडर मिल्ड्यू",
+      "organic_control": [
+        "पोटॅशिअम बायकार्बोनेट किंवा कडुलिंब तेलाचा फवारावा करा",
+        "वायुसंचारासाठी छाटणी करा",
+        "संसर्गलेले भाग कापून काढा आणि नष्ट करा"
+      ],
+      "prevention": [
+        "शक्य असल्यास प्रतिरोधक जाती लावा",
+        "वरून पाणी देणे टाळा",
+        "झाडांमध्ये योग्य अंतर ठेवा"
+      ],
+      "symptoms": [
+        "पाने आणि फुटांवर पांढरे पावडरसारखे डाग",
+        "विकृत किंवा अविकसित नवीन वाढ",
+        "गंभीर प्रकरणांमध्ये अकाली पानगळ"
+      ]
+    }
+  },
+  "Cherry_(including_sour)___healthy": {
+    "en": {
+      "care_tips": [
+        "Prune in late winter to shape and remove dead wood",
+        "Mulch around base to retain moisture",
+        "Protect blossoms from late spring frosts"
+      ],
+      "description": "Healthy cherry tree with no visible signs of disease or stress.",
+      "maintenance": [
+        "Monitor regularly for pests and diseases",
+        "Maintain consistent soil moisture",
+        "Apply balanced fertilizer in early spring"
+      ],
+      "name": "Healthy Cherry",
+      "symptoms": [
+        "Glossy, dark green leaves",
+        "Firm, well-colored fruits",
+        "Strong, flexible branches"
+      ],
+      "organic_control": [
+        "No organic control needed for healthy plants"
+      ],
+      "chemical_control": [
+        "No chemical control needed for healthy plants"
+      ],
+      "prevention": [
+        "Maintain good growing conditions",
+        "Practice crop rotation",
+        "Use disease-free seeds and plants",
+        "Monitor plants regularly for early signs of disease"
+      ]
+    },
+    "hi": {
+      "care_tips": [
+        "सर्दियों के अंत में छंटाई करें और सूखी शाखाओं को हटाएं",
+        "नमी बनाए रखने के लिए पेड़ के आसपास गीली घास बिछाएं",
+        "वसंत ऋतु में देर से आने वाले पाले से फूलों की सुरक्षा करें"
+      ],
+      "description": "स्वस्थ चेरी का पेड़ जिसमें किसी प्रकार के रोग या तनाव के लक्षण दिखाई नहीं दे रहे हैं।",
+      "maintenance": [
+        "नियमित रूप से कीटों और रोगों की जाँच करें",
+        "मिट्टी में नमी बनाए रखें",
+        "वसंत ऋतु की शुरुआत में संतुलित उर्वरक डालें"
+      ],
+      "name": "स्वस्थ चेरी",
+      "symptoms": [
+        "चमकदार, गहरे हरे रंग की पत्तियाँ",
+        "मजबूत, अच्छे रंग के फल",
+        "मजबूत, लचीली शाखाएँ"
+      ],
+      "organic_control": [
+        "स्वस्थ पौधों के लिए किसी कार्बनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "prevention": [
+        "अच्छी उगाने की स्थिति बनाए रखें",
+        "फसल चक्रण का अभ्यास करें",
+        "रोगमुक्त बीज और पौधों का उपयोग करें",
+        "रोग के शुरुआती लक्षणों के लिए नियमित रूप से पौधों की निगरानी करें"
+      ]
+    },
+    "mr": {
+      "care_tips": [
+        "हिवाळ्याच्या शेवटी छाटणी करा आणि मृत फांद्या काढून टाका",
+        "ओलावा टिकवण्यासाठी झाडाच्या मुळाशी मल्चिंग करा",
+        "उशिरा येणाऱ्या तुषारापासून फुले वाचवा"
+      ],
+      "description": "निरोगी चेरीचे झाड ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "maintenance": [
+        "कीटक आणि रोगांसाठी नियमित तपासणी करा",
+        "मातीत ओलावा कायम ठेवा",
+        "वसंत ऋतूच्या सुरुवातीला संतुलित खत घाला"
+      ],
+      "name": "निरोगी चेरी",
+      "symptoms": [
+        "चकचकीत, गडद हिरवी पाने",
+        "घट्ट, चांगल्या रंगाची फळे",
+        "मजबूत, लवचिक फांद्या"
+      ],
+      "organic_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही जैविक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "prevention": [
+        "चांगल्या वाढीच्या परिस्थिती राखा",
+        "पिकांची फेरपालट करा",
+        "रोगमुक्त बिया आणि रोपे वापरा",
+        "रोगाची लक्षणे लवकर ओळखण्यासाठी नियमितपणे वनस्पतींचे निरीक्षण करा"
+      ]
+    }
+  },
+  "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot": {
+    "en": {
+      "chemical_control": [
+        "Apply azoxystrobin or pyraclostrobin at disease onset",
+        "Use protectant fungicides like chlorothalonil preventively"
+      ],
+      "description": "Fungal diseases causing leaf spots that can reduce photosynthesis and yield in maize crops.",
+      "name": "Cercospora and Gray Leaf Spot of Corn",
+      "organic_control": [
+        "Use disease-free certified seeds",
+        "Apply compost tea or biofungicides containing Bacillus subtilis",
+        "Remove and destroy crop residues after harvest"
+      ],
+      "prevention": [
+        "Practice crop rotation with non-host crops",
+        "Avoid overhead irrigation",
+        "Maintain proper plant spacing for air circulation"
+      ],
+      "symptoms": [
+        "Small, tan to brown spots with yellow halos (Cercospora)",
+        "Long, rectangular lesions between leaf veins (Gray Leaf Spot)",
+        "Premature leaf death in severe cases"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "रोग के लक्षण दिखते ही एजोक्सीस्ट्रोबिन या पायराक्लोस्ट्रोबिन का छिड़काव करें",
+        "बचाव के लिए क्लोरोथेलोनिल जैसे सुरक्षात्मक कवकनाशी का उपयोग करें"
+      ],
+      "description": "कवक जनित रोग जो मक्के की पत्तियों पर धब्बे बनाते हैं, जिससे प्रकाश संश्लेषण और उपज कम हो सकती है।",
+      "name": "मक्का का सेरकोस्पोरा और ग्रे लीफ स्पॉट",
+      "organic_control": [
+        "रोगमुक्त प्रमाणित बीजों का उपयोग करें",
+        "कंपोस्ट टी या बैसिलस सबटिलिस युक्त जैव-कवकनाशी का छिड़काव करें",
+        "फसल कटाई के बाद अवशेषों को हटाकर नष्ट कर दें"
+      ],
+      "prevention": [
+        "गैर-धारक फसलों के साथ फसल चक्रण अपनाएं",
+        "ऊपर से सिंचाई करने से बचें",
+        "हवा के प्रवाह के लिए पौधों के बीच उचित दूरी रखें"
+      ],
+      "symptoms": [
+        "पीले घेरे वाले छोटे, भूरे-भूरे धब्बे (सेरकोस्पोरा)",
+        "पत्तियों की नसों के बीच लंबे, आयताकार घाव (ग्रे लीफ स्पॉट)",
+        "गंभीर मामलों में पत्तियों का समय से पहले मरना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "रोगाची लक्षणे दिसताच अझोक्सिस्ट्रोबिन किंवा पायराक्लोस्ट्रोबिनचा फवारावा करा",
+        "क्लोरोथॅलोनिल सारखे संरक्षक फंगिसायड्स प्रतिबंधात्मकपणे वापरा"
+      ],
+      "description": "बुरशीजन्य रोग जे मक्याच्या पानांवर डाग तयार करतात, ज्यामुळे प्रकाशसंश्लेषण आणि उत्पादन कमी होऊ शकते.",
+      "name": "मका येथील सरकोस्पोरा आणि ग्रे लीफ स्पॉट",
+      "organic_control": [
+        "रोगमुक्त प्रमाणित बियांचा वापर करा",
+        "कंपोस्ट चहा किंवा बॅसिलस सबटिलिस युक्त जैविक फंगीसायड्स वापरा",
+        "कापणीनंतर पिकाचे अवशेष काढून टाका आणि नष्ट करा"
+      ],
+      "prevention": [
+        "नॉन-होस्ट पिकांसोबत पीक फेरफार करा",
+        "वरून पाणी देणे टाळा",
+        "वायुसंचारासाठी योग्य अंतर ठेवा"
+      ],
+      "symptoms": [
+        "पिवळ्या कडांसह लहान, तपकिरी-तपकिरी डाग (सरकोस्पोरा)",
+        "पानांच्या शिरांमधील लांब, आयताकृती जखमा (ग्रे लीफ स्पॉट)",
+        "गंभीर प्रकरणांमध्ये पानांची अकाली मृत्यू"
+      ]
+    }
+  },
+  "Corn_(maize)___Common_rust_": {
+    "en": {
+      "chemical_control": [
+        "Apply foliar fungicides like propiconazole or tebuconazole",
+        "Time applications to protect leaves during silking and tasseling"
+      ],
+      "description": "Fungal disease causing reddish-brown pustules on leaves, which can reduce photosynthesis and yield.",
+      "name": "Common Rust of Corn",
+      "organic_control": [
+        "Plant resistant hybrids when available",
+        "Apply sulfur or copper-based fungicides early in disease development",
+        "Remove volunteer corn plants that may harbor the fungus"
+      ],
+      "prevention": [
+        "Avoid late planting in areas with rust history",
+        "Maintain proper plant nutrition",
+        "Use appropriate plant spacing for good air movement"
+      ],
+      "symptoms": [
+        "Small, circular to elongated cinnamon-brown pustules",
+        "Pustules appear primarily on upper leaf surfaces",
+        "Yellow halos around pustules in early stages"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "प्रोपिकोनाजोल या टेबुकोनाजोल जैसे पत्तेदार कवकनाशी लगाएं",
+        "रेशम निकलने और मंजरी आने के दौरान पत्तियों की सुरक्षा के लिए छिड़काव का समय निर्धारित करें"
+      ],
+      "description": "कवक जनित रोग जो पत्तियों पर लाल-भूरे रंग के फफोले पैदा करता है, जिससे प्रकाश संश्लेषण और उपज कम हो सकती है।",
+      "name": "मक्का का कॉमन रस्ट",
+      "organic_control": [
+        "जब उपलब्ध हो तो प्रतिरोधी संकर किस्में लगाएं",
+        "रोग के शुरुआती चरण में सल्फर या कॉपर आधारित कवकनाशी लगाएं",
+        "स्वैच्छिक मक्के के पौधों को हटा दें जो कवक को आश्रय दे सकते हैं"
+      ],
+      "prevention": [
+        "रस्ट के इतिहास वाले क्षेत्रों में देर से बुवाई से बचें",
+        "उचित पोषण प्रबंधन बनाए रखें",
+        "अच्छे वायु संचार के लिए पौधों के बीच उचित दूरी रखें"
+      ],
+      "symptoms": [
+        "छोटे, गोलाकार से लम्बे दालचीनी-भूरे रंग के फफोले",
+        "फफोले मुख्य रूप से पत्तियों की ऊपरी सतह पर दिखाई देते हैं",
+        "शुरुआती चरणों में फफोलों के चारों ओर पीले घेरे"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "प्रोपिकोनाझोल किंवा टेबुकोनाझोल सारखे पर्णवे फंगिसायड्स वापरा",
+        "कोंब आणि पुंकेसर येण्याच्या काळात पानांच्या संरक्षणासाठी फवारणीची योजना करा"
+      ],
+      "description": "बुरशीजन्य रोग जो पानांवर तांबूस-तपकिरी फोड तयार करतो, ज्यामुळे प्रकाशसंश्लेषण आणि उत्पादन कमी होऊ शकते.",
+      "name": "मक्याचा सामान्य गंज",
+      "organic_control": [
+        "शक्य असल्यास प्रतिरोधक संकरित जाती लावा",
+        "रोगाच्या सुरुवातीच्या अवस्थेत गंधक किंवा तांबेयुक्त फंगिसायड्सचा वापर करा",
+        "स्वयंसेवक मका वनस्पती काढून टाका ज्यामुळे बुरशीचा प्रसार होऊ शकतो"
+      ],
+      "prevention": [
+        "गंजाचा इतिहास असलेल्या भागात उशिरा लागवड टाळा",
+        "योग्य पोषण व्यवस्था राखा",
+        "चांगल्या वायुसंचारासाठी योग्य अंतर ठेवा"
+      ],
+      "symptoms": [
+        "छोटे, गोलाकार ते लांब डार्लिंगजी-तपकिरी फोड",
+        "फोड प्रामुख्याने पानांच्या वरच्या पृष्ठभागावर दिसतात",
+        "सुरुवातीच्या टप्प्यात फोडांभोवती पिवळे घेरे"
+      ]
+    }
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "en": {
+      "chemical_control": [
+        "Apply foliar fungicides like azoxystrobin or pyraclostrobin",
+        "Time applications to protect leaves before and during silking"
+      ],
+      "description": "Serious fungal disease causing large, cigar-shaped lesions on leaves, potentially causing significant yield loss.",
+      "name": "Northern Corn Leaf Blight",
+      "organic_control": [
+        "Use resistant or tolerant hybrids",
+        "Apply biofungicides containing Bacillus subtilis",
+        "Practice crop rotation with small grains or legumes"
+      ],
+      "prevention": [
+        "Plow under crop residues to reduce overwintering fungus",
+        "Avoid continuous corn planting",
+        "Use appropriate plant populations to reduce humidity in canopy"
+      ],
+      "symptoms": [
+        "Large, elliptical, gray-green to tan lesions",
+        "Lesions may have dark, concentric rings",
+        "Severe defoliation in susceptible hybrids"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "एजोक्सीस्ट्रोबिन या पायराक्लोस्ट्रोबिन जैसे पत्तेदार कवकनाशी लगाएं",
+        "रेशम निकलने से पहले और उसके दौरान पत्तियों की सुरक्षा के लिए छिड़काव करें"
+      ],
+      "description": "गंभीर कवक जनित रोग जो पत्तियों पर बड़े, सिगार के आकार के घाव पैदा करता है, जिससे उपज में महत्वपूर्ण कमी आ सकती है।",
+      "name": "उत्तरी मक्का पत्ती झुलसा",
+      "organic_control": [
+        "प्रतिरोधी या सहनशील संकर किस्मों का उपयोग करें",
+        "बैसिलस सबटिलिस युक्त जैव-कवकनाशी लगाएं",
+        "छोटे अनाज या दलहनी फसलों के साथ फसल चक्रण अपनाएं"
+      ],
+      "prevention": [
+        "सर्दियों में कवक को कम करने के लिए फसल अवशेषों को जोत दें",
+        "लगातार मक्का बोने से बचें",
+        "छतरी में नमी कम करने के लिए उचित पौध संख्या बनाए रखें"
+      ],
+      "symptoms": [
+        "बड़े, अंडाकार, भूरे-हरे से भूरे रंग के घाव",
+        "घावों में गहरे रंग के संकेंद्रित वलय हो सकते हैं",
+        "संवेदनशील संकर किस्मों में गंभीर पत्ती गिरावट"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "अझोक्सिस्ट्रोबिन किंवा पायराक्लोस्ट्रोबिन सारखे पर्णवे फंगिसायड्स वापरा",
+        "कोंब येण्यापूर्वी आणि दरम्यान पानांचे संरक्षण करण्यासाठी फवारणीची योजना करा"
+      ],
+      "description": "गंभीर बुरशीजन्य रोग जो पानांवर मोठे, सिगारसारखे घाव तयार करतो, ज्यामुळे लक्षणीय उत्पादन कमी होऊ शकते.",
+      "name": "उत्तर महामारी पानांचा झटका",
+      "organic_control": [
+        "प्रतिरोधक किंवा सहनशील संकरित जाती वापरा",
+        "बॅसिलस सबटिलिस युक्त जैविक फंगीसायड्स वापरा",
+        "लहान धान्ये किंवा कडधान्ये यांच्यासोबत पीक फेरफार करा"
+      ],
+      "prevention": [
+        "हिवाळ्यातील बुरशीचे प्रमाण कमी करण्यासाठी पिकाचे अवशेष नांगरून टाका",
+        "सलग मका लागवड टाळा",
+        "छतरीतील आर्द्रता कमी करण्यासाठी योग्य रोपण घनता राखा"
+      ],
+      "symptoms": [
+        "मोठे, अंडाकृती, राखाडी-हिरवे ते तपकिरी घाव",
+        "घावांवर गडद, एककेंद्री वर्तुळे असू शकतात",
+        "संवेदनशील संकरित जातींमध्ये तीव्र पानगळ"
+      ]
+    }
+  },
+  "Corn_(maize)___healthy": {
+    "en": {
+      "care_tips": [
+        "Ensure adequate spacing between plants (8-12 inches apart)",
+        "Control weeds that compete for nutrients and water",
+        "Consider side-dressing with nitrogen when plants are knee-high"
+      ],
+      "description": "Healthy corn plant with no visible signs of disease or stress, showing vigorous growth and development.",
+      "maintenance": [
+        "Monitor for pests and diseases regularly",
+        "Maintain proper soil moisture",
+        "Apply balanced fertilizer based on soil test results"
+      ],
+      "name": "Healthy Corn (Maize)",
+      "symptoms": [
+        "Upright, dark green leaves",
+        "Strong, sturdy stalks",
+        "Well-developed ears with uniform kernel set"
+      ],
+      "organic_control": [
+        "No organic control needed for healthy plants"
+      ],
+      "chemical_control": [
+        "No chemical control needed for healthy plants"
+      ],
+      "prevention": [
+        "Maintain good growing conditions",
+        "Practice crop rotation",
+        "Use disease-free seeds and plants",
+        "Monitor plants regularly for early signs of disease"
+      ]
+    },
+    "hi": {
+      "care_tips": [
+        "पौधों के बीच पर्याप्त दूरी सुनिश्चित करें (8-12 इंच की दूरी पर)",
+        "पोषक तत्वों और पानी के लिए प्रतिस्पर्धा करने वाले खरपतवारों को नियंत्रित करें",
+        "जब पौधे घुटने तक ऊंचे हों तो नाइट्रोजन युक्त उर्वरक का उपयोग करें"
+      ],
+      "description": "स्वस्थ मक्के का पौधा जिसमें किसी प्रकार के रोग या तनाव के लक्षण दिखाई नहीं दे रहे हैं, जो मजबूत वृद्धि और विकास दिखा रहा है।",
+      "maintenance": [
+        "नियमित रूप से कीटों और रोगों की निगरानी करें",
+        "मिट्टी में उचित नमी बनाए रखें",
+        "मिट्टी परीक्षण के परिणामों के आधार पर संतुलित उर्वरक डालें"
+      ],
+      "name": "स्वस्थ मक्का",
+      "symptoms": [
+        "सीधे, गहरे हरे रंग की पत्तियाँ",
+        "मजबूत, दृढ़ तने",
+        "एकसमान दानों वाली अच्छी तरह विकसित भुट्टे"
+      ],
+      "organic_control": [
+        "स्वस्थ पौधों के लिए किसी कार्बनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक नियंत्रण की आवश्यकता नहीं है"
+      ],
+      "prevention": [
+        "अच्छी उगाने की स्थिति बनाए रखें",
+        "फसल चक्रण का अभ्यास करें",
+        "रोगमुक्त बीज और पौधों का उपयोग करें",
+        "रोग के शुरुआती लक्षणों के लिए नियमित रूप से पौधों की निगरानी करें"
+      ]
+    },
+    "mr": {
+      "care_tips": [
+        "झाडांमध्ये योग्य अंतर ठेवा (8-12 इंच अंतर)",
+        "पोषकद्रव्ये आणि पाण्यासाठी स्पर्धा करणारी तणे नियंत्रित करा",
+        "झाडे गुडघ्याइतकी उंच झाल्यावर नायट्रोजनयुक्त खताचा वापर करा"
+      ],
+      "description": "निरोगी मक्याचे झाड ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत, जे जोमदार वाढ आणि विकास दर्शवते.",
+      "maintenance": [
+        "कीटक आणि रोगांसाठी नियमितपणे निरीक्षण करा",
+        "मातीत योग्य ओलावा राखा",
+        "मातीच्या चाचणीनुसार संतुलित खतांचा वापर करा"
+      ],
+      "name": "निरोगी मका",
+      "symptoms": [
+        "सरळ, गडद हिरवी पाने",
+        "मजबूत, टणक देठ",
+        "एकसमान दाणे असलेल्या चांगल्या विकसित भुकेली"
+      ],
+      "organic_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही जैविक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक नियंत्रणाची आवश्यकता नाही"
+      ],
+      "prevention": [
+        "चांगल्या वाढीच्या परिस्थिती राखा",
+        "पिकांची फेरपालट करा",
+        "रोगमुक्त बिया आणि रोपे वापरा",
+        "रोगाची लक्षणे लवकर ओळखण्यासाठी नियमितपणे वनस्पतींचे निरीक्षण करा"
+      ]
+    }
+  },
+  "Grape___Black_rot": {
+    "en": {
+      "chemical_control": [
+        "Apply mancozeb or myclobutanil at 7-10 day intervals during wet periods",
+        "Begin sprays at bud break and continue through 4-6 weeks after bloom"
+      ],
+      "description": "Serious fungal disease that can destroy grape clusters and cause significant yield loss if not controlled.",
+      "name": "Black Rot of Grape",
+      "organic_control": [
+        "Remove and destroy all mummified berries and infected canes",
+        "Apply copper-based fungicides early in the season",
+        "Use biofungicides containing Bacillus subtilis"
+      ],
+      "prevention": [
+        "Plant resistant varieties when available",
+        "Prune vines to improve air circulation",
+        "Avoid overhead irrigation"
+      ],
+      "symptoms": [
+        "Brown circular spots with dark borders on leaves",
+        "Infected berries shrivel into hard, black mummies",
+        "Small black fruiting bodies (pycnidia) in lesions"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "गीले मौसम के दौरान हर 7-10 दिन में मैंकोजेब या माइक्लोब्यूटानिल का छिड़काव करें",
+        "कली फूटने से लेकर फूल आने के 4-6 सप्ताह बाद तक छिड़काव जारी रखें"
+      ],
+      "description": "गंभीर कवक जनित रोग जो नियंत्रण न किए जाने पर अंगूर के गुच्छों को नष्ट कर सकता है और उपज में भारी कमी ला सकता है।",
+      "name": "अंगूर का ब्लैक रोट",
+      "organic_control": [
+        "सभी ममीकृत जामियों और संक्रमित डंठलों को हटाकर नष्ट कर दें",
+        "मौसम की शुरुआत में कॉपर आधारित कवकनाशी लगाएं",
+        "बैसिलस सबटिलिस युक्त जैव-कवकनाशी का उपयोग करें"
+      ],
+      "prevention": [
+        "जहां उपलब्ध हो वहां प्रतिरोधी किस्में लगाएं",
+        "हवा के प्रवाह के लिए बेलों की छंटाई करें",
+        "ऊपर से सिंचाई करने से बचें"
+      ],
+      "symptoms": [
+        "पत्तियों पर काले किनारे वाले भूरे रंग के गोल धब्बे",
+        "संक्रमित जामियाँ सख्त, काले रंग की ममी में बदल जाती हैं",
+        "घावों में छोटे काले फलने वाले शरीर (पाइकनिडिया)"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "ओल्या हवामानात दर 7-10 दिवसांनी मॅन्कोझेब किंवा मायक्लोब्युटानिलचा फवारावा करा",
+        "कुड्या फुटण्यापासून फुलांना बट्टे बसल्यानंतर 4-6 आठवड्यांपर्यंत फवारणी सुरू ठेवा"
+      ],
+      "description": "गंभीर बुरशीजन्य रोग जो नियंत्रित न केल्यास द्राक्षांच्या गुच्छांना नष्ट करू शकतो आणि लक्षणीय उत्पादन कमी करू शकतो.",
+      "name": "द्राक्षाचा ब्लॅक रॉट",
+      "organic_control": [
+        "सर्व ममीकृत द्राक्षे आणि संसर्गित वेलींना काढून टाका आणि नष्ट करा",
+        "हंगामाच्या सुरुवातीला तांबेयुक्त फंगिसायड्सचा वापर करा",
+        "बॅसिलस सबटिलिस युक्त जैविक फंगीसायड्स वापरा"
+      ],
+      "prevention": [
+        "शक्य असल्यास प्रतिरोधक जाती लावा",
+        "वायुसंचारासाठी वेलींची छाटणी करा",
+        "वरून पाणी देणे टाळा"
+      ],
+      "symptoms": [
+        "पानांवर गडद कडा असलेले तपकिरी गोलाकार डाग",
+        "संसर्गित द्राक्षे कठीण, काळ्या ममींमध्ये बदलतात",
+        "जखमांमध्ये लहान काळे फळ देणारे शरीर (पायक्निडिया)"
+      ]
+    }
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "en": {
+      "chemical_control": [
+        "Limited chemical options available",
+        "Trunk application of sodium tetrathiocarbonate may help suppress symptoms"
+      ],
+      "description": "Complex disease caused by multiple fungi, leading to wood decay and foliar symptoms in grapevines.",
+      "name": "Esca (Black Measles) of Grape",
+      "organic_control": [
+        "Remove and destroy severely infected vines",
+        "Apply compost tea to improve soil microbiology",
+        "Use balanced nutrition to improve vine health"
+      ],
+      "prevention": [
+        "Plant certified disease-free vines",
+        "Avoid mechanical injuries to trunks and cordons",
+        "Prune during dry weather to promote rapid healing"
+      ],
+      "symptoms": [
+        "Tiger-stripe pattern on leaves (yellow/red bands between veins)",
+        "Small, dark spots on berries (measles-like)",
+        "Wood decay in trunks and cordons"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "सीमित रासायनिक विकल्प उपलब्ध",
+        "सोडियम टेट्राथायोकार्बोनेट का तने पर उपयोग लक्षणों को कम करने में मदद कर सकता है"
+      ],
+      "description": "कई कवकों के कारण होने वाला जटिल रोग, जो अंगूर की बेलों में लकड़ी की सड़न और पत्तियों के लक्षण पैदा करता है।",
+      "name": "अंगूर का एस्का (ब्लैक मीजल्स)",
+      "organic_control": [
+        "गंभीर रूप से संक्रमित बेलों को हटाकर नष्ट कर दें",
+        "मिट्टी के सूक्ष्मजीवों को बेहतर बनाने के लिए कंपोस्ट टी लगाएं",
+        "बेल के स्वास्थ्य को बेहतर बनाने के लिए संतुलित पोषण का उपयोग करें"
+      ],
+      "prevention": [
+        "प्रमाणित रोगमुक्त पौधे लगाएं",
+        "तनों और कॉर्डन को यांत्रिक चोट से बचाएं",
+        "तेजी से घाव भरने के लिए सूखे मौसम में छंटाई करें"
+      ],
+      "symptoms": [
+        "पत्तियों पर बाघ की धारियों जैसा पैटर्न (नसों के बीच पीले/लाल रंग की पट्टियाँ)",
+        "जामियों पर छोटे, काले धब्बे (खसरे की तरह)",
+        "तनों और कॉर्डन में लकड़ी की सड़न"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "मर्यादित रासायनिक पर्याय उपलब्ध",
+        "सोडियम टेट्राथायोकार्बोनेटचा खोडावर वापर लक्षणे कमी करण्यास मदत करू शकतो"
+      ],
+      "description": "अनेक बुरशीमुळे होणारा जटिल रोग, जो द्राक्षवेलींमध्ये लाकूड कुजणे आणि पानांची लक्षणे निर्माण करतो.",
+      "name": "द्राक्षाचा एस्का (ब्लॅक मिझल्स)",
+      "organic_control": [
+        "तीव्रपणे संसर्गित वेला काढून टाका आणि नष्ट करा",
+        "मातीचे सूक्ष्मजीवशास्त्र सुधारण्यासाठी कंपोस्ट चहा वापरा",
+        "वेलांचे आरोग्य सुधारण्यासाठी संतुलित पोषण वापरा"
+      ],
+      "prevention": [
+        "प्रमाणित रोगमुक्त रोपे लावा",
+        "खोडे आणि मोठ्या फांद्यांना यांत्रिक इजा होऊ नयेत याची काळजी घ्या",
+        "जलद बरे होण्यासाठी कोरड्या हवामानात छाटणी करा"
+      ],
+      "symptoms": [
+        "पानांवर वाघाच्या पट्ट्यांसारखा नमुना (शिरांमधील पिवळे/तांबूस पट्टे)",
+        "फळांवर लहान, गडद डाग (गोवरासारखे)",
+        "खोडे आणि मोठ्या फांद्यांमध्ये लाकडाचे कुजणे"
+      ]
+    }
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "en": {
+      "chemical_control": [
+        "Apply mancozeb or chlorothalonil at first sign of disease",
+        "Use systemic fungicides like azoxystrobin if disease pressure is high"
+      ],
+      "description": "Fungal disease causing leaf spots and premature defoliation, particularly problematic in warm, humid conditions.",
+      "name": "Grape Leaf Blight (Isariopsis Leaf Spot)",
+      "organic_control": [
+        "Remove and destroy fallen leaves in autumn",
+        "Apply potassium bicarbonate sprays",
+        "Use compost tea to boost plant immunity"
+      ],
+      "prevention": [
+        "Plant resistant varieties when possible",
+        "Prune to improve air circulation",
+        "Avoid overhead irrigation"
+      ],
+      "symptoms": [
+        "Small, angular, reddish-brown spots on upper leaf surfaces",
+        "Yellow halos around spots on older leaves",
+        "Severe leaf drop in susceptible varieties"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "रोग के पहले लक्षण दिखते ही मैंकोज़ेब या क्लोरोथेलोनिल का छिड़काव करें",
+        "यदि रोग का दबाव अधिक हो तो एजोक्सीस्ट्रोबिन जैसे प्रणालीगत कवकनाशी का उपयोग करें"
+      ],
+      "description": "कवक जनित रोग जो पत्तियों पर धब्बे और समय से पहले पत्ती गिरावट का कारण बनता है, विशेष रूप से गर्म, आर्द्र परिस्थितियों में समस्या पैदा करता है।",
+      "name": "अंगूर की पत्ती झुलसा (इसरियोप्सिस लीफ स्पॉट)",
+      "organic_control": [
+        "पतझड़ में गिरी हुई पत्तियों को हटाकर नष्ट कर दें",
+        "पोटेशियम बाइकार्बोनेट का छिड़काव करें",
+        "पौधों की रोग प्रतिरोधक क्षमता बढ़ाने के लिए कंपोस्ट टी का उपयोग करें"
+      ],
+      "prevention": [
+        "संभव हो तो प्रतिरोधी किस्में लगाएं",
+        "हवा के प्रवाह के लिए छंटाई करें",
+        "ऊपर से सिंचाई करने से बचें"
+      ],
+      "symptoms": [
+        "पत्तियों की ऊपरी सतह पर छोटे, कोणीय, लाल-भूरे रंग के धब्बे",
+        "पुरानी पत्तियों पर धब्बों के चारों ओर पीले घेरे",
+        "संवेदनशील किस्मों में गंभीर पत्ती गिरावट"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "रोगाची पहिली लक्षणे दिसताच मँकोझेब किंवा क्लोरोथॅलोनिलचा वापर करा",
+        "जास्त रोगाचा ताण असल्यास अझोक्सिस्ट्रोबिन सारखे प्रणालीगत फंगिसायड्स वापरा"
+      ],
+      "description": "बुरशीजन्य रोग जो पानांवर डाग आणि अकाली पानगळ होण्यास कारणीभूत ठरतो, विशेषत: उबदार, दमट हवामानात तीव्र होतो.",
+      "name": "द्राक्षाचा पानांचा झटका (इसरिओप्सिस लीफ स्पॉट)",
+      "organic_control": [
+        "शरद ऋतूत पडलेली पाने काढून टाका आणि नष्ट करा",
+        "पोटॅशिअम बायकार्बोनेटचा फवारावा करा",
+        "वनस्पतींची रोगप्रतिकारक शक्ती वाढवण्यासाठी कंपोस्ट चहा वापरा"
+      ],
+      "prevention": [
+        "शक्य असल्यास प्रतिरोधक जाती लावा",
+        "वायुसंचारासाठी छाटणी करा",
+        "वरून पाणी देणे टाळा"
+      ],
+      "symptoms": [
+        "पानांच्या वरच्या पृष्ठभागावर लहान, कोनदार, तांबूस-तपकिरी डाग",
+        "जुन्या पानांवरील डागांभोवती पिवळे घेरे",
+        "संवेदनशील जातींमध्ये तीव्र पानगळ"
+      ]
+    }
+  },
+  "Grape___healthy": {
+    "en": {
+      "chemical_control": [
+        "No chemical treatment needed for healthy plants",
+        "Use preventive fungicides only if disease pressure is high"
+      ],
+      "description": "Healthy grapevine with no visible signs of disease or stress.",
+      "name": "Healthy Grape",
+      "organic_control": [
+        "Maintain good vineyard hygiene",
+        "Ensure proper spacing between vines for air circulation",
+        "Use compost and organic fertilizers"
+      ],
+      "prevention": [
+        "Regular monitoring for early signs of disease",
+        "Prune properly to improve air circulation",
+        "Water at the base to keep foliage dry"
+      ],
+      "symptoms": [
+        "Vibrant green leaves with no spots or discoloration",
+        "Firm, well-formed grapes",
+        "Strong, flexible canes"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक उपचार की आवश्यकता नहीं है",
+        "केवल उच्च रोग दबाव की स्थिति में निवारक कवकनाशी का उपयोग करें"
+      ],
+      "description": "स्वस्थ अंगूर की बेल जिसमें किसी प्रकार के रोग या तनाव के कोई लक्षण दिखाई नहीं देते।",
+      "name": "स्वस्थ अंगूर",
+      "organic_control": [
+        "अच्छी बागवानी स्वच्छता बनाए रखें",
+        "हवा के संचार के लिए बेलों के बीच उचित दूरी रखें",
+        "कम्पोस्ट और जैविक उर्वरकों का उपयोग करें"
+      ],
+      "prevention": [
+        "रोग के प्रारंभिक लक्षणों के लिए नियमित निगरानी करें",
+        "हवा के अच्छे संचार के लिए उचित छंटाई करें",
+        "पत्तियों को सूखा रखने के लिए जड़ के पास पानी दें"
+      ],
+      "symptoms": [
+        "किसी भी धब्बे या रंग परिवर्तन के बिना जीवंत हरी पत्तियाँ",
+        "मजबूत, अच्छी तरह से बने अंगूर",
+        "मजबूत, लचीली डालियाँ"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "फक्त जर रोगाचा ताण जास्त असेल तरच प्रतिजैविकांचा वापर करा"
+      ],
+      "description": "निरोगी द्राक्षवेल ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "name": "निरोगी द्राक्ष",
+      "organic_control": [
+        "चांगली द्राक्षवाटिका स्वच्छता राखा",
+        "हवेच्या वाहतुकीसाठी वेलींमध्ये योग्य अंतर ठेवा",
+        "कंपोस्ट आणि जैविक खते वापरा"
+      ],
+      "prevention": [
+        "रोगाची लवकर लक्षणे ओळखण्यासाठी नियमित निरीक्षण करा",
+        "हवेची चांगली वाहतूक होण्यासाठी योग्यरित्या छाटणी करा",
+        "पाने कोरडी ठेवण्यासाठी मुळाशी पाणी द्या"
+      ],
+      "symptoms": [
+        "डाग किंवा रंग बदलाशिवाय चैतन्यमय हिरवी पाने",
+        "घट्ट, चांगले तयार झालेले द्राक्ष",
+        "मजबूत, लवचिक कळ्या"
+      ]
+    }
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "en": {
+      "chemical_control": [
+        "Apply systemic insecticides against Asian citrus psyllid vectors",
+        "Use foliar sprays of antibiotics in early infection stages"
+      ],
+      "description": "Devastating bacterial disease of citrus trees spread by psyllid insects, causing yellow shoots, lopsided fruit, and tree decline.",
+      "name": "Citrus Greening (Huanglongbing)",
+      "organic_control": [
+        "Remove and destroy infected trees to prevent spread",
+        "Use reflective mulches to deter psyllid vectors",
+        "Apply plant growth regulators to improve tree health"
+      ],
+      "prevention": [
+        "Plant certified disease-free nursery stock",
+        "Monitor for psyllids with yellow sticky traps",
+        "Remove alternative host plants near citrus groves"
+      ],
+      "symptoms": [
+        "Yellowing of leaf veins and shoots (blotchy mottle)",
+        "Small, lopsided, bitter-tasting fruit",
+        "Premature fruit drop"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "एशियाई सिट्रस साइलिड वैक्टर के खिलाफ सिस्टमिक कीटनाशकों का छिड़काव करें",
+        "प्रारंभिक संक्रमण अवस्था में एंटीबायोटिक्स के पर्णीय छिड़काव का उपयोग करें"
+      ],
+      "description": "सिट्रस के पेड़ों में होने वाली विनाशकारी जीवाणुजनित बीमारी, जो साइलिड कीड़ों द्वारा फैलती है, जिससे पीली शूटिंग, असंतुलित फल और पेड़ों का कमजोर होना जैसे लक्षण दिखाई देते हैं।",
+      "name": "सिट्रस ग्रीनिंग (हुआंगलोंगबिंग)",
+      "organic_control": [
+        "संक्रमित पेड़ों को फैलने से रोकने के लिए हटा दें और नष्ट कर दें",
+        "साइलिड वैक्टर को रोकने के लिए परावर्तक मल्च का उपयोग करें",
+        "पेड़ों के स्वास्थ्य में सुधार के लिए प्लांट ग्रोथ रेगुलेटर्स लगाएं"
+      ],
+      "prevention": [
+        "प्रमाणित रोगमुक्त नर्सरी स्टॉक लगाएं",
+        "पीले चिपचिपे जाल के साथ साइलिड की निगरानी करें",
+        "सिट्रस बागों के पास वैकल्पिक मेजबान पौधों को हटा दें"
+      ],
+      "symptoms": [
+        "पत्तियों की नसों और शूटिंग का पीला पड़ना (धब्बेदार पीलापन)",
+        "छोटे, असंतुलित, कड़वे स्वाद वाले फल",
+        "समय से पहले फलों का गिरना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "आशियाई लिंबूवर्गीय सायलिड वाहकांविरूद्ध सिस्टीमिक कीटकनाशके वापरा",
+        "लवकरच्या संसर्गावस्थेत अँटिबायोटिक्सचे पानावरील फवारणी वापरा"
+      ],
+      "description": "सायलिड कीटांद्वारे पसरवली जाणारी लिंबूवर्गीय झाडांची विनाशकारी जीवाणूजन्य रोग, ज्यामुळे पिवळे कोंब, असमान फळे आणि झाडांचे कमकुवत होणे होते.",
+      "name": "लिंबूवर्गीय ग्रीनिंग (हुआंगलोंगबिंग)",
+      "organic_control": [
+        "संसर्ग पसरू नये म्हणून संसर्गित झाडे काढून टाका आणि नष्ट करा",
+        "सायलिड वाहकांना दूर ठेवण्यासाठी परावर्तक मल्च वापरा",
+        "झाडांचे आरोग्य सुधारण्यासाठी वनस्पती वाढ नियंत्रक वापरा"
+      ],
+      "prevention": [
+        "प्रमाणित रोगमुक्त रोपे लावा",
+        "पिवळ्या चिकट पंजरांसह सायलिड्सचे निरीक्षण करा",
+        "लिंबूवर्गीय बागांजवळील पर्यायी यजमान वनस्पती काढून टाका"
+      ],
+      "symptoms": [
+        "पानांच्या शिरा आणि कोंबांचे पिवळे पडणे (डागाळलेले पिवळेपणा)",
+        "छोटी, विषम, कडू चवीची फळे",
+        "अकाली फळे गळणे"
+      ]
+    }
+  },
+  "Peach___Bacterial_spot": {
+    "en": {
+      "chemical_control": [
+        "Apply streptomycin or oxytetracycline during bloom",
+        "Use copper hydroxide or mancozeb during active growth"
+      ],
+      "description": "Bacterial disease causing leaf spots, fruit blemishes, and defoliation, particularly severe in warm, wet weather.",
+      "name": "Bacterial Spot of Peach",
+      "organic_control": [
+        "Apply copper-based bactericides during leaf emergence",
+        "Use compost tea to boost plant immunity",
+        "Prune to improve air circulation"
+      ],
+      "prevention": [
+        "Plant resistant varieties if available",
+        "Avoid overhead irrigation",
+        "Remove and destroy fallen leaves and fruit"
+      ],
+      "symptoms": [
+        "Small, angular, water-soaked spots on leaves that turn purple-brown",
+        "Raised, corky spots on fruit that may crack",
+        "Severe leaf yellowing and drop"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "फूल आते समय स्ट्रेप्टोमाइसिन या ऑक्सीटेट्रासाइक्लिन का छिड़काव करें",
+        "सक्रिय वृद्धि के दौरान कॉपर हाइड्रॉक्साइड या मैंकोज़ेब का उपयोग करें"
+      ],
+      "description": "जीवाणुजनित रोग जो पत्तियों पर धब्बे, फलों पर दाग और पत्ती गिरावट का कारण बनता है, विशेष रूप से गर्म, गीले मौसम में गंभीर हो जाता है।",
+      "name": "आड़ू का जीवाणुजनित धब्बा रोग",
+      "organic_control": [
+        "पत्ती निकलते समय तांबे पर आधारित जीवाणुनाशक लगाएं",
+        "पौधों की रोग प्रतिरोधक क्षमता बढ़ाने के लिए कंपोस्ट टी का उपयोग करें",
+        "हवा के प्रवाह के लिए छंटाई करें"
+      ],
+      "prevention": [
+        "यदि उपलब्ध हो तो प्रतिरोधी किस्में लगाएं",
+        "ऊपर से सिंचाई करने से बचें",
+        "गिरी हुई पत्तियों और फलों को हटाकर नष्ट कर दें"
+      ],
+      "symptoms": [
+        "पत्तियों पर छोटे, कोणीय, पानी से लथपथ धब्बे जो बैंगनी-भूरे हो जाते हैं",
+        "फलों पर उभरे हुए, कॉर्की धब्बे जो फट सकते हैं",
+        "गंभीर पत्ती पीली पड़ना और गिरना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "फुलांना फुलं येताना स्ट्रेप्टोमायसिन किंवा ऑक्सीटेट्रासायक्लिनचा वापर करा",
+        "सक्रिय वाढीच्या काळात कॉपर हायड्रॉक्साइड किंवा मँकोझेब वापरा"
+      ],
+      "description": "जीवाणूजन्य रोग जो पानांवर डाग, फळांवर खराबी आणि पानगळ होण्यास कारणीभूत ठरतो, विशेषत: उबदार, ओल्या हवामानात तीव्र होतो.",
+      "name": "पीचचा जीवाणूजन्य डाग रोग",
+      "organic_control": [
+        "पाने फुटताना तांब्यावर आधारित जीवाणुनाशकांचा वापर करा",
+        "वनस्पतींची रोगप्रतिकारक शक्ती वाढवण्यासाठी कंपोस्ट चहा वापरा",
+        "वायुसंचारासाठी छाटणी करा"
+      ],
+      "prevention": [
+        "शक्य असल्यास प्रतिरोधक जाती लावा",
+        "वरून पाणी देणे टाळा",
+        "पडलेली पाने आणि फळे काढून टाका आणि नष्ट करा"
+      ],
+      "symptoms": [
+        "पानांवर लहान, कोनदार, पाण्याने भरलेले डाग जे जांभळे-तपकिरी होतात",
+        "फळांवर उंचावलेले, कॉर्कसारखे डाग जे फुटू शकतात",
+        "तीव्र पानांचे पिवळे पडणे आणि गळणे"
+      ]
+    }
+  },
+  "Peach___healthy": {
+    "en": {
+      "chemical_control": [
+        "No chemical treatment needed for healthy trees",
+        "Monitor regularly for early signs of pests or disease"
+      ],
+      "description": "Healthy peach tree with no visible signs of disease or stress, showing vigorous growth and fruit production.",
+      "name": "Healthy Peach Tree",
+      "organic_control": [
+        "Maintain proper soil health with organic matter",
+        "Use compost tea to boost natural defenses",
+        "Practice regular pruning for air circulation"
+      ],
+      "prevention": [
+        "Plant in well-draining soil with full sun exposure",
+        "Maintain consistent watering schedule",
+        "Apply balanced organic fertilizer in early spring"
+      ],
+      "symptoms": [
+        "Vibrant green leaves with no spots or discoloration",
+        "Strong, flexible branches with smooth bark",
+        "Abundant flower and fruit set during appropriate seasons"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "स्वस्थ पेड़ों के लिए किसी रसायनिक उपचार की आवश्यकता नहीं",
+        "कीट या रोग के शुरुआती लक्षणों के लिए नियमित निगरानी करें"
+      ],
+      "description": "रोग या तनाव के कोई दृश्यमान लक्षण नहीं दिखाने वाला स्वस्थ आड़ू का पेड़, जो जोरदार वृद्धि और फल उत्पादन दिखाता है।",
+      "name": "स्वस्थ आड़ू का पेड़",
+      "organic_control": [
+        "कार्बनिक पदार्थों के साथ मिट्टी का उचित स्वास्थ्य बनाए रखें",
+        "प्राकृतिक सुरक्षा बढ़ाने के लिए कंपोस्ट टी का उपयोग करें",
+        "हवा के प्रवाह के लिए नियमित छंटाई करें"
+      ],
+      "prevention": [
+        "पूर्ण धूप वाली अच्छी जल निकासी वाली मिट्टी में लगाएं",
+        "नियमित जलसिंचन कार्यक्रम बनाए रखें",
+        "वसंत ऋतु की शुरुआत में संतुलित जैविक उर्वरक डालें"
+      ],
+      "symptoms": [
+        "बिना किसी धब्बे या रंग बदलाव के जीवंत हरी पत्तियां",
+        "चिकनी छाल वाली मजबूत, लचीली शाखाएं",
+        "उपयुक्त मौसम में प्रचुर मात्रा में फूल और फल लगना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "निरोगी झाडांसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "किडे किंवा रोगांची सुरुवातीची लक्षणे दिसल्यास लगेच तपासा"
+      ],
+      "description": "कोणत्याही दृश्यमान रोग किंवा तणावाची लक्षणे न दाखवणारे निरोगी पीच झाड, जे जोमदार वाढ आणि फलन दर्शवते.",
+      "name": "निरोगी पीच झाड",
+      "organic_control": [
+        "सेंद्रीय पदार्थांसह मातीचे योग्य आरोग्य राखा",
+        "नैसर्गिक संरक्षण वाढवण्यासाठी कंपोस्ट चहा वापरा",
+        "वायुसंचारासाठी नियमित छाटणी करा"
+      ],
+      "prevention": [
+        "पूर्ण सूर्यप्रकाश मिळेल अशा चांगल्या जलनिचरा असलेल्या जागी लावा",
+        "सातत्यपूर्ण पाण्याचे शेड्यूल राखा",
+        "वसंत ऋतूच्या सुरुवातीला संतुलित सेंद्रीय खत वापरा"
+      ],
+      "symptoms": [
+        "कोणत्याही डाग किंवा रंग बदलाशिवाय चैतन्यमय हिरवी पाने",
+        "गुळगुळीत साल असलेल्या मजबूत, लवचिक फांद्या",
+        "योग्य ऋतूत मुबलक फुले आणि फळे येणे"
+      ]
+    }
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "en": {
+      "chemical_control": [
+        "Copper hydroxide or mancozeb applications",
+        "Streptomycin or oxytetracycline for severe infections"
+      ],
+      "description": "Bacterial disease causing leaf spots and fruit blemishes, common in warm, wet conditions.",
+      "name": "Bacterial Spot of Bell Pepper",
+      "organic_control": [
+        "Use disease-free seed and transplants",
+        "Apply copper-based bactericides early in the season",
+        "Allow proper plant spacing for air circulation"
+      ],
+      "prevention": [
+        "Practice 3-year crop rotation with non-solanaceous crops",
+        "Avoid overhead irrigation",
+        "Remove and destroy crop debris after harvest"
+      ],
+      "symptoms": [
+        "Small, water-soaked spots on leaves with yellow halos",
+        "Raised, scabby lesions on fruit that may crack",
+        "Leaf yellowing and defoliation in severe cases"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "कॉपर हाइड्रॉक्साइड या मैंकोज़ेब का छिड़काव",
+        "गंभीर संक्रमण के लिए स्ट्रेप्टोमाइसिन या ऑक्सीटेट्रासाइक्लिन"
+      ],
+      "description": "जीवाणु जनित रोग जो गर्म, नम परिस्थितियों में आम है, जिससे पत्तियों और फलों पर धब्बे पड़ जाते हैं।",
+      "name": "शिमला मिर्च का जीवाणु धब्बा रोग",
+      "organic_control": [
+        "रोगमुक्त बीज और पौधे का उपयोग करें",
+        "मौसम की शुरुआत में तांबे पर आधारित जीवाणुनाशक लगाएं",
+        "हवा के प्रवाह के लिए पौधों के बीच उचित दूरी रखें"
+      ],
+      "prevention": [
+        "गैर-सोलानेसियस फसलों के साथ 3-वर्षीय फसल चक्र अपनाएं",
+        "ऊपर से सिंचाई करने से बचें",
+        "फसल कटाई के बाद अवशेषों को हटाकर नष्ट कर दें"
+      ],
+      "symptoms": [
+        "पीले घेरे वाले पत्तों पर छोटे, पानी से भीगे धब्बे",
+        "फलों पर उभरे हुए, खुरदरे घाव जो फट सकते हैं",
+        "गंभीर मामलों में पत्तियों का पीला पड़ना और झड़ना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "कॉपर हायड्रॉक्साइड किंवा मँकोझेबचे फवारणी",
+        "तीव्र संसर्गासाठी स्ट्रेप्टोमायसिन किंवा ऑक्सीटेट्रासायक्लिन"
+      ],
+      "description": "जीवाणूजन्य रोग जो उबदार, ओल्या हवामानात सामान्य आहे, जो पाने आणि फळांवर डाग तयार करतो.",
+      "name": "भोपळी मिरचीचा जीवाणूजन्य डाग रोग",
+      "organic_control": [
+        "रोगमुक्त बी आणि रोपे वापरा",
+        "हंगामाच्या सुरुवातीला तांब्यावर आधारित जीवाणुनाशकांचा वापर करा",
+        "वायुसंचारासाठी रोपांमध्ये योग्य अंतर ठेवा"
+      ],
+      "prevention": [
+        "नॉन-सोलानेसियस पिकांसह 3-वर्षीय पीक फेरफार करा",
+        "वरून पाणी देणे टाळा",
+        "कापणीनंतर पिकाचे अवशेष काढून टाका आणि नष्ट करा"
+      ],
+      "symptoms": [
+        "पिवळ्या कडा असलेल्या पानांवर लहान, पाण्याने भरलेले डाग",
+        "फळांवर उंचावलेले, खरबरीत घाव जे फुटू शकतात",
+        "गंभीर प्रकरणांमध्ये पाने पिवळी होणे आणि गळणे"
+      ]
+    }
+  },
+  "Pepper,_bell___healthy": {
+    "en": {
+      "chemical_control": [
+        "No chemical treatment needed for healthy plants",
+        "Monitor regularly for early signs of pests or disease"
+      ],
+      "description": "Healthy bell pepper plant with no visible signs of disease or stress, showing vigorous growth and fruit production.",
+      "name": "Healthy Bell Pepper Plant",
+      "organic_control": [
+        "Maintain proper soil health with organic matter",
+        "Use compost tea to boost natural defenses",
+        "Practice regular pruning for air circulation"
+      ],
+      "prevention": [
+        "Plant in well-draining soil with full sun exposure",
+        "Maintain consistent watering schedule",
+        "Apply balanced organic fertilizer during growing season"
+      ],
+      "symptoms": [
+        "Deep green, turgid leaves with no spots or discoloration",
+        "Strong, upright plant structure",
+        "Abundant flower and fruit set during appropriate seasons"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रसायनिक उपचार की आवश्यकता नहीं",
+        "कीट या रोग के शुरुआती लक्षणों के लिए नियमित निगरानी करें"
+      ],
+      "description": "स्वस्थ शिमला मिर्च का पौधा जिसमें किसी प्रकार के रोग या तनाव के कोई लक्षण नहीं दिखाई देते, जो सशक्त वृद्धि और फल उत्पादन दिखा रहा है।",
+      "name": "स्वस्थ शिमला मिर्च का पौधा",
+      "organic_control": [
+        "कार्बनिक पदार्थों के साथ मिट्टी का उचित स्वास्थ्य बनाए रखें",
+        "प्राकृतिक सुरक्षा बढ़ाने के लिए कंपोस्ट टी का उपयोग करें",
+        "हवा के प्रवाह के लिए नियमित छंटाई करें"
+      ],
+      "prevention": [
+        "पूर्ण धूप वाली अच्छी जल निकासी वाली मिट्टी में लगाएं",
+        "नियमित जलसिंचन कार्यक्रम बनाए रखें",
+        "बढ़ते मौसम के दौरान संतुलित जैविक उर्वरक डालें"
+      ],
+      "symptoms": [
+        "गहरे हरे, तने हुए पत्ते बिना किसी धब्बे या रंग बदलाव के",
+        "मजबूत, सीधा पौधा ढांचा",
+        "उपयुक्त मौसम में प्रचुर मात्रा में फूल और फल लगना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "किडे किंवा रोगांची लवकर लक्षणे दिसल्यास नियमितपणे तपासा"
+      ],
+      "description": "निरोगी भोपळी मिरचीचे झाड ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत, जे जोमदार वाढ आणि फलन दर्शवते.",
+      "name": "निरोगी भोपळी मिरचीचे झाड",
+      "organic_control": [
+        "सेंद्रिय पदार्थांसह मातीचे योग्य आरोग्य राखा",
+        "नैसर्गिक संरक्षण वाढवण्यासाठी कंपोस्ट चहा वापरा",
+        "वायुसंचारासाठी नियमित छाटणी करा"
+      ],
+      "prevention": [
+        "पूर्ण सूर्यप्रकाश मिळेल अशा चांगल्या जलनिचरा असलेल्या जागी लावा",
+        "सातत्यपूर्ण पाण्याचे शेड्यूल राखा",
+        "वाढीच्या हंगामात संतुलित सेंद्रीय खत वापरा"
+      ],
+      "symptoms": [
+        "खोल हिरव्या, ताठ पाने कोणत्याही डाग किंवा रंग बदलाशिवाय",
+        "मजबूत, सरळ वनस्पती रचना",
+        "योग्य ऋतूत मुबलक फुले आणि फळे येणे"
+      ]
+    }
+  },
+  "Potato___Early_blight": {
+    "en": {
+      "chemical_control": [
+        "Chlorothalonil or mancozeb preventatively",
+        "Systemic fungicides like azoxystrobin when disease appears"
+      ],
+      "description": "Fungal disease causing target-like lesions on leaves and stems, leading to defoliation and reduced tuber yield.",
+      "name": "Early Blight of Potato",
+      "organic_control": [
+        "Apply compost tea or biofungicides containing Bacillus subtilis",
+        "Use resistant varieties when available",
+        "Remove and destroy infected plant debris"
+      ],
+      "prevention": [
+        "Practice 3-year crop rotation with non-solanaceous crops",
+        "Ensure proper plant spacing for good air circulation",
+        "Avoid overhead irrigation"
+      ],
+      "symptoms": [
+        "Brown, target-like spots with concentric rings on leaves",
+        "Yellow halos around lesions",
+        "Premature defoliation starting from lower leaves"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "रोकथाम के लिए क्लोरोथेलोनिल या मैंकोज़ेब",
+        "रोग दिखाई देने पर एज़ोक्सीस्ट्रोबिन जैसे सिस्टेमिक फंगीसाइड"
+      ],
+      "description": "फफूंदी जनित रोग जो पत्तियों और तनों पर निशाने जैसे घाव पैदा करता है, जिससे पत्तियाँ गिर जाती हैं और कंद की पैदावार कम हो जाती है।",
+      "name": "आलू का अर्लाईट ब्लाइट",
+      "organic_control": [
+        "कंपोस्ट टी या बैसिलस सबटिलिस युक्त जैविक कवकनाशी लगाएं",
+        "उपलब्ध होने पर प्रतिरोधी किस्मों का उपयोग करें",
+        "संक्रमित पौधों के अवशेषों को हटाकर नष्ट कर दें"
+      ],
+      "prevention": [
+        "गैर-सोलानेसियस फसलों के साथ 3-वर्षीय फसल चक्र अपनाएं",
+        "अच्छे वायु संचार के लिए पौधों के बीच उचित दूरी रखें",
+        "ऊपर से सिंचाई करने से बचें"
+      ],
+      "symptoms": [
+        "पत्तियों पर भूरे रंग के निशाने जैसे धब्बे जिनमें एक केन्द्रित वलय होते हैं",
+        "घावों के चारों ओर पीले घेरे",
+        "निचली पत्तियों से शुरू होकर समय से पहले पत्तियों का गिरना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "प्रतिबंधात्मकपणे क्लोरोथॅलोनिल किंवा मँकोझेब",
+        "रोग दिसल्यावर अझोक्सिस्ट्रोबिन सारखे प्रणालीगत फंगिसायड"
+      ],
+      "description": "बुरशीजन्य रोग जो पाने आणि देठांवर टार्गेटसारखे घाव तयार करतो, ज्यामुळे पानगळ होते आणि कंदांचे उत्पादन कमी होते.",
+      "name": "बटाट्याचा अर्ली ब्लाइट",
+      "organic_control": [
+        "कंपोस्ट चहा किंवा बॅसिलस सबटिलिस असलेले जैविक फंगिसायड वापरा",
+        "शक्य असल्यास प्रतिरोधक जाती वापरा",
+        "संक्रमित वनस्पतींचे अवशेष काढून टाका आणि नष्ट करा"
+      ],
+      "prevention": [
+        "नॉन-सोलानेसियस पिकांसह 3-वर्षीय पीक फेरफार करा",
+        "चांगल्या वायुवीजनासाठी वनस्पतींमध्ये योग्य अंतर ठेवा",
+        "वरून पाणी देणे टाळा"
+      ],
+      "symptoms": [
+        "पानांवर तपकिरी, टार्गेटसारखे डाग जे एककेंद्रित वर्तुळे दाखवतात",
+        "घावांभोवती पिवळे घेरे",
+        "खालच्या पानांपासून सुरू होणारी अकाली पानगळ"
+      ]
+    }
+  },
+  "Potato___Late_blight": {
+    "en": {
+      "chemical_control": [
+        "Chlorothalonil or mancozeb before infection",
+        "Systemic fungicides like metalaxyl or cymoxanil after infection"
+      ],
+      "description": "Devastating fungal disease causing rapid plant collapse, responsible for the Irish Potato Famine. Thrives in cool, wet conditions.",
+      "name": "Late Blight of Potato",
+      "organic_control": [
+        "Apply copper-based fungicides preventatively",
+        "Use resistant varieties when available",
+        "Remove and destroy infected plants immediately"
+      ],
+      "prevention": [
+        "Plant certified disease-free seed potatoes",
+        "Avoid overhead irrigation",
+        "Destroy volunteer potato plants and nightshade weeds"
+      ],
+      "symptoms": [
+        "Water-soaked, pale green to brown lesions on leaves with white fungal growth",
+        "Dark brown to black lesions on stems and petioles",
+        "Rapid browning and rotting of foliage"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "संक्रमण से पहले क्लोरोथेलोनिल या मैंकोज़ेब",
+        "संक्रमण के बाद मेटालैक्सिल या साइमोक्सानिल जैसे सिस्टेमिक फंगीसाइड"
+      ],
+      "description": "विनाशकारी फफूंदी जनित रोग जो पौधों को तेजी से नष्ट कर देता है, आयरिश आलू अकाल के लिए जिम्मेदार था। ठंडे, नम वातावरण में फलता-फूलता है।",
+      "name": "आलू का लेट ब्लाइट",
+      "organic_control": [
+        "रोकथाम के तौर पर तांबे पर आधारित कवकनाशी लगाएं",
+        "उपलब्ध होने पर प्रतिरोधी किस्मों का उपयोग करें",
+        "संक्रमित पौधों को तुरंत हटाकर नष्ट कर दें"
+      ],
+      "prevention": [
+        "प्रमाणित रोगमुक्त बीज आलू लगाएं",
+        "ऊपर से सिंचाई करने से बचें",
+        "स्वेच्छा से उग आए आलू के पौधों और बैंगन परिवार के खरपतवारों को नष्ट कर दें"
+      ],
+      "symptoms": [
+        "पत्तियों पर पानी से भीगे, हल्के हरे से भूरे रंग के घाव जिन पर सफेद फफूंद दिखाई देती है",
+        "तनों और डंठलों पर गहरे भूरे से काले रंग के घाव",
+        "पत्तियों का तेजी से भूरा पड़ना और सड़ना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "संसर्गापूर्वी क्लोरोथॅलोनिल किंवा मँकोझेब",
+        "संसर्ग झाल्यानंतर मेटॅलॅक्सिल किंवा सिमोक्सॅनिल सारखे प्रणालीगत फंगिसायड"
+      ],
+      "description": "विनाशकारी बुरशीजन्य रोग जो वनस्पतींचा झपाट्याने नाश करतो, आयरिश बटाटा दुष्काळासाठी जबाबदार होता. थंड, ओल्या हवामानात वाढतो.",
+      "name": "बटाट्याचा लेट ब्लाइट",
+      "organic_control": [
+        "प्रतिबंधात्मकपणे तांब्यावर आधारित फंगिसायड्स लावा",
+        "शक्य असल्यास प्रतिरोधक जाती वापरा",
+        "संक्रमित वनस्पतींना लगेच काढून टाका आणि नष्ट करा"
+      ],
+      "prevention": [
+        "प्रमाणित रोगमुक्त बियाणू बटाटे लावा",
+        "वरून पाणी देणे टाळा",
+        "स्वेच्छेने उगवलेल्या टोमॅट्याच्या रोपांचा आणि धोतरांच्या तणांचा नाश करा"
+      ],
+      "symptoms": [
+        "पानांवर पाण्याने भिजलेले, फिकट हिरवे ते तपकिरी घाव ज्यावर पांढरी बुरशी दिसते",
+        "खोडांवर आणि देठांवर गडद तपकिरी ते काळे घाव",
+        "पाल्यांचा झपाट्याने तपकिरी होणे आणि कुजणे"
+      ]
+    }
+  },
+  "Potato___healthy": {
+    "en": {
+      "chemical_control": [
+        "No chemical treatment needed for healthy plants",
+        "Use preventive fungicides if disease pressure is high"
+      ],
+      "description": "Healthy potato plant with no visible signs of disease or stress.",
+      "name": "Healthy Potato",
+      "organic_control": [
+        "Practice crop rotation",
+        "Use certified disease-free seed potatoes",
+        "Maintain proper soil fertility"
+      ],
+      "prevention": [
+        "Plant in well-drained soil",
+        "Avoid overhead irrigation",
+        "Remove and destroy infected plant debris"
+      ],
+      "symptoms": [
+        "Vibrant green leaves with no spots or discoloration",
+        "Strong, upright stems",
+        "Well-developed tubers"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक उपचार की आवश्यकता नहीं है",
+        "यदि रोग का दबाव अधिक हो तो निवारक कवकनाशी का उपयोग करें"
+      ],
+      "description": "स्वस्थ आलू का पौधा जिसमें किसी प्रकार के रोग या तनाव के कोई लक्षण दिखाई नहीं देते।",
+      "name": "स्वस्थ आलू",
+      "organic_control": [
+        "फसल चक्रण का अभ्यास करें",
+        "प्रमाणित रोगमुक्त बीज आलू का उपयोग करें",
+        "मिट्टी की उर्वरता बनाए रखें"
+      ],
+      "prevention": [
+        "अच्छी जल निकासी वाली मिट्टी में लगाएं",
+        "ऊपर से सिंचाई से बचें",
+        "संक्रमित पौधों के अवशेषों को हटा दें और नष्ट कर दें"
+      ],
+      "symptoms": [
+        "किसी भी धब्बे या रंग परिवर्तन के बिना जीवंत हरी पत्तियाँ",
+        "मजबूत, सीधे तने",
+        "अच्छी तरह से विकसित कंद"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "जर रोगाचा ताण जास्त असेल तर निवारक कवकनाशकांचा वापर करा"
+      ],
+      "description": "निरोगी बटाट्याचे झाड ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "name": "निरोगी बटाटा",
+      "organic_control": [
+        "पीक फेरबदलाचा सराव करा",
+        "प्रमाणित रोगमुक्त बियाणू बटाटे वापरा",
+        "योग्य मातीची सुपीकता राखा"
+      ],
+      "prevention": [
+        "चांगल्या जलनिकाशी असलेल्या जमिनीत लावा",
+        "वरून पाणी देणे टाळा",
+        "संसर्गित वनस्पतींचा कचरा काढून टाका आणि नष्ट करा"
+      ],
+      "symptoms": [
+        "डाग किंवा रंग बदलाशिवाय चैतन्यमय हिरवी पाने",
+        "मजबूत, सरळ देठ",
+        "चांगले विकसित कंद"
+      ]
+    }
+  },
+  "Raspberry___healthy": {
+    "en": {
+      "chemical_control": [
+        "No chemical treatment needed for healthy plants",
+        "Use preventive fungicides if disease pressure is high"
+      ],
+      "description": "Healthy raspberry plant with no visible signs of disease or stress.",
+      "name": "Healthy Raspberry",
+      "organic_control": [
+        "Maintain good air circulation",
+        "Remove and destroy old fruiting canes after harvest",
+        "Use organic mulch to suppress weeds"
+      ],
+      "prevention": [
+        "Plant in well-drained soil with full sun",
+        "Keep the area around plants weed-free",
+        "Water at the base to keep foliage dry"
+      ],
+      "symptoms": [
+        "Vibrant green leaves with no spots or discoloration",
+        "Firm, plump berries",
+        "Strong, upright canes"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक उपचार की आवश्यकता नहीं है",
+        "यदि रोग का दबाव अधिक हो तो निवारक कवकनाशी का उपयोग करें"
+      ],
+      "description": "स्वस्थ रास्पबेरी का पौधा जिसमें किसी प्रकार के रोग या तनाव के कोई लक्षण दिखाई नहीं देते।",
+      "name": "स्वस्थ रास्पबेरी",
+      "organic_control": [
+        "हवा के अच्छे संचार को बनाए रखें",
+        "फसल कटाई के बाद पुराने फलदार तनों को हटा दें और नष्ट कर दें",
+        "खरपतवार को रोकने के लिए जैविक मल्च का उपयोग करें"
+      ],
+      "prevention": [
+        "अच्छी जल निकासी वाली मिट्टी में और पूरी धूप में लगाएं",
+        "पौधों के आसपास का क्षेत्र खरपतवार मुक्त रखें",
+        "पत्तियों को सूखा रखने के लिए जड़ के पास पानी दें"
+      ],
+      "symptoms": [
+        "किसी भी धब्बे या रंग परिवर्तन के बिना जीवंत हरी पत्तियाँ",
+        "मजबूत, रसीले बेर",
+        "मजबूत, सीधे तने"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "जर रोगाचा ताण जास्त असेल तर निवारक कवकनाशकांचा वापर करा"
+      ],
+      "description": "निरोगी रास्पबेरीचे झुडूप ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "name": "निरोगी रास्पबेरी",
+      "organic_control": [
+        "हवेची चांगली वाहतूक राखा",
+        "काढणीनंतर जुन्या फळझाडाच्या काड्या काढून टाका आणि नष्ट करा",
+        "तणांवर नियंत्रण ठेवण्यासाठी जैविक मल्च वापरा"
+      ],
+      "prevention": [
+        "चांगल्या जलनिकाशी असलेल्या जमिनीत आणि पूर्ण उन्हात लावा",
+        "झुडूपाभोवतीचे क्षेत्र तणमुक्त ठेवा",
+        "पाने कोरडी ठेवण्यासाठी मुळाशी पाणी द्या"
+      ],
+      "symptoms": [
+        "डाग किंवा रंग बदलाशिवाय चैतन्यमय हिरवी पाने",
+        "घट्ट, गोड रसभरी",
+        "मजबूत, सरळ कळ्या"
+      ]
+    }
+  },
+  "Soybean___healthy": {
+    "en": {
+      "chemical_control": [
+        "No chemical treatment needed for healthy plants",
+        "Use seed treatment if disease pressure is high"
+      ],
+      "description": "Healthy soybean plant with no visible signs of disease or stress.",
+      "name": "Healthy Soybean",
+      "organic_control": [
+        "Practice crop rotation",
+        "Use disease-free seeds",
+        "Maintain proper soil fertility"
+      ],
+      "prevention": [
+        "Plant in well-drained soil",
+        "Avoid planting in cool, wet soil",
+        "Monitor regularly for early signs of disease"
+      ],
+      "symptoms": [
+        "Vibrant green leaves with no spots or discoloration",
+        "Well-developed pods",
+        "Strong, upright stems"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रासायनिक उपचार की आवश्यकता नहीं है",
+        "यदि रोग का दबाव अधिक हो तो बीजोपचार का उपयोग करें"
+      ],
+      "description": "स्वस्थ सोयाबीन का पौधा जिसमें किसी प्रकार के रोग या तनाव के कोई लक्षण दिखाई नहीं देते।",
+      "name": "स्वस्थ सोयाबीन",
+      "organic_control": [
+        "फसल चक्रण का अभ्यास करें",
+        "रोगमुक्त बीजों का उपयोग करें",
+        "मिट्टी की उर्वरता बनाए रखें"
+      ],
+      "prevention": [
+        "अच्छी जल निकासी वाली मिट्टी में लगाएं",
+        "ठंडी, गीली मिट्टी में रोपण से बचें",
+        "रोग के प्रारंभिक लक्षणों के लिए नियमित रूप से निगरानी करें"
+      ],
+      "symptoms": [
+        "किसी भी धब्बे या रंग परिवर्तन के बिना जीवंत हरी पत्तियाँ",
+        "अच्छी तरह से विकसित फलियाँ",
+        "मजबूत, सीधे तने"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "जर रोगाचा ताण जास्त असेल तर बियाण्यावर उपचार करा"
+      ],
+      "description": "निरोगी सोयाबीनचे झाड ज्यावर कोणत्याही प्रकारच्या रोगाची किंवा ताणाची लक्षणे दिसत नाहीत.",
+      "name": "निरोगी सोयाबीन",
+      "organic_control": [
+        "पीक फेरबदलाचा सराव करा",
+        "रोगमुक्त बियाणे वापरा",
+        "योग्य मातीची सुपीकता राखा"
+      ],
+      "prevention": [
+        "चांगल्या जलनिकाशी असलेल्या जमिनीत लावा",
+        "थंड, ओलसर जमिनीत लागवड टाळा",
+        "रोगाची लवकर लक्षणे ओळखण्यासाठी नियमित निरीक्षण करा"
+      ],
+      "symptoms": [
+        "डाग किंवा रंग बदलाशिवाय चैतन्यमय हिरवी पाने",
+        "चांगले विकसित शेंगा",
+        "मजबूत, सरळ देठ"
+      ]
+    }
+  },
+  "Squash___Powdery_mildew": {
+    "en": {
+      "chemical_control": [
+        "Apply myclobutanil or propiconazole-based fungicides",
+        "Start treatment at first sign of disease",
+        "Rotate fungicides to prevent resistance"
+      ],
+      "description": "Fungal disease that appears as white powdery spots on leaves and stems, common in warm, dry conditions.",
+      "name": "Powdery Mildew of Squash",
+      "organic_control": [
+        "Apply sulfur or potassium bicarbonate sprays",
+        "Use milk spray (1 part milk to 9 parts water)",
+        "Remove and destroy infected plant parts"
+      ],
+      "prevention": [
+        "Plant resistant varieties when available",
+        "Ensure good air circulation around plants",
+        "Avoid overhead watering"
+      ],
+      "symptoms": [
+        "White, powdery fungal growth on upper leaf surfaces",
+        "Yellowing and browning of affected leaves",
+        "Premature leaf drop"
+      ]
+    },
+    "hi": {
+      "chemical_control": [
+        "मायक्लोब्युटानिल या प्रोपिकोनाजोल आधारित कवकनाशक लगाएं",
+        "रोग के पहले लक्षण दिखते ही उपचार शुरू कर दें",
+        "प्रतिरोधकता को रोकने के लिए कवकनाशकों को बारी-बारी से इस्तेमाल करें"
+      ],
+      "description": "कवक जनित रोग जो पत्तियों और तनों पर सफेद पाउडर जैसे धब्बों के रूप में दिखाई देता है, गर्म, शुष्क परिस्थितियों में आम है।",
+      "name": "स्क्वैश का पाउडरी मिल्ड्यू",
+      "organic_control": [
+        "सल्फर या पोटेशियम बाइकार्बोनेट का छिड़काव करें",
+        "दूध का घोल (1 भाग दूध और 9 भाग पानी) का छिड़काव करें",
+        "संक्रमित पौधों के हिस्सों को हटा दें और नष्ट कर दें"
+      ],
+      "prevention": [
+        "जब उपलब्ध हो तो प्रतिरोधी किस्में लगाएं",
+        "पौधों के आसपास हवा का अच्छा संचार सुनिश्चित करें",
+        "ऊपर से पानी देने से बचें"
+      ],
+      "symptoms": [
+        "पत्तियों की ऊपरी सतह पर सफेद, पाउडर जैसी कवकीय वृद्धि",
+        "प्रभावित पत्तियों का पीला पड़ना और भूरा होना",
+        "पत्तियों का समय से पहले झड़ना"
+      ]
+    },
+    "mr": {
+      "chemical_control": [
+        "मायक्लोब्युटानिल किंवा प्रोपिकोनाजोल-आधारित कवकनाशकांचा वापर करा",
+        "रोगाची पहिली लक्षणे दिसताच उपचार सुरू करा",
+        "प्रतिकारकता टाळण्यासाठी कवकनाशके फिरवा"
+      ],
+      "description": "बुरशीजन्य रोग जो पाने आणि देठांवर पांढऱ्या पावडरसारख्या डागांसारखा दिसतो, उबदार, कोरड्या हवामानात सामान्य.",
+      "name": "स्क्वॅशचा पावडरी मिल्ड्यू",
+      "organic_control": [
+        "गंधक किंवा पोटॅशियम बायकार्बोनेटचे फवारणी वापरा",
+        "दुधाचे फवारणी वापरा (1 भाग दूध आणि 9 भाग पाणी)",
+        "संसर्गित वनस्पतींचे भाग काढून टाका आणि नष्ट करा"
+      ],
+      "prevention": [
+        "शक्य असल्यास प्रतिरोधक जाती लावा",
+        "वनस्पतींभोवती हवेची चांगली वाहतूक सुनिश्चित करा",
+        "वरून पाणी देणे टाळा"
+      ],
+      "symptoms": [
+        "पानांच्या वरच्या पृष्ठभागावर पांढरी, पावडरसारखी बुरशीची वाढ",
+        "संसर्गित पानांचे पिवळे आणि तपकिरी होणे",
+        "पानांची अकाली गळ"
+      ]
+    }
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "en": {
+      "name": "Corn (maize) - Cercospora Leaf Spot / Gray Leaf Spot",
+      "description": "Fungal disease affecting corn leaves, causing rectangular, tan to brown lesions with yellow halos.",
+      "symptoms": [
+        "Small, tan to brown spots with yellow halos on leaves",
+        "Lesions become rectangular and brown with gray centers",
+        "Leaves may wither and die in severe cases"
+      ],
+      "organic_control": [
+        "Use resistant corn varieties when available",
+        "Practice crop rotation with non-host crops",
+        "Remove and destroy infected plant debris after harvest"
+      ],
+      "chemical_control": [
+        "Apply fungicides containing chlorothalonil or mancozeb",
+        "Begin applications at first sign of disease",
+        "Follow label instructions for application rates and intervals"
+      ],
+      "prevention": [
+        "Plant disease-free seed",
+        "Space plants adequately for good air circulation",
+        "Avoid overhead irrigation"
+      ]
+    },
+    "hi": {
+      "name": "मक्का - सेरकोस्पोरा पत्ती धब्बा / ग्रे लीफ स्पॉट",
+      "description": "कवक रोग जो मक्के की पत्तियों को प्रभावित करता है, जिससे पीले घेरे वाले आयताकार, भूरे रंग के घाव हो जाते हैं।",
+      "symptoms": [
+        "पत्तियों पर पीले घेरे वाले छोटे, भूरे धब्बे",
+        "घाव आयताकार होकर भूरे रंग के हो जाते हैं जिनके बीच में ग्रे रंग होता है",
+        "गंभीर मामलों में पत्तियाँ मुरझा सकती हैं और मर सकती हैं"
+      ],
+      "organic_control": [
+        "जब उपलब्ध हो तो प्रतिरोधी किस्में लगाएं",
+        "गैर-मेजबान फसलों के साथ फसल चक्रण अपनाएं",
+        "फसल कटाई के बाद संक्रमित पौधे के अवशेषों को हटाकर नष्ट कर दें"
+      ],
+      "chemical_control": [
+        "क्लोरोथैलोनिल या मैंकोज़ेब युक्त कवकनाशकों का छिड़काव करें",
+        "रोग के पहले लक्षण दिखते ही उपचार शुरू कर दें",
+        "आवेदन दरों और अंतराल के लिए लेबल निर्देशों का पालन करें"
+      ],
+      "prevention": [
+        "रोगमुक्त बीज लगाएं",
+        "हवा के अच्छे संचार के लिए पौधों के बीच पर्याप्त दूरी रखें",
+        "ऊपर से पानी देने से बचें"
+      ]
+    },
+    "mr": {
+      "name": "मका - सर्कोस्पोरा पानाचा डाग / करड्या पानांचा डाग",
+      "description": "बुरशीजन्य रोग जो मक्याच्या पानांना प्रभावित करतो, ज्यामुळे पिवळ्या कडांसह आयताकृती, तपकिरी रंगाचे घाव तयार होतात.",
+      "symptoms": [
+        "पानांवर पिवळ्या कडांसह लहान, तपकिरी रंगाचे ठिपके",
+        "घाव आयताकृती होतात आणि मध्यभागी करड्या रंगाचे होतात",
+        "गंभीर प्रकरणांमध्ये पाने कोमेजू शकतात आणि मरू शकतात"
+      ],
+      "organic_control": [
+        "उपलब्ध असल्यास प्रतिरोधक जाती वापरा",
+        "अवांछित पिकांसोबत पीक फेरफार करा",
+        "कापणीनंतर संसर्गित वनस्पतींचे अवशेष काढून टाका आणि नष्ट करा"
+      ],
+      "chemical_control": [
+        "क्लोरोथॅलोनील किंवा मॅन्कोझेब असलेले फंगीसायड वापरा",
+        "रोगाची पहिली लक्षणे दिसल्यावर उपचार सुरू करा",
+        "अर्ज दर आणि मध्यांतरासाठी लेबल सूचनांचे अनुसरण करा"
+      ],
+      "prevention": [
+        "रोगमुक्त बियाणे लावा",
+        "चांगल्या हवामानासाठी झाडांमध्ये योग्य अंतर ठेवा",
+        "वरून पाणी देणे टाळा"
+      ]
+    }
+  },
+  "Strawberry___Leaf_scorch": {
+    "en": {
+      "name": "Strawberry Leaf Scorch",
+      "description": "Fungal disease causing purple to brown leaf spots that can lead to leaf scorch and defoliation.",
+      "symptoms": [
+        "Small purple spots on upper leaf surfaces",
+        "Spots enlarge and turn brown or gray in the center",
+        "Severe infections cause leaves to curl and die"
+      ],
+      "organic_control": [
+        "Remove and destroy infected leaves and plants",
+        "Improve air circulation by proper plant spacing",
+        "Use drip irrigation to keep foliage dry"
+      ],
+      "chemical_control": [
+        "Apply fungicides containing myclobutanil or azoxystrobin",
+        "Begin applications at first sign of disease",
+        "Rotate fungicide classes to prevent resistance"
+      ],
+      "prevention": [
+        "Plant disease-free runners",
+        "Remove old leaves after harvest",
+        "Avoid overhead irrigation"
+      ]
+    },
+    "hi": {
+      "name": "स्ट्रॉबेरी पत्ती झुलसा",
+      "description": "कवक रोग जो बैंगनी से भूरे रंग के पत्ते के धब्बे पैदा करता है जिससे पत्तियाँ झुलस सकती हैं और गिर सकती हैं।",
+      "symptoms": [
+        "पत्तियों की ऊपरी सतह पर छोटे बैंगनी धब्बे",
+        "धब्बे बढ़कर भूरे या भूरे रंग के हो जाते हैं",
+        "गंभीर संक्रमण से पत्तियाँ मुड़ जाती हैं और मर जाती हैं"
+      ],
+      "organic_control": [
+        "संक्रमित पत्तियों और पौधों को हटाकर नष्ट कर दें",
+        "पौधों के बीच उचित दूरी रखकर हवा का संचार बेहतर बनाएं",
+        "पत्तियों को सूखा रखने के लिए ड्रिप सिंचाई का उपयोग करें"
+      ],
+      "chemical_control": [
+        "मायक्लोब्युटानिल या एजोक्सीस्ट्रोबिन युक्त कवकनाशक लगाएं",
+        "रोग के पहले लक्षण दिखते ही उपचार शुरू कर दें",
+        "प्रतिरोधकता को रोकने के लिए कवकनाशकों को बदल-बदल कर इस्तेमाल करें"
+      ],
+      "prevention": [
+        "रोगमुक्त पौधे लगाएं",
+        "फसल कटाई के बाद पुरानी पत्तियों को हटा दें",
+        "ऊपर से पानी देने से बचें"
+      ]
+    },
+    "mr": {
+      "name": "स्ट्रॉबेरी पानांचा झटका",
+      "description": "बुरशीजन्य रोग ज्यामुळे जांभळ्या ते तपकिरी रंगाचे पानांचे डाग तयार होतात ज्यामुळे पाने कोरडी होऊ शकतात आणि गळून पडू शकतात.",
+      "symptoms": [
+        "पानांच्या वरच्या पृष्ठभागावर लहान जांभळे डाग",
+        "डाग मोठे होतात आणि मध्यभागी तपकिरी किंवा करडे होतात",
+        "तीव्र संसर्गामुळे पाने वाकतात आणि मरतात"
+      ],
+      "organic_control": [
+        "संसर्गित पाने आणि वनस्पती काढून टाका आणि नष्ट करा",
+        "योग्य अंतर ठेवून हवेचे प्रवाह सुधारा",
+        "पाने कोरडी ठेवण्यासाठी ड्रिप वॉटरिंग वापरा"
+      ],
+      "chemical_control": [
+        "मायक्लोबुटानिल किंवा अझॉक्सिस्ट्रोबिन असलेले फंगीसायड वापरा",
+        "रोगाची पहिली लक्षणे दिसल्यावर उपचार सुरू करा",
+        "प्रतिकार टाळण्यासाठी फंगीसायडच्या वेगवेगळ्या प्रकारांचा वापर करा"
+      ],
+      "prevention": [
+        "रोगमुक्त रनर्स लावा",
+        "कापणीनंतर जुनी पाने काढून टाका",
+        "वरून पाणी देणे टाळा"
+      ]
+    }
+  },
+  "Strawberry___healthy": {
+    "en": {
+      "name": "Healthy Strawberry",
+      "description": "Healthy strawberry plant with no signs of disease or stress.",
+      "symptoms": [
+        "Vibrant green leaves without spots or discoloration",
+        "Firm, well-formed berries",
+        "Strong root system"
+      ],
+      "organic_control": [
+        "Maintain proper plant spacing for air circulation",
+        "Use organic mulch to regulate soil temperature and moisture",
+        "Practice crop rotation"
+      ],
+      "chemical_control": [
+        "No chemical treatment needed for healthy plants",
+        "Monitor regularly for early signs of disease or pests"
+      ],
+      "prevention": [
+        "Plant disease-resistant varieties",
+        "Water at the base to keep foliage dry",
+        "Remove weeds that can harbor pests"
+      ]
+    },
+    "hi": {
+      "name": "स्वस्थ स्ट्रॉबेरी",
+      "description": "स्वस्थ स्ट्रॉबेरी का पौधा जिसमें किसी प्रकार के रोग या तनाव के कोई लक्षण नहीं हैं।",
+      "symptoms": [
+        "बिना किसी धब्बे या रंग बदलाव के जीवंत हरी पत्तियाँ",
+        "मजबूत, अच्छी तरह से बने फल",
+        "मजबूत जड़ प्रणाली"
+      ],
+      "organic_control": [
+        "हवा के संचार के लिए पौधों के बीच उचित दूरी बनाए रखें",
+        "मिट्टी के तापमान और नमी को नियंत्रित करने के लिए जैविक मल्च का उपयोग करें",
+        "फसल चक्रण का अभ्यास करें"
+      ],
+      "chemical_control": [
+        "स्वस्थ पौधों के लिए किसी रसायनिक उपचार की आवश्यकता नहीं है",
+        "रोग या कीटों के शुरुआती लक्षणों के लिए नियमित रूप से निगरानी करें"
+      ],
+      "prevention": [
+        "रोग प्रतिरोधी किस्में लगाएं",
+        "पत्तियों को सूखा रखने के लिए जड़ के पास पानी दें",
+        "खरपतवार को हटा दें जो कीटों को आश्रय दे सकते हैं"
+      ]
+    },
+    "mr": {
+      "name": "निरोगी स्ट्रॉबेरी",
+      "description": "निरोगी स्ट्रॉबेरीचे झाड ज्यामध्ये रोग किंवा तणावाची कोणतीही लक्षणे नाहीत.",
+      "symptoms": [
+        "डाग किंवा रंग बदल नसलेली जीवंत हिरवी पाने",
+        "घट्ट, चांगले तयार केलेले फळे",
+        "मजबूत मुळे"
+      ],
+      "organic_control": [
+        "हवेच्या वाहतुकीसाठी योग्य अंतर ठेवा",
+        "मातीचे तापमान आणि ओलावा नियंत्रित करण्यासाठी सेंद्रिय मल्च वापरा",
+        "पीक फेरफार करा"
+      ],
+      "chemical_control": [
+        "निरोगी वनस्पतींसाठी कोणत्याही रासायनिक उपचाराची आवश्यकता नाही",
+        "रोग किंवा कीटकांच्या सुरुवातीच्या लक्षणांसाठी नियमितपणे निरीक्षण करा"
+      ],
+      "prevention": [
+        "रोगप्रतिकारक जाती लावा",
+        "पाने कोरडी ठेवण्यासाठी मुळाशी पाणी द्या",
+        "कीटकांना आश्रय देऊ शकणारे तण काढून टाका"
+      ]
+    }
+  },
+  "Tomato___Bacterial_spot": {
+    "en": {
+      "name": "Tomato - Bacterial Spot",
+      "description": "Bacterial disease causing small, water-soaked spots on leaves, stems, and fruits.",
+      "symptoms": [
+        "Small, dark, water-soaked spots on leaves",
+        "Spots may have yellow halos and become raised or scabby",
+        "Fruit spots are raised, brown, and rough"
+      ],
+      "organic_control": [
+        "Use disease-free seeds and transplants",
+        "Apply copper-based bactericides",
+        "Remove and destroy infected plants"
+      ],
+      "chemical_control": [
+        "Copper-based bactericides as a preventive measure",
+        "Streptomycin or oxytetracycline sprays",
+        "Apply at first sign of disease and repeat as needed"
+      ],
+      "prevention": [
+        "Rotate crops with non-solanaceous plants",
+        "Avoid overhead irrigation",
+        "Sterilize tools between plants"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - बैक्टीरियल स्पॉट",
+      "description": "जीवाणु जनित रोग जो पत्तियों, तनों और फलों पर छोटे, पानी से लथपथ धब्बे पैदा करता है।",
+      "symptoms": [
+        "पत्तियों पर छोटे, काले, पानी से लथपथ धब्बे",
+        "धब्बों के चारों ओर पीला घेरा हो सकता है और वे उभरे हुए या खुरदरे हो सकते हैं",
+        "फलों पर उभरे हुए, भूरे और खुरदरे धब्बे"
+      ],
+      "organic_control": [
+        "रोगमुक्त बीज और पौधे का उपयोग करें",
+        "तांबे आधारित जीवाणुरोधी दवाओं का छिड़काव करें",
+        "संक्रमित पौधों को हटाकर नष्ट कर दें"
+      ],
+      "chemical_control": [
+        "निवारक उपाय के रूप में तांबे आधारित जीवाणुरोधी दवाएं",
+        "स्ट्रेप्टोमाइसिन या ऑक्सीटेट्रासाइक्लिन का छिड़काव",
+        "रोग के पहले लक्षण दिखते ही छिड़काव करें और आवश्यकतानुसार दोहराएं"
+      ],
+      "prevention": [
+        "गैर-सोलानेसी पौधों के साथ फसल चक्रण करें",
+        "ऊपर से पानी देने से बचें",
+        "पौधों के बीच उपकरणों को निष्फल करें"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - बॅक्टेरियल स्पॉट",
+      "description": "जीवाणूंमुळे होणारा रोग ज्यामुळे पान्याने भिजलेले लहान डाग पाने, देठ आणि फळांवर येतात.",
+      "symptoms": [
+        "पान्याने भिजलेले लहान, गडद डाग पानावर",
+        "डागांभोवती पिवळी कडा असू शकते आणि ते उंचावर किंवा खरबरीत होऊ शकतात",
+        "फळांवरील डाग उंचावर, तपकिरी आणि खरबरीत असतात"
+      ],
+      "organic_control": [
+        "रोगमुक्त बियाणे आणि रोपे वापरा",
+        "कॉपर-आधारित जीवाणुनाशके लावा",
+        "संसर्गित वनस्पती काढून टाका आणि नष्ट करा"
+      ],
+      "chemical_control": [
+        "प्रतिबंधात्मक उपाय म्हणून कॉपर-आधारित जीवाणुनाशके",
+        "स्ट्रेप्टोमायसिन किंवा ऑक्सिटेट्रासायक्लिन स्प्रे",
+        "रोगाची पहिली लक्षणे दिसल्यावर लावा आणि गरजेनुसार पुन्हा करा"
+      ],
+      "prevention": [
+        "नॉन-सोलानेसी वनस्पतींसह पिकांची फेरपालट करा",
+        "वरून पाणी देणे टाळा",
+        "वनस्पतींमध्ये साधने निर्जंतुक करा"
+      ]
+    }
+  },
+  "Tomato___Early_blight": {
+    "en": {
+      "name": "Tomato - Early Blight",
+      "description": "Fungal disease causing dark, concentric rings on leaves, stems, and fruits.",
+      "symptoms": [
+        "Dark brown spots with concentric rings on lower leaves",
+        "Yellowing and browning of leaves, progressing upward",
+        "Dark, sunken lesions on stems and fruits"
+      ],
+      "organic_control": [
+        "Apply compost tea or baking soda spray",
+        "Use copper or sulfur-based fungicides",
+        "Remove and destroy infected plant parts"
+      ],
+      "chemical_control": [
+        "Chlorothalonil or mancozeb fungicides",
+        "Apply at first sign of disease",
+        "Repeat every 7-14 days as needed"
+      ],
+      "prevention": [
+        "Use disease-resistant varieties",
+        "Space plants for good air circulation",
+        "Mulch to prevent soil splash"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - अर्ली ब्लाइट",
+      "description": "कवक जनित रोग जो पत्तियों, तनों और फलों पर गहरे रंग के संकेंद्रित छल्ले पैदा करता है।",
+      "symptoms": [
+        "निचली पत्तियों पर गहरे भूरे रंग के धब्बे जिनमें संकेंद्रित छल्ले होते हैं",
+        "पत्तियों का पीला पड़ना और भूरा होना, ऊपर की ओर बढ़ता हुआ",
+        "तनों और फलों पर काले, धंसे हुए घाव"
+      ],
+      "organic_control": [
+        "कंपोस्ट टी या बेकिंग सोडा का छिड़काव करें",
+        "तांबे या सल्फर आधारित कवकनाशकों का उपयोग करें",
+        "संक्रमित पौधों के भागों को हटाकर नष्ट कर दें"
+      ],
+      "chemical_control": [
+        "क्लोरोथैलोनिल या मैंकोज़ेब कवकनाशक",
+        "रोग के पहले लक्षण दिखते ही छिड़काव करें",
+        "आवश्यकतानुसार हर 7-14 दिन में दोहराएं"
+      ],
+      "prevention": [
+        "रोग प्रतिरोधी किस्में लगाएं",
+        "हवा के अच्छे संचार के लिए पौधों के बीच उचित दूरी रखें",
+        "मिट्टी के छींटों को रोकने के लिए मल्च लगाएं"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - अर्ली ब्लाइट",
+      "description": "बुरशीजन्य रोग ज्यामुळे पाने, देठ आणि फळांवर गडद, केंद्रस्थानी असलेले अनेक वर्तुळे तयार होतात.",
+      "symptoms": [
+        "खालच्या पानांवर गडद तपकिरी रंगाचे डाग ज्यात एकमेकांत गुंफलेली वर्तुळे असतात",
+        "पानांचा पिवळा आणि तपकिरी रंग होणे, वरच्या दिशेने पसरणारे",
+        "देठ आणि फळांवर गडद, खोलगट जखमा"
+      ],
+      "organic_control": [
+        "कंपोस्ट चहा किंवा बेकिंग सोडा स्प्रे लावा",
+        "कॉपर किंवा सल्फर-आधारित फंगीसायड वापरा",
+        "संसर्गित वनस्पतींचे भाग काढून टाका आणि नष्ट करा"
+      ],
+      "chemical_control": [
+        "क्लोरोथॅलोनील किंवा मॅन्कोझेब फंगीसायड",
+        "रोगाची पहिली लक्षणे दिसल्यावर लावा",
+        "गरजेनुसार दर 7-14 दिवसांनी पुन्हा करा"
+      ],
+      "prevention": [
+        "रोगप्रतिकारक जाती वापरा",
+        "चांगल्या हवामानासाठी वनस्पतींमध्ये योग्य अंतर ठेवा",
+        "मातीचे छिडवे रोखण्यासाठी मल्च वापरा"
+      ]
+    }
+  },
+  "Tomato___Late_blight": {
+    "en": {
+      "name": "Tomato - Late Blight",
+      "description": "Destructive fungal disease causing rapid plant collapse and fruit rot.",
+      "symptoms": [
+        "Irregular, water-soaked spots on leaves",
+        "White fungal growth on undersides of leaves in humid conditions",
+        "Dark, firm lesions on stems and fruits"
+      ],
+      "organic_control": [
+        "Apply copper-based fungicides",
+        "Use compost tea to boost plant immunity",
+        "Remove and destroy infected plants"
+      ],
+      "chemical_control": [
+        "Chlorothalonil or mancozeb as protectants",
+        "Systemic fungicides for active infections",
+        "Apply preventatively in wet weather"
+      ],
+      "prevention": [
+        "Plant resistant varieties",
+        "Space plants for good air flow",
+        "Avoid overhead watering"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - लेट ब्लाइट",
+      "description": "विनाशकारी कवक रोग जो पौधों के तेजी से नष्ट होने और फलों के सड़ने का कारण बनता है।",
+      "symptoms": [
+        "पत्तियों पर अनियमित, पानी से लथपथ धब्बे",
+        "नमी वाली स्थितियों में पत्तियों के निचले हिस्से पर सफेद कवक की वृद्धि",
+        "तनों और फलों पर काले, सख्त घाव"
+      ],
+      "organic_control": [
+        "तांबे आधारित कवकनाशकों का छिड़काव करें",
+        "पौधों की प्रतिरोधक क्षमता बढ़ाने के लिए कंपोस्ट टी का उपयोग करें",
+        "संक्रमित पौधों को हटाकर नष्ट कर दें"
+      ],
+      "chemical_control": [
+        "सुरक्षात्मक उपाय के रूप में क्लोरोथैलोनिल या मैंकोज़ेब",
+        "सक्रिय संक्रमण के लिए व्यवस्थित कवकनाशक",
+        "गीले मौसम में निवारक रूप से छिड़काव करें"
+      ],
+      "prevention": [
+        "प्रतिरोधी किस्में लगाएं",
+        "हवा के अच्छे प्रवाह के लिए पौधों के बीच उचित दूरी रखें",
+        "ऊपर से पानी देने से बचें"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - लेट ब्लाइट",
+      "description": "विध्वंसक बुरशीजन्य रोग जो वनस्पतींचा झपाट्याने नाश करतो आणि फळे कुजवतो.",
+      "symptoms": [
+        "पान्याने भिजलेले अनियमित डाग पानांवर",
+        "दमट हवामानात पानांच्या खालच्या बाजूला पांढरी बुरशीची वाढ",
+        "देठ आणि फळांवर गडद, कठीण जखमा"
+      ],
+      "organic_control": [
+        "कॉपर-आधारित फंगीसायड लावा",
+        "वनस्पतींची रोगप्रतिकारक शक्ती वाढवण्यासाठी कंपोस्ट चहा वापरा",
+        "संसर्गित वनस्पती काढून टाका आणि नष्ट करा"
+      ],
+      "chemical_control": [
+        "संरक्षक म्हणून क्लोरोथॅलोनील किंवा मॅन्कोझेब",
+        "सक्रिय संसर्गासाठी सिस्टेमिक फंगीसायड",
+        "ओल्या हवामानात प्रतिबंधात्मकपणे लावा"
+      ],
+      "prevention": [
+        "प्रतिकारक जाती लावा",
+        "चांगल्या वायुवीजनासाठी वनस्पतींमध्ये अंतर ठेवा",
+        "वरून पाणी देणे टाळा"
+      ]
+    }
+  },
+  "Tomato___Leaf_Mold": {
+    "en": {
+      "name": "Tomato - Leaf Mold",
+      "description": "Fungal disease causing yellow spots on leaves.",
+      "symptoms": [
+        "Yellow spots on upper leaf surfaces",
+        "Fuzzy mold underneath leaves",
+        "Leaf curling"
+      ],
+      "organic_control": [
+        "Improve air circulation",
+        "Water at base of plants"
+      ],
+      "chemical_control": [
+        "Copper-based fungicides"
+      ],
+      "prevention": [
+        "Use resistant varieties",
+        "Space plants properly"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - पत्ती फफूंदी",
+      "description": "पत्तियों पर पीले धब्बे पैदा करने वाला कवक रोग।",
+      "symptoms": [
+        "पत्तियों की ऊपरी सतह पर पीले धब्बे",
+        "पत्तियों के नीचे फजी फफूंदी",
+        "पत्तियों का मुड़ना"
+      ],
+      "organic_control": [
+        "हवा का संचार बेहतर बनाएं",
+        "पौधों के आधार पर पानी दें"
+      ],
+      "chemical_control": [
+        "तांबे आधारित कवकनाशक"
+      ],
+      "prevention": [
+        "प्रतिरोधी किस्मों का उपयोग करें",
+        "पौधों को उचित दूरी पर लगाएं"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - पानाची बुरशी",
+      "description": "पानांवर पिवळे डाग पाडणारा बुरशीजन्य आजार.",
+      "symptoms": [
+        "पानांच्या वरच्या पृष्ठभागावर पिवळे डाग",
+        "पानांच्या खालील बाजूस फुसफुशीत बुरशी",
+        "पानांचे वाकणे"
+      ],
+      "organic_control": [
+        "हवेची अदलाबदल सुधारा",
+        "वनस्पतींच्या मुळाशी पाणी द्या"
+      ],
+      "chemical_control": [
+        "कॉपर-आधारित फंगीसायड"
+      ],
+      "prevention": [
+        "प्रतिकारक जाती वापरा",
+        "योग्य अंतराने रोपे लावा"
+      ]
+    }
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "en": {
+      "name": "Tomato - Septoria Leaf Spot",
+      "description": "Fungal disease causing small, circular spots on leaves.",
+      "symptoms": [
+        "Small, circular spots with dark borders",
+        "Yellowing leaves",
+        "Leaf drop"
+      ],
+      "organic_control": [
+        "Remove infected leaves",
+        "Improve air flow"
+      ],
+      "chemical_control": [
+        "Chlorothalonil fungicides"
+      ],
+      "prevention": [
+        "Rotate crops",
+        "Avoid overhead watering"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - सेप्टोरिया लीफ स्पॉट",
+      "description": "पत्तियों पर छोटे, गोल धब्बे पैदा करने वाला कवक रोग।",
+      "symptoms": [
+        "गहरे किनारों वाले छोटे, गोल धब्बे",
+        "पीली पड़ती पत्तियां",
+        "पत्तियों का गिरना"
+      ],
+      "organic_control": [
+        "संक्रमित पत्तियों को हटा दें",
+        "हवा का प्रवाह बेहतर बनाएं"
+      ],
+      "chemical_control": [
+        "क्लोरोथैलोनिल कवकनाशक"
+      ],
+      "prevention": [
+        "फसल चक्रण करें",
+        "ऊपर से पानी देने से बचें"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - सेप्टोरिया पानाचा डाग",
+      "description": "पानांवर लहान, गोल डाग पाडणारा बुरशीजन्य आजार.",
+      "symptoms": [
+        "गडद कडा असलेले लहान, गोलाकार डाग",
+        "पिवळी पडणारी पाने",
+        "पानगळ"
+      ],
+      "organic_control": [
+        "संसर्गित पाने काढून टाका",
+        "हवेचा प्रवाह सुधारा"
+      ],
+      "chemical_control": [
+        "क्लोरोथॅलोनील फंगीसायड"
+      ],
+      "prevention": [
+        "पिकांची फेरपालट करा",
+        "वरून पाणी देणे टाळा"
+      ]
+    }
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "en": {
+      "name": "Tomato - Two-spotted Spider Mite",
+      "description": "Tiny pests that feed on plant sap, causing stippling on leaves.",
+      "symptoms": [
+        "Tiny yellow or white stippling",
+        "Fine webbing on leaves",
+        "Leaf drop in severe cases"
+      ],
+      "organic_control": [
+        "Spray with water",
+        "Use insecticidal soap"
+      ],
+      "chemical_control": [
+        "Miticide applications"
+      ],
+      "prevention": [
+        "Maintain humidity",
+        "Remove weeds"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - दो-बिंदु मकड़ी घुन",
+      "description": "छोटे कीट जो पौधे के रस को चूसकर पत्तियों पर धब्बे बनाते हैं।",
+      "symptoms": [
+        "छोटे पीले या सफेद धब्बे",
+        "पत्तियों पर बारीक जाले",
+        "गंभीर मामलों में पत्तियों का गिरना"
+      ],
+      "organic_control": [
+        "पानी का छिड़काव करें",
+        "कीटनाशक साबुन का उपयोग करें"
+      ],
+      "chemical_control": [
+        "माइटिसाइड का छिड़काव"
+      ],
+      "prevention": [
+        "नमी बनाए रखें",
+        "खरपतवार हटाएं"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - दोन-ठिपक्यांचा कोळी माइट",
+      "description": "वनस्पतींचा रस चोखून पानांवर ठिपके पाडणारे सूक्ष्म कीटक.",
+      "symptoms": [
+        "लहान पिवळे किंवा पांढरे ठिपके",
+        "पानांवर बारीक जाळी",
+        "गंभीर प्रकरणांमध्ये पानगळ"
+      ],
+      "organic_control": [
+        "पाण्याचा फवारा करा",
+        "कीटकनाशक साबण वापरा"
+      ],
+      "chemical_control": [
+        "मायटिसाइडचा वापर"
+      ],
+      "prevention": [
+        "ओलावा राखा",
+        "तणांचे नियंत्रण करा"
+      ]
+    }
+  },
+  "Tomato___Target_Spot": {
+    "en": {
+      "name": "Tomato - Target Spot",
+      "description": "Fungal disease causing dark, concentric rings on leaves.",
+      "symptoms": [
+        "Dark spots with concentric rings",
+        "Yellow halos around spots",
+        "Leaf drop"
+      ],
+      "organic_control": [
+        "Remove infected leaves",
+        "Improve air circulation"
+      ],
+      "chemical_control": [
+        "Chlorothalonil fungicides"
+      ],
+      "prevention": [
+        "Avoid overhead watering",
+        "Space plants properly"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - टारगेट स्पॉट",
+      "description": "पत्तियों पर गहरे रंग के संकेंद्रित छल्ले पैदा करने वाला कवक रोग।",
+      "symptoms": [
+        "संकेंद्रित छल्लों वाले गहरे धब्बे",
+        "धब्बों के चारों ओर पीले घेरे",
+        "पत्तियों का गिरना"
+      ],
+      "organic_control": [
+        "संक्रमित पत्तियों को हटा दें",
+        "हवा का संचार बेहतर बनाएं"
+      ],
+      "chemical_control": [
+        "क्लोरोथैलोनिल कवकनाशक"
+      ],
+      "prevention": [
+        "ऊपर से पानी देने से बचें",
+        "पौधों को उचित दूरी पर लगाएं"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - टार्गेट स्पॉट",
+      "description": "पानांवर गडद, केंद्रस्थानी वर्तुळे तयार करणारा बुरशीजन्य आजार.",
+      "symptoms": [
+        "केंद्रस्थानी वर्तुळे असलेले गडद डाग",
+        "डागांभोवती पिवळे वलय",
+        "पानगळ"
+      ],
+      "organic_control": [
+        "संसर्गित पाने काढून टाका",
+        "हवेची अदलाबदल सुधारा"
+      ],
+      "chemical_control": [
+        "क्लोरोथॅलोनील फंगीसायड"
+      ],
+      "prevention": [
+        "वरून पाणी देणे टाळा",
+        "योग्य अंतराने रोपे लावा"
+      ]
+    }
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "en": {
+      "name": "Tomato - Yellow Leaf Curl Virus",
+      "description": "Viral disease causing leaf curling and yellowing.",
+      "symptoms": [
+        "Upward leaf curling",
+        "Yellowing between veins",
+        "Stunted growth"
+      ],
+      "organic_control": [
+        "Remove infected plants",
+        "Control whiteflies"
+      ],
+      "chemical_control": [
+        "Systemic insecticides"
+      ],
+      "prevention": [
+        "Use resistant varieties",
+        "Use row covers"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - यलो लीफ कर्ल वायरस",
+      "description": "वायरल रोग जिससे पत्तियां मुड़ जाती हैं और पीली पड़ जाती हैं।",
+      "symptoms": [
+        "पत्तियों का ऊपर की ओर मुड़ना",
+        "नसों के बीच पीलापन",
+        "विकास रुक जाना"
+      ],
+      "organic_control": [
+        "संक्रमित पौधों को हटा दें",
+        "व्हाइटफ्लाई को नियंत्रित करें"
+      ],
+      "chemical_control": [
+        "सिस्टमिक कीटनाशक"
+      ],
+      "prevention": [
+        "प्रतिरोधी किस्में लगाएं",
+        "रो कवर का उपयोग करें"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - पिवळ्या पानांच्या वळणाचा विषाणू",
+      "description": "विषाणूजन्य आजार ज्यामुळे पाने वाकतात आणि पिवळी पडतात.",
+      "symptoms": [
+        "पानांचे वरच्या दिशेने वाकणे",
+        "शिरांमधील पिवळेपणा",
+        "वाढ अवरुद्ध होणे"
+      ],
+      "organic_control": [
+        "संसर्गित वनस्पती काढून टाका",
+        "व्हाइटफ्लायवर नियंत्रण ठेवा"
+      ],
+      "chemical_control": [
+        "सिस्टीमिक कीटकनाशके"
+      ],
+      "prevention": [
+        "प्रतिकारक जाती वापरा",
+        "रो कव्हर वापरा"
+      ]
+    }
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "en": {
+      "name": "Tomato - Mosaic Virus",
+      "description": "Viral disease causing mottled leaves and stunted growth.",
+      "symptoms": [
+        "Mottled light and dark green leaves",
+        "Leaf distortion",
+        "Reduced fruit set"
+      ],
+      "organic_control": [
+        "Remove infected plants",
+        "Control aphids"
+      ],
+      "chemical_control": [
+        "No chemical cure"
+      ],
+      "prevention": [
+        "Use virus-free seeds",
+        "Disinfect tools"
+      ]
+    },
+    "hi": {
+      "name": "टमाटर - मोज़ेक वायरस",
+      "description": "वायरल रोग जिससे चितकबरी पत्तियां और विकास रुक जाता है।",
+      "symptoms": [
+        "हल्के और गहरे हरे रंग की चितकबरी पत्तियां",
+        "पत्तियों का विकृत होना",
+        "फल कम लगना"
+      ],
+      "organic_control": [
+        "संक्रमित पौधों को हटा दें",
+        "एफिड को नियंत्रित करें"
+      ],
+      "chemical_control": [
+        "कोई रासायनिक उपचार नहीं"
+      ],
+      "prevention": [
+        "वायरस मुक्त बीजों का प्रयोग करें",
+        "उपकरणों को निष्फल करें"
+      ]
+    },
+    "mr": {
+      "name": "टोमॅटो - मोझेक विषाणू",
+      "description": "विषाणूजन्य आजार ज्यामुळे चित्रविचित्र पाने आणि वाढ अवरुद्ध होते.",
+      "symptoms": [
+        "फिकट आणि गडद हिरव्या रंगाची चित्रविचित्र पाने",
+        "पानांचे विकृतीकरण",
+        "कमी फळे येणे"
+      ],
+      "organic_control": [
+        "संसर्गित वनस्पती काढून टाका",
+        "अळ्यांवर नियंत्रण ठेवा"
+      ],
+      "chemical_control": [
+        "कोणताही रासायनिक उपचार नाही"
+      ],
+      "prevention": [
+        "विषाणुमुक्त बियांचा वापर करा",
+        "साधने निर्जंतुक करा"
+      ]
+    }
+  }
+}
