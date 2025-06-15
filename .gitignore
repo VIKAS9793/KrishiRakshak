@@ -1,6 +1,7 @@
 # Python virtual environments
 venv/
 .venv/
+venv310/
 env/
 ENV/
 
@@ -11,6 +12,11 @@ data/
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Weights & Biases
+wandb/
+.wandb/
+wandb-*.log
 
 # Distribution / packaging
 dist/
@@ -34,6 +40,42 @@ build/
 # System files
 .DS_Store
 Thumbs.db
+
+# Model and output files
+*.pth
+*.pt
+*.onnx
+*.tflite
+*.pb
+*.t7
+*.pkl
+*.pickle
+*.safetensors
+*.bin
+*.h5
+*.hdf5
+*.ckpt
+
+# Output directories (tracked selectively)
+outputs/
+!outputs/README.md
+!outputs/public_metrics.csv
+!outputs/final_visualizations/
+!outputs/final_visualizations/README.md
+!outputs/figures/
+!outputs/models/
+!outputs/predictions/
+
+# Checkpoints (tracked selectively)
+checkpoints/
+!checkpoints/README.md
+!checkpoints/best_model.pth
+!checkpoints/class_to_idx.json
+!checkpoints/last_checkpoint.pth
+
+# Project specific exclusions
+!src/data/advisories.json
+!assets/
 
 # Note: outputs/ directory is now tracked for hackathon submission
 # It contains:
