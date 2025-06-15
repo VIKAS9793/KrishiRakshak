@@ -59,18 +59,59 @@ Thumbs.db
 # Output directories (tracked selectively)
 outputs/*
 !outputs/README.md
-!outputs/public_metrics.csv
 !outputs/*.csv
 !outputs/*.json
 !outputs/*.png
 !outputs/*.pth
 !outputs/*.onnx
 !outputs/*.pt
+!outputs/*.jpg
+!outputs/*.jpeg
 !outputs/final_visualizations/
-!outputs/final_visualizations/README.md
+!outputs/final_visualizations/*.png
+!outputs/final_visualizations/*.jpg
+!outputs/final_visualizations/*.jpeg
 !outputs/figures/
+!outputs/figures/*.png
+!outputs/figures/*.jpg
 !outputs/models/
+!outputs/models/*.pth
+!outputs/models/*.onnx
 !outputs/predictions/
+!outputs/predictions/*.csv
+!outputs/predictions/*.json
+!outputs/predictions/*.txt
+
+# Data files
+data/raw/
+data/processed/
+!data/*.csv
+!data/*.json
+!data/plantvillage/
+!data/processed_data/
+
+# Source code
+!src/
+!src/**/
+!*.py
+
+# Config files
+!*.yaml
+!*.yml
+!*.json
+
+# Documentation
+!docs/
+!docs/*.md
+!*.md
+
+# Assets
+!assets/
+!assets/**/
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
 
 # Checkpoints (tracked selectively)
 checkpoints/*
