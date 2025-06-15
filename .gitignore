@@ -57,9 +57,15 @@ Thumbs.db
 *.ckpt
 
 # Output directories (tracked selectively)
-outputs/
+outputs/*
 !outputs/README.md
 !outputs/public_metrics.csv
+!outputs/*.csv
+!outputs/*.json
+!outputs/*.png
+!outputs/*.pth
+!outputs/*.onnx
+!outputs/*.pt
 !outputs/final_visualizations/
 !outputs/final_visualizations/README.md
 !outputs/figures/
@@ -67,11 +73,11 @@ outputs/
 !outputs/predictions/
 
 # Checkpoints (tracked selectively)
-checkpoints/
+checkpoints/*
 !checkpoints/README.md
-!checkpoints/best_model.pth
-!checkpoints/class_to_idx.json
-!checkpoints/last_checkpoint.pth
+!checkpoints/*.pth
+!checkpoints/*.json
+!checkpoints/*.pt
 
 # Project specific exclusions
 !src/data/advisories.json
